@@ -11,16 +11,16 @@ We've chose to use __:nested__ as the style for the main css file. It's nice and
 
 * :nested
 
-        `$ sass -t nested scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
+    `$ sass -t nested scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
 
 * :expanded
 
-        `$ sass -t expanded scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
+    `$ sass -t expanded scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
 
 * :compact
 
-        `$ sass -t compact scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
+    `$ sass -t compact scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
 
 * :compressed
 
-        `$ sass -t compressed scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.min.css`
+    `$ sass -t compressed scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.min.css`
