@@ -5,14 +5,16 @@ Use the following command to install the sass Ruby gem:
 
 ## Choose an Output Style
 
-:nested
-`$ sass -t nested scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
+We've chose to use _:nested_ as the style for the main css file. It's nice and easy to read. We've used _:compressed_ on the minified css file. If you want to go straight into production just grab the minifed version.
 
-:expanded
-`$ sass -t expanded scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
+* :nested
+        `$ sass -t nested scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
 
-:compact
-`$ sass -t compact scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
+* :expanded
+        `$ sass -t expanded scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
 
-:compressed
-`$ sass -t compressed scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.min.css`
+* :compact
+        `$ sass -t compact scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
+
+* :compressed
+        `$ sass -t compressed scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.min.css`
