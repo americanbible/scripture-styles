@@ -1,0 +1,80 @@
+.notelink {
+    text-decoration: underline;
+    padding: .1em;
+    &, &:hover, &:active, &:visited {
+        color: lighten($base-font-color,35%);
+    }
+    sup {
+        font-size: .7em;
+        letter-spacing: -.03em;
+        vertical-align: 0.25em;
+        line-height: 0;
+        font-family: "Helvetica", sans-serif;
+        font-weight: bold;
+    }
+    & + sup:before {
+        content: "\a0";
+    }
+}
+
+// .note is a wrapper class for both cross refs and footnotes
+.note {
+    @include adjust-font-size-to(16px);
+}
+
+.f {
+    display: block;
+}
+
+// Origin reference
+.fr {
+    font-weight: bold;
+}
+
+// Footnote keyword
+.fk {
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+// Footnote translation quotation.
+// .fq {} & .fqa {}
+[class^=fq] {
+    font-style: italic;
+}
+
+// Footnote label
+.fl {
+    font-style: italic;
+    font-weight: bold;
+}
+
+// Footnote additional paragraph.
+.fp {}
+
+// Footnote verse number.
+.fv {
+    color: lighten($base-font-color, 25%);
+    font-size: .75em;
+    letter-spacing: -.03em;
+    vertical-align: 0.25em;
+    line-height: 0;
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    &:after {
+        content: "\a0";
+    }
+}
+
+// Footnote text
+.ft {}
+
+.fe {}
+
+// Deuterocanonical content
+.fdc {}
+
+.fs {}
+
+// Footnote reference mark
+.fm {}

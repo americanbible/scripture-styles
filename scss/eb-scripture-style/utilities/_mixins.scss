@@ -1,0 +1,46 @@
+@mixin establish-eb-baseline($font-size: $base-font-size) {
+  $relative-size: 100% * $font-size / $browser-default-font-size;
+  @if support-legacy-browser(ie, "6") and not $relative-font-sizing {
+    // IE 6 refuses to resize fonts set in pixels and it weirdly resizes fonts
+    // whose root is set in ems. So we set the root font size in percentages of
+    // the default font size, even if we are using absolute sizes elsewhere.
+    * .eb-container {
+      font-size: $relative-size;
+    }
+  }
+  .eb-container {
+    font-size: if($relative-font-sizing, $relative-size, $font-size);
+    // Webkit has a bug that prevents line-height being set in rem on ;
+    // To work around this and simplify output, we can set initial line-height
+    // in ems for all relative rhythm units, even when $rhythm-unit is `rem`.
+    @if $relative-font-sizing {
+      line-height: convert-length($base-line-height, em);
+    }
+    @else {
+      line-height: round($base-line-height);
+    }
+  }
+}
+
+@mixin text-indent {
+  text-indent: rhythm(1);
+}
+
+@mixin indented($left,$right) {
+  margin-left: rhythm($left);
+  margin-right: rhythm($right);
+}
+
+@mixin hanging-indent {
+  padding-left: rhythm(1);
+  text-indent: rhythm(-1);
+}
+
+@mixin parenthesis-wrap {
+  &:before {
+      content: "(";
+  }
+  &:after {
+      content: ")" !important;
+  }
+}

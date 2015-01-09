@@ -1,0 +1,60 @@
+// Chapter number
+.c {
+    text-align: center;
+    font-weight: bold;
+    @include adjust-font-size-to(23px);
+}
+
+// Alternate (second) chapter number.
+.ca {
+    font-style: italic;
+    font-weight: normal;
+    color: lighten($base-font-color, 40%);
+    @include parenthesis-wrap;
+}
+
+// Published chapter character.
+// cp = h3
+.cp {}
+
+// cl = h3 (should this be an inline element?)
+.cl {
+    text-align: center;
+    font-weight: bold;
+}
+
+// Chapter Description
+.cd {
+    @include indented(1, 1);
+    font-style: italic;
+}
+
+// Verse Numbers
+sup[class^=v] {
+    color: darken($base-font-color, 80%);
+    font-size: .7em;
+    letter-spacing: -.03em;
+    vertical-align: 0.25em;
+    line-height: 0;
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    &:after {
+        content: "\a0";
+    }
+}
+sup + sup {
+    &:before {
+        content: "\a0";
+    }
+}
+
+// Verse Alternate
+.va {
+    @include parenthesis-wrap;
+    font-style: italic;
+}
+
+// Published verse character
+.vp {
+    // no extra styles yet
+}

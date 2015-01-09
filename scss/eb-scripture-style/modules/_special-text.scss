@@ -1,0 +1,124 @@
+//  Quoted book title.
+.bk {
+    font-style: italic;
+}
+
+
+// Name of Diety. Small caps?
+.nd {
+    font-variant: small-caps;
+}
+// Translators addition
+.add {
+    font-weight:bold;
+    font-style:italic;
+}
+// Deuterocanonical/LXX additions
+.dc {
+    font-style:italic;
+}
+// Keyword
+.k {
+    font-weight:bold;
+    font-style:italic;
+}
+
+// Liturgical note/comment
+.lit {
+    text-align: right;
+    font-weight: bold;
+}
+
+// TODO:
+// Ordinal number ending
+.ord {}
+
+// Proper name
+.pn {
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+// Secondary language
+.sls {
+    font-style: italic;
+}
+// Tr
+.tl {
+    font-style: italic;
+}
+
+//Words of Jesus
+.wj {
+    color: #CC0000;
+}
+
+// Emphasis text
+.em {
+    font-style: italic;
+}
+
+// Bold text
+.bd {
+    font-weight: bold;
+}
+
+// Italic text
+.it {
+    font-style: italic;
+}
+
+// Bold italic
+.bdit {
+    font-weight: bold;
+    font-style: italic;
+}
+
+// Normal text
+.no {
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Small caps text
+.sc {
+    font-variant: small-caps;
+}
+
+// Page break
+.pb {}
+
+
+// ---------------
+// Special Figures
+// ---------------
+// Note: We may do something with these in the future should we start working with versions that contain images/figures.
+.fig {}
+
+
+// Subject index entry
+.ndx {}
+
+// Pronunciation information. Used for CJK texts.
+.pro {}
+
+
+// Wordlist/glossary/dictionary entry
+.w {}
+
+// Greek wordlist entry
+.wg {}
+
+// Hebrew wordlist entry
+.wh {}
+
+// Quoted text
+.qt {
+    font-style: italic;
+}
+
+// Signature
+.sig {
+    font-weight: normal;
+    font-style: italic;
+}
