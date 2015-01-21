@@ -1,0 +1,33 @@
+// Golden Scale for 18px Font
+// Title: 47px
+// Headlines: 29px
+// Sub-headlines: 23px
+// Primary Text: 18px
+// Secondary Text: 14px
+// Optimized Typography for 18px Font at 75 CPL (chars per line)
+// http://www.pearsonified.com/typography
+
+// https://drewish.com/tools/vertical-rhythm/
+
+@mixin text-indent {
+    text-indent: 1em;
+}
+
+@mixin indented($left, $right) {
+    margin-left: $left + em;
+    margin-right: $right + em;
+}
+
+@mixin hanging-indent {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+@mixin parenthesis-wrap {
+    &:before {
+        content: "(";
+    }
+    &:after {
+        content: ")" !important;
+    }
+}

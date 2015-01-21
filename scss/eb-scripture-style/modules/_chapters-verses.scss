@@ -2,7 +2,7 @@
 .c {
     text-align: center;
     font-weight: bold;
-    @include adjust-font-size-to(23px);
+    font-size: 1.3em;
 }
 
 // Alternate (second) chapter number.

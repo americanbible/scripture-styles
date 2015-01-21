@@ -1,21 +1,7 @@
-// Golden Scale for 18px Font
-    // Title: 47px
-    // Headlines: 29px
-    // Sub-headlines: 23px
-    // Primary Text: 18px
-    // Secondary Text: 14px
-    // Optimized Typography for 18px Font at 75 CPL (chars per line)
-    // http://www.pearsonified.com/typography
-
-$base-font-size: 18px;
-$base-line-height: 27px;
-$base-font-color: #333;
-$scripture-font: "CharisSIL", serif;
-
-@include establish-eb-baseline; // Modification of Compass establish-baseline mixin so that we can get a baseline on the container element.
-
 .eb-container {
-    @include nested-reset; // Let's clear out all the inherited styles and get back to a clean slate
+    font-size: $base-font-size;
+    line-height: $modular-scale-ratio;
+    @include eb-reset; // Let's clear out all the inherited styles and get back to a clean slate
     color: $base-font-color; // Choose the color of your choice. We recommend a slightly less stark grey/black as opposed to straightup black.
     font-family: $scripture-font;
     // text-rendering: optimizeLegibility; just kidding. but let's keep an eye on this as support might get better.

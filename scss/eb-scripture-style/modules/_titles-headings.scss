@@ -4,11 +4,10 @@
     font-weight: bold;
 }
 .mt, .mt1 {
-    @include adjust-font-size-to(47px);
-    @include trailer(1,47px,margin);
+    font-size: 2.8em;
 }
 .mt2 {
-    @include adjust-font-size-to(29px);
+    font-size: 1.6em;
     font-style: italic;
     font-weight: normal;
 }
@@ -19,26 +18,27 @@
 [class^=ms] {
     text-align: center;
     font-weight: bold;
+    line-height: 1.2;
 }
 
 .ms, .ms1 {
-    @include adjust-font-size-to(29px);
+    font-size: 1.6em;
 }
 
 .ms2 {
-    @include adjust-font-size-to(27px);
+    font-size: 1.5em;
 }
 
 .ms3 {
-    @include adjust-font-size-to(26px);
+    font-size: 1.4em;
 }
 
 // Major section reference range.
 // The text reference range listed under a major section heading.
 // mr = h3
 .mr {
-    @include adjust-font-size-to(16px);
-    @include trailer(1,16px,margin);
+    font-size: .9em;
+    margin-bottom: 1em;
     text-align: center;
     font-weight: normal;
     font-style: italic;
@@ -49,13 +49,12 @@
 .s, .s1 {
     text-align: center;
     font-weight: bold;
-    @include adjust-font-size-to(20px);
+    font-size: 1.1em;
 }
 
 .s2 {
     text-align: center;
     font-weight: bold;
-    @include adjust-font-size-to(19px);
 }
 
 .s3 {
@@ -79,7 +78,7 @@
 // Parallel passage reference(s).
 // r = h5
 .r {
-    @include adjust-font-size-to(17px);
+    font-size: .9em;
     font-weight: normal;
     font-style: italic;
     text-align: center;
@@ -88,7 +87,8 @@
 // Inline quotation reference(s).
 // .rq = <p>
 .rq {
-    @include adjust-font-size-to(14px);
+    font-size: .85em;
+    line-height: 1.9;
     font-style: italic;
     padding-left: rhythm(0.5);
 }
@@ -110,6 +110,6 @@
 
 [class^=p], [class^=q] {
     & + .s, & + .s1 {
-        @include margin-leader(1,20px);
+        margin-top: $modular-scale-ratio+em;
     }
 }

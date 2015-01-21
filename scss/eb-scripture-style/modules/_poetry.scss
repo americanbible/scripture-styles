@@ -27,7 +27,7 @@
 .qa {
     text-align: center;
     font-style: italic;
-    @include adjust-font-size-to(20px);
+    font-size: 1.1em;
     @include indented(0,0);
 }
 

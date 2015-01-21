@@ -18,30 +18,26 @@
 //  Introduction major title.
 .imt, .imt1,
 .imte, .imte1 {
-    @include adjust-font-size-to(23px);
-    @include trailer(1, 23px, margin);
+    font-size: 1.4em;
 }
 
 .imt2, .imte2 {
-    @include adjust-font-size-to(22px);
-    @include trailer(1, 22px, margin);
+    font-size: 1.3em;
 }
 
 .imt3, .imte3 {
-    @include adjust-font-size-to(21px);
-    @include trailer(1, 21px, margin);
+    font-size: 1.2em;
 }
 
 .imt4, .imte4 {
-    @include adjust-font-size-to(20px);
-    @include trailer(1, 20px, margin);
+    font-size: 1.1em;
 }
 
 // Introduction section heading.
 [class^=is] {
+    font-size: 1.1em;
     text-align: center;
     font-weight: bold;
-    @include adjust-font-size-to(20px);
 }
 
 // Introduction Paragraphs
@@ -101,7 +97,7 @@
 
 // Introduction Blank Line
 .ib {
-    @include trailer(1, $base-font-size, margin);
+    // @include trailer(1, $base-font-size, margin);
 }
 
 .ior {}
@@ -124,8 +120,8 @@
 // Introduction outline title
 .iot {
     font-weight: bold;
-    @include adjust-font-size-to(20px);
-    @include leader(1, 20px, margin);
+    font-size: 1.1em;
+    margin-top: $modular-scale-ratio+em;
 }
 
 // Introduction outline entry

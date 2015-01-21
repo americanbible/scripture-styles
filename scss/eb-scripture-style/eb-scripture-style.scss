@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
-@import "utilities/vertical_rhythm",
-        "utilities/reset",
-        "utilities/mixins";
-
-@import "base";
+@import "settings",
+        "eb-reset",
+        "mixins",
+        "functions",
+        "modular-scale",
+        "base";
 
 // Let's namespace all the modules
 .eb-container {

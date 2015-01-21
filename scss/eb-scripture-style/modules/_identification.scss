@@ -3,7 +3,7 @@
 .h {
     text-align: center;
     font-style: italic;
-    @include adjust-font-size-to(20px);
+    // @include adjust-font-size-to(20px);
 }
 
 // These are not used.
