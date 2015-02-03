@@ -2,6 +2,7 @@
 [class^=mt] {
     text-align: center;
     font-weight: bold;
+    letter-spacing: normal;
 }
 .mt, .mt1 {
     font-size: 2.8em;
@@ -19,6 +20,7 @@
     text-align: center;
     font-weight: bold;
     line-height: 1.2;
+    letter-spacing: normal;
 }
 
 .ms, .ms1 {
@@ -50,24 +52,28 @@
     text-align: center;
     font-weight: bold;
     font-size: 1.1em;
+    letter-spacing: normal;
 }
 
 .s2 {
     text-align: center;
     font-weight: bold;
     font-size: inherit;
+    letter-spacing: normal;
 }
 
 .s3 {
     text-align: center;
     font-weight: bold;
     font-size: inherit;
+    letter-spacing: normal;
 }
 
 .s4 {
     text-align: center;
     font-weight: bold;
     font-size: inherit;
+    letter-spacing: normal;
 }
 
 // Section reference range
@@ -77,6 +83,7 @@
     font-style: italic;
     text-align: center;
     font-size: inherit;
+    letter-spacing: normal;
 }
 
 // Parallel passage reference(s).
@@ -86,6 +93,7 @@
     font-weight: normal;
     font-style: italic;
     text-align: center;
+    letter-spacing: normal;
 }
 
 // Inline quotation reference(s).
@@ -95,6 +103,7 @@
     line-height: 1.9;
     font-style: italic;
     padding-left: rhythm(0.5);
+    letter-spacing: normal;
 }
 
 // Descriptive title (or "Hebrew subtitle")
@@ -103,6 +112,7 @@
     font-style: italic;
     text-align: center;
     font-size: inherit;
+    letter-spacing: normal;
 }
 
 // Speaker Identification
@@ -112,6 +122,7 @@
     font-weight: normal;
     font-style: italic;
     font-size: inherit;
+    letter-spacing: normal;
 }
 
 [class^=p], [class^=q] {
