@@ -1,8 +1,12 @@
 .eb-container {
-    font-size: $base-font-size;
-    line-height: $modular-scale-ratio;
     @include eb-reset; // Let's clear out all the inherited styles and get back to a clean slate
-    color: $base-font-color; // Choose the color of your choice. We recommend a slightly less stark grey/black as opposed to straightup black.
+    font-size: $base-font-size;
     font-family: $scripture-font;
-    // text-rendering: optimizeLegibility; just kidding. but let's keep an eye on this as support might get better.
+    line-height: $modular-scale-ratio;
+    color: $base-font-color; // Choose the color of your choice. We recommend a slightly less stark grey/black as opposed to straightup black.
+    // We want these rules applied to everything inside .eb-container
+    * {
+        background: none;
+    }
+
 }
