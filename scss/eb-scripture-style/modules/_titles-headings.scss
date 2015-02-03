@@ -55,16 +55,19 @@
 .s2 {
     text-align: center;
     font-weight: bold;
+    font-size: inherit;
 }
 
 .s3 {
     text-align: center;
     font-weight: bold;
+    font-size: inherit;
 }
 
 .s4 {
     text-align: center;
     font-weight: bold;
+    font-size: inherit;
 }
 
 // Section reference range
@@ -73,6 +76,7 @@
     font-weight: normal;
     font-style: italic;
     text-align: center;
+    font-size: inherit;
 }
 
 // Parallel passage reference(s).
@@ -98,6 +102,7 @@
 .d {
     font-style: italic;
     text-align: center;
+    font-size: inherit;
 }
 
 // Speaker Identification
@@ -106,6 +111,7 @@
     text-align: left;
     font-weight: normal;
     font-style: italic;
+    font-size: inherit;
 }
 
 [class^=p], [class^=q] {
