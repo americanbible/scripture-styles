@@ -38,6 +38,7 @@ sup[class^=v] {
     line-height: 0;
     font-family: "Helvetica", sans-serif;
     font-weight: bold;
+    top: inherit;
     &:after {
         content: "\a0";
     }
