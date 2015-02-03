@@ -1,9 +1,9 @@
 .eb-container {
-  font-size: 18px;
-  line-height: 1.5;
   /* HTML5 display-role reset for older browsers */
-  color: #333;
-  font-family: "CharisSIL", serif; }
+  font-size: 18px;
+  font-family: "CharisSIL", serif;
+  line-height: 1.5;
+  color: #333; }
   .eb-container html, .eb-container body, .eb-container div, .eb-container span, .eb-container applet, .eb-container object, .eb-container iframe,
   .eb-container h1, .eb-container h2, .eb-container h3, .eb-container h4, .eb-container h5, .eb-container h6, .eb-container p, .eb-container blockquote, .eb-container pre,
   .eb-container a, .eb-container abbr, .eb-container acronym, .eb-container address, .eb-container big, .eb-container cite, .eb-container code,
@@ -26,8 +26,6 @@
   .eb-container article, .eb-container aside, .eb-container details, .eb-container figcaption, .eb-container figure,
   .eb-container footer, .eb-container header, .eb-container hgroup, .eb-container menu, .eb-container nav, .eb-container section {
     display: block; }
-  .eb-container body {
-    line-height: 1; }
   .eb-container ol, .eb-container ul {
     list-style: none; }
   .eb-container blockquote, .eb-container q {
@@ -39,6 +37,8 @@
   .eb-container table {
     border-collapse: collapse;
     border-spacing: 0; }
+  .eb-container * {
+    background: none; }
 
 .eb-container .c {
   text-align: center;
@@ -66,7 +66,8 @@
   vertical-align: 0.25em;
   line-height: 0;
   font-family: "Helvetica", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  top: inherit; }
   .eb-container sup[class^=v]:after {
     content: "\a0"; }
 .eb-container sup + sup:before {
@@ -348,7 +349,8 @@
   padding-right: 1.5em; }
 .eb-container [class^=mt] {
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  letter-spacing: normal; }
 .eb-container .mt, .eb-container .mt1 {
   font-size: 2.8em; }
 .eb-container .mt2 {
@@ -358,7 +360,8 @@
 .eb-container [class^=ms] {
   text-align: center;
   font-weight: bold;
-  line-height: 1.2; }
+  line-height: 1.2;
+  letter-spacing: normal; }
 .eb-container .ms, .eb-container .ms1 {
   font-size: 1.6em; }
 .eb-container .ms2 {
@@ -374,37 +377,52 @@
 .eb-container .s, .eb-container .s1 {
   text-align: center;
   font-weight: bold;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  letter-spacing: normal; }
 .eb-container .s2 {
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: inherit;
+  letter-spacing: normal; }
 .eb-container .s3 {
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: inherit;
+  letter-spacing: normal; }
 .eb-container .s4 {
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: inherit;
+  letter-spacing: normal; }
 .eb-container .sr {
   font-weight: normal;
   font-style: italic;
-  text-align: center; }
+  text-align: center;
+  font-size: inherit;
+  letter-spacing: normal; }
 .eb-container .r {
   font-size: .9em;
   font-weight: normal;
   font-style: italic;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: normal; }
 .eb-container .rq {
   font-size: .85em;
   line-height: 1.9;
   font-style: italic;
-  padding-left: rhythm(0.5); }
+  padding-left: rhythm(0.5);
+  letter-spacing: normal; }
 .eb-container .d {
   font-style: italic;
-  text-align: center; }
+  text-align: center;
+  font-size: inherit;
+  letter-spacing: normal; }
 .eb-container .sp {
   text-align: left;
   font-weight: normal;
-  font-style: italic; }
+  font-style: italic;
+  font-size: inherit;
+  letter-spacing: normal; }
 .eb-container [class^=p] + .s, .eb-container [class^=p] + .s1, .eb-container [class^=q] + .s, .eb-container [class^=q] + .s1 {
   margin-top: 1.5em; }
 
