@@ -31,6 +31,7 @@ __compressed__
 `$ scss -t compressed scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.min.css`
 
 __gzip__
+
 `gzip < css/eb-scripture-style.min.css > css/eb-scripture-style.min.css.gz`
 
 ## Fonts
