@@ -30,6 +30,9 @@ __compressed__
 
 `$ scss -t compressed scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.min.css`
 
+__gzip__
+`gzip < css/eb-scripture-style.min.css > css/eb-scripture-style.min.css.gz`
+
 ## Fonts
 
 We recommend using [CharisSIL](http://scripts.sil.org/cms/scripts/page.php?item_id=CharisSIL_download) because it has tremendous character support. Over 3600 glyphs are included. We have included “Charis” in our default font stack and we are leaving it up to developers to make that font available to their apps or sites.
