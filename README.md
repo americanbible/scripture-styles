@@ -12,25 +12,25 @@ Use the following command to install the sass Ruby gem:
 
 We've chose to use **:nested** as the style for the main css file. It's nice and easy to read. We've used **:compressed** on the minified css file. If you want to go straight into production just grab the minifed version.
 
+If you need to rebuild the css you can run.
+
+```
+npm run build
+```
+
+Or individually:
+
 **nested**
 
-`$ scss -t nested scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
-
-**expanded**
-
-`$ scss -t expanded scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
-
-**compact**
-
-`$ scss -t compact scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
+`npm run build-nested`
 
 **compressed**
 
-`$ scss -t compressed scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.min.css`
+`npm run build-nested`
 
 **gzip**
 
-`gzip < css/eb-scripture-style.min.css > css/eb-scripture-style.min.css.gz`
+`npm run gzip`
 
 ## Fonts
 
