@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "SASS and CSS styles for API.Bible Scripture Output",
   "main": "index.js",
+  "style": "css/eb-scripture-style.css",
+  "sass": "scss/eb-scripture-style/eb-scripture-style.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build-nested && npm run build-compressed && npm run gzip",
