@@ -41,3 +41,17 @@ You are welcome to use the Sass files to change the default font stack and recom
 Charis SIL is released under the SIL Open Font License (OFL), version 1.1. Copyright (c) 1997-2014, SIL International (http://scripts.sil.org/) with Reserved Font Names "Charis" and "SIL".
 
 http://scripts.sil.org/cms/scripts/page.php?item_id=OFL
+
+# Preview Tool
+
+First add your API.Bible key to `previewer/config.json`. See `config.json.sample` for format.
+
+Then, to run the preview tool
+
+```
+cd previewer
+npm install
+npm run storybook
+```
+
+New stories can be added to `stores/index.js`.
