@@ -10,6 +10,7 @@
     font-style: italic;
     font-weight: normal;
     color: lighten($base-font-color, 40%);
+
     @include parenthesis-wrap;
 }
 
@@ -26,6 +27,7 @@
 // Chapter Description
 .cd {
     @include indented(1, 1);
+
     font-style: italic;
 }
 
@@ -39,10 +41,12 @@ sup[class^=v] {
     font-family: "Helvetica", sans-serif;
     font-weight: bold;
     top: inherit;
+
     &:after {
         content: "\a0";
     }
 }
+
 sup + sup {
     &:before {
         content: "\a0";
@@ -52,6 +56,7 @@ sup + sup {
 // Verse Alternate
 .va {
     @include parenthesis-wrap;
+
     font-style: italic;
 }
 

@@ -1,5 +1,3 @@
-// This file is namespaced .eb-container in _all.scss to avoid colision.
-
 // imt = h2
 // imt1 = h2
 // imt2 = h3
@@ -60,12 +58,14 @@
 
 .imi {
     text-indent: 0;
+
     @include indented(1, 1);
 }
 
 // Intro Quote
 .ipq {
     font-style: italic;
+
     @include indented(1, 1);
 }
 
@@ -121,7 +121,7 @@
 .iot {
     font-weight: bold;
     font-size: 1.1em;
-    margin-top: $modular-scale-ratio+em;
+    margin-top: $modular-scale-ratio + em;
 }
 
 // Introduction outline entry
@@ -153,7 +153,8 @@
 //  Introduction quoted text.
 .iqt {
     @include text-indent;
-    font-style:italic;
+
+    font-style: italic;
 }
 
 //  Introduction end.

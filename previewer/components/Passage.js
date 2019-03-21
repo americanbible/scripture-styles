@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../scss/eb-scripture-style/eb-scripture-style.scss";
+import "../../scss/api-bible-content.scss";
 import { apikey } from "../config.json";
 
 const Passage = ({ bibleId, passageId, footnotes = false }) => {
@@ -23,7 +23,7 @@ const Passage = ({ bibleId, passageId, footnotes = false }) => {
 
   return (
     <div
-      className="eb-container"
+      className="api-bible-content"
       dangerouslySetInnerHTML={{ __html: data.content }}
     />
   );
