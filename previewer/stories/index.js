@@ -19,3 +19,7 @@ storiesOf("Passage", module).add("Genesis 1 with Footnotes", () => (
 storiesOf("Passage", module).add("Psalms 23", () => (
   <Passage bibleId={gntId} passageId="PSA.23" />
 ));
+
+storiesOf("Passage", module).add("John 3:16-20", () => (
+  <Passage bibleId={gntId} passageId="JHN.3.16-JHN.3.20" />
+));
