@@ -1,4 +1,32 @@
-.x {}
+.x {
+    font-size: 0.75em;
+    display: block;
+    position: relative;
+    padding: 1em;
+    text-indent: 0;
+    margin: 0.25em 0.75em;
+
+    // color: $blue-grey-900;
+    background-color: white;
+    float: left;
+    clear: left;
+    width: 8em;
+    margin-left: -10em;
+    text-align: left;
+    border-left: solid 3px lightgrey;
+
+    &:after {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 4.5em;
+        height: 100%;
+        content: "";
+        box-shadow: -1px 1px 4px rgba(black, 0.15);
+    }
+}
 
 // Origin reference
 .xo {

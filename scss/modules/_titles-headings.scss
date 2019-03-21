@@ -1,22 +1,23 @@
 // Major title.
-[class^=mt] {
+[class^="mt"] {
     text-align: center;
     font-weight: bold;
     letter-spacing: normal;
 }
+
 .mt, .mt1 {
     font-size: 2.8em;
 }
+
 .mt2 {
     font-size: 1.6em;
     font-style: italic;
     font-weight: normal;
 }
 
-
 // Major Section Heading - Headings before larger text divisions than what is typically considered a "section" division (see \s#).
 // ms = h2, ms1 = h2, ms2 = h3
-[class^=ms] {
+[class^="ms"] {
     text-align: center;
     font-weight: bold;
     line-height: 1.2;
@@ -39,7 +40,7 @@
 // The text reference range listed under a major section heading.
 // mr = h3
 .mr {
-    font-size: .9em;
+    font-size: 0.9em;
     margin-bottom: 1em;
     text-align: center;
     font-weight: normal;
@@ -89,7 +90,7 @@
 // Parallel passage reference(s).
 // r = h5
 .r {
-    font-size: .9em;
+    font-size: 0.9em;
     font-weight: normal;
     font-style: italic;
     text-align: center;
@@ -99,7 +100,7 @@
 // Inline quotation reference(s).
 // .rq = <p>
 .rq {
-    font-size: .85em;
+    font-size: 0.85em;
     line-height: 1.9;
     font-style: italic;
     padding-left: rhythm(0.5);
@@ -125,8 +126,8 @@
     letter-spacing: normal;
 }
 
-[class^=p], [class^=q] {
+[class^="p"], [class^="q"] {
     & + .s, & + .s1 {
-        margin-top: $modular-scale-ratio+em;
+        margin-top: $modular-scale-ratio + em;
     }
 }

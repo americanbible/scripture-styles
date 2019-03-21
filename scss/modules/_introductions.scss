@@ -8,7 +8,7 @@
 // is1 = h3
 // is2  = h
 
-[class^=imt] {
+[class^="imt"] {
     text-align: center;
     font-weight: bold;
 }
@@ -32,7 +32,7 @@
 }
 
 // Introduction section heading.
-[class^=is] {
+[class^="is"] {
     font-size: 1.1em;
     text-align: center;
     font-weight: bold;
@@ -81,7 +81,7 @@
 }
 
 // Introduction Poetic Line
-[class^=iq] {
+[class^="iq"] {
     @include indented(1, 1);
 }
 
@@ -103,7 +103,7 @@
 .ior {}
 
 // Introduction list item.
-[class^=ili] {
+[class^="ili"] {
     @include hanging-indent;
 }
 
