@@ -1,0 +1,25 @@
+{
+  "name": "api-bible-assets",
+  "version": "0.1.0",
+  "description": "SASS and CSS styles for API.Bible Scripture Output",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-css && npm run build-min",
+    "build-css": "node-sass scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css --source-map true",
+    "build-min": "node-sass scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.min.css --source-map true --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/americanbible/api-bible-assets.git"
+  },
+  "author": "American Bible Society",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/americanbible/api-bible-assets/issues"
+  },
+  "homepage": "https://github.com/americanbible/api-bible-assets#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
