@@ -2,37 +2,35 @@
 
 We've worked hard to make sure that the scripture styles do not collide with other styles on your site. That being said, it's important that it comes last in the source order whether that is last in a Sass import or last when linking to the CSS file.
 
-
 ## Install Sass
 
 Use the following command to install the sass Ruby gem:
 
 `$ gem install sass`
 
-
 ## Choose an Output Style
 
-We've chose to use __:nested__ as the style for the main css file. It's nice and easy to read. We've used __:compressed__ on the minified css file. If you want to go straight into production just grab the minifed version.
+We've chose to use **:nested** as the style for the main css file. It's nice and easy to read. We've used **:compressed** on the minified css file. If you want to go straight into production just grab the minifed version.
 
-__nested__
+If you need to rebuild the css you can run.
 
-`$ scss -t nested scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
+```
+npm run build
+```
 
-__expanded__
+Or individually:
 
-`$ scss -t expanded scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
+**nested**
 
-__compact__
+`npm run build-nested`
 
-`$ scss -t compact scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css`
+**compressed**
 
-__compressed__
+`npm run build-nested`
 
-`$ scss -t compressed scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.min.css`
+**gzip**
 
-__gzip__
-
-`gzip < css/eb-scripture-style.min.css > css/eb-scripture-style.min.css.gz`
+`npm run gzip`
 
 ## Fonts
 

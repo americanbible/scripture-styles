@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build-css && npm run build-min",
-    "build-css": "node-sass scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css --source-map true",
-    "build-min": "node-sass scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.min.css --source-map true --output-style compressed"
+    "build": "npm run build-nested && npm run build-compressed && npm run gzip",
+    "build-nested": "node-sass scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.css --source-map true --output-style nested",
+    "build-compressed": "node-sass scss/eb-scripture-style/eb-scripture-style.scss css/eb-scripture-style.min.css --source-map true --output-style compressed",
+    "gzip": "gzip < css/eb-scripture-style.min.css > css/eb-scripture-style.min.css.gz"
   },
   "repository": {
     "type": "git",
