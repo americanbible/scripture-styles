@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "description": "SASS and CSS styles for API.Bible Scripture Output",
   "main": "index.js",
-  "style": "dist/css/eb-scripture-style.css",
-  "sass": "scss/eb-scripture-style/eb-scripture-style.scss",
+  "style": "dist/css/api-bible-content.css",
+  "sass": "scss/api-bible-content.scss",
   "scripts": {
     "test": "jest",
     "build": "npm run build-nested && npm run build-compressed && npm run gzip",
-    "build-nested": "node-sass scss/eb-scripture-style/eb-scripture-style.scss dist/css/eb-scripture-style.css --source-map true --output-style nested",
-    "build-compressed": "node-sass scss/eb-scripture-style/eb-scripture-style.scss dist/css/eb-scripture-style.min.css --source-map true --output-style compressed",
-    "gzip": "gzip < dist/css/eb-scripture-style.min.css > dist/css/eb-scripture-style.min.css.gz"
+    "build-nested": "node-sass scss/api-bible-content.scss dist/css/api-bible-content.css --source-map true --output-style nested",
+    "build-compressed": "node-sass scss/api-bible-content.scss dist/css/api-bible-content.css --source-map true --output-style compressed",
+    "gzip": "gzip < dist/css/api-bible-content.css > dist/css/api-bible-content.css.gz"
   },
   "repository": {
     "type": "git",
