@@ -23,7 +23,7 @@ const Passage = ({ bibleId, passageId, footnotes = false }) => {
 
   return (
     <div
-      className="eb-container"
+      className="api-bible-content"
       dangerouslySetInnerHTML={{ __html: data.content }}
     />
   );
