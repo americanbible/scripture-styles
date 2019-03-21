@@ -1,0 +1,7 @@
+.api-bible-content {
+    @include style-reset; // Clear out all the inherited styles and get back to a clean slate
+    font-size: $base-font-size;
+    font-family: $scripture-font;
+    line-height: $modular-scale-ratio;
+    color: $base-font-color;
+}

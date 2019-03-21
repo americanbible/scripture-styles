@@ -1,6 +1,6 @@
 // For now the following seems to get the job done. However we may determine that something more agressive like http://cleanslatecss.com might need consideration.
 
-@mixin eb-reset {
+@mixin style-reset {
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -21,22 +21,27 @@
         font: inherit;
         vertical-align: baseline;
     }
+
     /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure,
     footer, header, hgroup, menu, nav, section {
         display: block;
     }
+
     ol, ul {
         list-style: none;
     }
+
     blockquote, q {
         quotes: none;
     }
+
     blockquote:before, blockquote:after,
     q:before, q:after {
         content: '';
         content: none;
     }
+
     table {
         border-collapse: collapse;
         border-spacing: 0;

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import "settings";
+@import "eb-reset";
+@import "mixins";
+@import "functions";
+@import "modular-scale";
+@import "base";
+
+// Let's namespace all the modules
+.api-bible-content {
+    @import "modules/chapters-verses";
+    @import "modules/cross-references";
+    @import "modules/footnotes";
+    @import "modules/identification";
+    @import "modules/introductions";
+    @import "modules/other";
+    @import "modules/paragraphs";
+    @import "modules/poetry";
+    @import "modules/special-text";
+    @import "modules/tables";
+    @import "modules/titles-headings";
+}
