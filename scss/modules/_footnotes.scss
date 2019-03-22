@@ -1,9 +1,11 @@
 .notelink {
     text-decoration: underline;
     padding: .1em;
+
     &, &:hover, &:active, &:visited {
-        color: lighten($base-font-color,35%);
+        color: lighten($base-font-color, 35%);
     }
+
     sup {
         font-size: .7em;
         letter-spacing: -.03em;
@@ -12,6 +14,7 @@
         font-family: "Helvetica", sans-serif;
         font-weight: bold;
     }
+
     & + sup:before {
         content: "\a0";
     }
@@ -23,7 +26,31 @@
 }
 
 .f {
+    font-size: 0.75em;
     display: block;
+    position: relative;
+    padding: 1em;
+    text-indent: 0;
+    margin: 0.25em 0.75em;
+    background-color: white;
+    float: right;
+    clear: right;
+    width: 15em;
+    margin-right: -16em;
+    text-align: left;
+    border-right: solid 3px lightgrey;
+
+    &:after {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 10.5em;
+        height: 100%;
+        content: "";
+        box-shadow: 1px 1px 4px rgba(black, 0.15);
+    }
 }
 
 // Origin reference
@@ -39,7 +66,7 @@
 
 // Footnote translation quotation.
 // .fq {} & .fqa {}
-[class^=fq] {
+[class^="fq"] {
     font-style: italic;
 }
 
@@ -55,12 +82,13 @@
 // Footnote verse number.
 .fv {
     color: lighten($base-font-color, 25%);
-    font-size: .75em;
-    letter-spacing: -.03em;
+    font-size: 0.75em;
+    letter-spacing: -0.03em;
     vertical-align: 0.25em;
     line-height: 0;
     font-family: "Helvetica", sans-serif;
     font-weight: bold;
+
     &:after {
         content: "\a0";
     }

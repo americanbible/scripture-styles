@@ -32,10 +32,12 @@
 }
 
 // Verse Numbers
-sup[class^=v] {
+.v,
+.vp,
+sup[class^="v"] {
     color: darken($base-font-color, 80%);
-    font-size: .7em;
-    letter-spacing: -.03em;
+    font-size: 0.7em;
+    letter-spacing: -0.03em;
     vertical-align: 0.25em;
     line-height: 0;
     font-family: "Helvetica", sans-serif;

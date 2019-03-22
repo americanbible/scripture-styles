@@ -7,17 +7,21 @@
 .nd {
     font-variant: small-caps;
 }
+
 // Translators addition
-// .add {}
+.add {
+    font-style: italic;
+}
 
 // Deuterocanonical/LXX additions
 .dc {
-    font-style:italic;
+    font-style: italic;
 }
+
 // Keyword
 .k {
-    font-weight:bold;
-    font-style:italic;
+    font-weight: bold;
+    font-style: italic;
 }
 
 // Liturgical note/comment
@@ -32,14 +36,15 @@
 
 // Proper name
 .pn {
-    font-weight:bold;
-    text-decoration:underline;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 // Secondary language
 .sls {
     font-style: italic;
 }
+
 // Tr
 .tl {
     font-style: italic;
@@ -85,20 +90,17 @@
 // Page break
 // .pb {}
 
-
 // ---------------
 // Special Figures
 // ---------------
 // Note: We may do something with these in the future should we start working with versions that contain images/figures.
 // .fig {}
 
-
 // Subject index entry
 // .ndx {}
 
 // Pronunciation information. Used for CJK texts.
 // .pro {}
-
 
 // Wordlist/glossary/dictionary entry
 // .w {}
