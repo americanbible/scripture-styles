@@ -46,9 +46,10 @@
 .ip {}
 
 // Indented Introduction Paragraph
+// https://ubsicap.github.io/usfm/introductions/index.html#ipi
 .ipi {
-    padding-left: rhythm(1);
-    padding-right: rhythm(1);
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 // Introduction flush left (margin) paragraph.
