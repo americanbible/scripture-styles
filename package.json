@@ -8,7 +8,7 @@
   "scripts": {
     "test": "jest",
     "build": "npm run build-nested && npm run build-compressed && npm run gzip",
-    "build-nested": "node-sass scss/api-bible-content.scss dist/css/api-bible-content.css --source-map true --output-style nested",
+    "build-nested": "node-sass scss/api-bible-content.scss dist/css/api-bible-content-nested.css --source-map true --output-style nested",
     "build-compressed": "node-sass scss/api-bible-content.scss dist/css/api-bible-content.css --source-map true --output-style compressed",
     "gzip": "gzip < dist/css/api-bible-content.css > dist/css/api-bible-content.css.gz"
   },
