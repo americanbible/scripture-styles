@@ -1,0 +1,599 @@
+@font-face {
+  font-family: 'Noto Serif';
+  src: url("../fonts/NotoSerif-Regular.woff2") format("woff2"), url("../fonts/NotoSerif-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: url("../fonts/NotoSerif-Light.woff2") format("woff2"), url("../fonts/NotoSerif-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: url("../fonts/NotoSerif-Bold.woff2") format("woff2"), url("../fonts/NotoSerif-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: url("../fonts/NotoSerif-BoldItalic.woff2") format("woff2"), url("../fonts/NotoSerif-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: url("../fonts/NotoSerif-Italic.woff2") format("woff2"), url("../fonts/NotoSerif-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+.api-bible-content {
+  /* HTML5 display-role reset for older browsers */
+  font-size: 18px;
+  font-family: "Noto Serif", serif;
+  line-height: 1.5;
+  color: #444444; }
+  .api-bible-content html, .api-bible-content body, .api-bible-content div, .api-bible-content span, .api-bible-content applet, .api-bible-content object, .api-bible-content iframe,
+  .api-bible-content h1, .api-bible-content h2, .api-bible-content h3, .api-bible-content h4, .api-bible-content h5, .api-bible-content h6, .api-bible-content p, .api-bible-content blockquote, .api-bible-content pre,
+  .api-bible-content a, .api-bible-content abbr, .api-bible-content acronym, .api-bible-content address, .api-bible-content big, .api-bible-content cite, .api-bible-content code,
+  .api-bible-content del, .api-bible-content dfn, .api-bible-content em, .api-bible-content img, .api-bible-content ins, .api-bible-content kbd, .api-bible-content q, .api-bible-content s, .api-bible-content samp,
+  .api-bible-content small, .api-bible-content strike, .api-bible-content strong, .api-bible-content sub, .api-bible-content sup, .api-bible-content tt, .api-bible-content var,
+  .api-bible-content b, .api-bible-content u, .api-bible-content i, .api-bible-content center,
+  .api-bible-content dl, .api-bible-content dt, .api-bible-content dd, .api-bible-content ol, .api-bible-content ul, .api-bible-content li,
+  .api-bible-content fieldset, .api-bible-content form, .api-bible-content label, .api-bible-content legend,
+  .api-bible-content table, .api-bible-content caption, .api-bible-content tbody, .api-bible-content tfoot, .api-bible-content thead, .api-bible-content tr, .api-bible-content th, .api-bible-content td,
+  .api-bible-content article, .api-bible-content aside, .api-bible-content canvas, .api-bible-content details, .api-bible-content embed,
+  .api-bible-content figure, .api-bible-content figcaption, .api-bible-content footer, .api-bible-content header, .api-bible-content hgroup,
+  .api-bible-content menu, .api-bible-content nav, .api-bible-content output, .api-bible-content ruby, .api-bible-content section, .api-bible-content summary,
+  .api-bible-content time, .api-bible-content mark, .api-bible-content audio, .api-bible-content video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline; }
+  .api-bible-content article, .api-bible-content aside, .api-bible-content details, .api-bible-content figcaption, .api-bible-content figure,
+  .api-bible-content footer, .api-bible-content header, .api-bible-content hgroup, .api-bible-content menu, .api-bible-content nav, .api-bible-content section {
+    display: block; }
+  .api-bible-content ol, .api-bible-content ul {
+    list-style: none; }
+  .api-bible-content blockquote, .api-bible-content q {
+    quotes: none; }
+  .api-bible-content blockquote:before, .api-bible-content blockquote:after,
+  .api-bible-content q:before, .api-bible-content q:after {
+    content: "";
+    content: none; }
+  .api-bible-content table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+.api-bible-content .c {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em; }
+
+.api-bible-content .ca {
+  font-style: italic;
+  font-weight: normal;
+  color: #aaaaaa; }
+  .api-bible-content .ca:before {
+    content: "("; }
+  .api-bible-content .ca:after {
+    content: ")" !important; }
+
+.api-bible-content .cl {
+  text-align: center;
+  font-weight: bold; }
+
+.api-bible-content .cd {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-style: italic; }
+
+.api-bible-content .v,
+.api-bible-content .vp,
+.api-bible-content sup[class^="v"] {
+  color: black;
+  font-size: 0.7em;
+  letter-spacing: -0.03em;
+  vertical-align: 0.25em;
+  line-height: 0;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+  top: inherit; }
+  .api-bible-content .v:after,
+  .api-bible-content .vp:after,
+  .api-bible-content sup[class^="v"]:after {
+    content: "\a0"; }
+
+.api-bible-content sup + sup:before {
+  content: "\a0"; }
+
+.api-bible-content .va {
+  font-style: italic; }
+  .api-bible-content .va:before {
+    content: "("; }
+  .api-bible-content .va:after {
+    content: ")" !important; }
+
+.api-bible-content .x {
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  padding: 0 0.4em;
+  margin: 0 0.1em;
+  text-indent: 0;
+  text-align: left;
+  border-radius: 4px;
+  border: 1px solid #dcdcdc; }
+
+.api-bible-content .xo {
+  font-weight: bold; }
+
+.api-bible-content .xk {
+  font-style: italic; }
+
+.api-bible-content .xq {
+  font-style: italic; }
+
+.api-bible-content .notelink {
+  text-decoration: underline;
+  padding: .1em; }
+  .api-bible-content .notelink, .api-bible-content .notelink:hover, .api-bible-content .notelink:active, .api-bible-content .notelink:visited {
+    color: #9d9d9d; }
+  .api-bible-content .notelink sup {
+    font-size: .7em;
+    letter-spacing: -.03em;
+    vertical-align: 0.25em;
+    line-height: 0;
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold; }
+  .api-bible-content .notelink + sup:before {
+    content: "\a0"; }
+
+.api-bible-content .f {
+  font-size: 0.85rem;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 0.4em;
+  margin: 0 0.1em;
+  text-indent: 0;
+  text-align: left;
+  border-radius: 4px;
+  border: 1px solid #dcdcdc; }
+
+.api-bible-content .fr {
+  font-weight: bold; }
+
+.api-bible-content .fk {
+  font-style: italic;
+  font-variant: small-caps; }
+
+.api-bible-content [class^="fq"] {
+  font-style: italic; }
+
+.api-bible-content .fl {
+  font-style: italic;
+  font-weight: bold; }
+
+.api-bible-content .fv {
+  color: #848484;
+  font-size: 0.75em;
+  letter-spacing: -0.03em;
+  vertical-align: 0.25em;
+  line-height: 0;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold; }
+  .api-bible-content .fv:after {
+    content: "\a0"; }
+
+.api-bible-content .h {
+  text-align: center;
+  font-style: italic; }
+
+.api-bible-content [class^="imt"] {
+  text-align: center;
+  font-weight: bold; }
+
+.api-bible-content .imt, .api-bible-content .imt1,
+.api-bible-content .imte, .api-bible-content .imte1 {
+  font-size: 1.4em; }
+
+.api-bible-content .imt2, .api-bible-content .imte2 {
+  font-size: 1.3em; }
+
+.api-bible-content .imt3, .api-bible-content .imte3 {
+  font-size: 1.2em; }
+
+.api-bible-content .imt4, .api-bible-content .imte4 {
+  font-size: 1.1em; }
+
+.api-bible-content [class^="is"] {
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: bold; }
+
+.api-bible-content [class^="ip"] {
+  text-indent: 1em; }
+
+.api-bible-content .ipi {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.api-bible-content .im {
+  text-indent: 0; }
+
+.api-bible-content .imi {
+  text-indent: 0;
+  margin-left: 1em;
+  margin-right: 1em; }
+
+.api-bible-content .ipq {
+  font-style: italic;
+  margin-left: 1em;
+  margin-right: 1em; }
+
+.api-bible-content .imq {
+  margin-left: 1em;
+  margin-right: 1em; }
+
+.api-bible-content .ipr {
+  text-align: right;
+  text-indent: 0; }
+
+.api-bible-content [class^="iq"] {
+  margin-left: 1em;
+  margin-right: 1em; }
+
+.api-bible-content .iq2 {
+  text-indent: 1em; }
+
+.api-bible-content [class^="ili"] {
+  padding-left: 1em;
+  text-indent: -1em; }
+
+.api-bible-content .ili1 {
+  margin-left: 1em;
+  margin-right: 1em; }
+
+.api-bible-content .ili2 {
+  margin-left: 2em;
+  margin-right: 1em; }
+
+.api-bible-content .iot {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 1.5em; }
+
+.api-bible-content .io, .api-bible-content .io1 {
+  margin-left: 1em;
+  margin-right: 0em; }
+
+.api-bible-content .io2 {
+  margin-left: 2em;
+  margin-right: 0em; }
+
+.api-bible-content .io3 {
+  margin-left: 3em;
+  margin-right: 0em; }
+
+.api-bible-content .io4 {
+  margin-left: 4em;
+  margin-right: 0em; }
+
+.api-bible-content .ior {
+  font-style: italic; }
+
+.api-bible-content .iex {
+  text-indent: 1em; }
+
+.api-bible-content .iqt {
+  text-indent: 1em;
+  font-style: italic; }
+
+.api-bible-content [class^="p"] {
+  text-indent: 1em; }
+
+.api-bible-content .m {
+  text-indent: 0 !important; }
+
+.api-bible-content .pmo {
+  text-indent: 0;
+  margin-left: 1em;
+  margin-right: 0em; }
+
+.api-bible-content .pm {
+  margin-left: 1em;
+  margin-right: 0em; }
+
+.api-bible-content .pmr {
+  text-align: right; }
+
+.api-bible-content .pmc {
+  margin-left: 1em;
+  margin-right: 0em; }
+
+.api-bible-content .pi {
+  margin-left: 1em;
+  margin-right: 0em; }
+
+.api-bible-content .pi1 {
+  margin-left: 2em;
+  margin-right: 0em; }
+
+.api-bible-content .pi2 {
+  margin-left: 3em;
+  margin-right: 0em; }
+
+.api-bible-content .pi3 {
+  margin-left: 4em;
+  margin-right: 0em; }
+
+.api-bible-content .mi {
+  margin-left: 1em;
+  margin-right: 0em;
+  text-indent: 0; }
+
+.api-bible-content .pc {
+  text-align: center;
+  text-indent: 0; }
+
+.api-bible-content .cls {
+  text-align: right; }
+
+.api-bible-content [class^="li"] {
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-left: 1em;
+  margin-right: 0em; }
+
+.api-bible-content .li2 {
+  margin-left: 2em;
+  margin-right: 0em; }
+
+.api-bible-content .li3 {
+  margin-left: 3em;
+  margin-right: 0em; }
+
+.api-bible-content .li4 {
+  margin-left: 4em;
+  margin-right: 0em; }
+
+.api-bible-content [class^="q"] {
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-left: 1em;
+  margin-right: 0em; }
+
+.api-bible-content .q2 {
+  margin-left: 1.5em;
+  margin-right: 0em; }
+
+.api-bible-content .q3 {
+  margin-left: 2em;
+  margin-right: 0em; }
+
+.api-bible-content .q4 {
+  margin-left: 2.5em;
+  margin-right: 0em; }
+
+.api-bible-content .qr {
+  text-align: right;
+  font-style: italic; }
+
+.api-bible-content .qc {
+  text-align: center; }
+
+.api-bible-content .qs {
+  font-style: italic;
+  text-align: right; }
+
+.api-bible-content .qa {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1em;
+  margin-left: 0em;
+  margin-right: 0em; }
+
+.api-bible-content .qac {
+  margin-left: 0em;
+  margin-right: 0em;
+  padding: 0;
+  text-indent: 0;
+  font-style: italic; }
+
+.api-bible-content .qm2 {
+  margin-left: 1.5em;
+  margin-right: 0em; }
+
+.api-bible-content .qm3 {
+  margin-left: 2em;
+  margin-right: 0em; }
+
+.api-bible-content .qt {
+  font-style: italic;
+  text-indent: 0;
+  padding: 0;
+  margin: 0; }
+
+.api-bible-content .bk {
+  font-style: italic; }
+
+.api-bible-content .nd {
+  font-variant: small-caps; }
+
+.api-bible-content .add {
+  font-style: italic; }
+
+.api-bible-content .dc {
+  font-style: italic; }
+
+.api-bible-content .k {
+  font-weight: bold;
+  font-style: italic; }
+
+.api-bible-content .lit {
+  text-align: right;
+  font-weight: bold; }
+
+.api-bible-content .pn {
+  font-weight: bold;
+  text-decoration: underline; }
+
+.api-bible-content .sls {
+  font-style: italic; }
+
+.api-bible-content .tl {
+  font-style: italic; }
+
+.api-bible-content .wj {
+  color: #CC0000; }
+
+.api-bible-content .em {
+  font-style: italic; }
+
+.api-bible-content .bd {
+  font-weight: bold; }
+
+.api-bible-content .it {
+  font-style: italic; }
+
+.api-bible-content .bdit {
+  font-weight: bold;
+  font-style: italic; }
+
+.api-bible-content .no {
+  font-weight: normal;
+  font-style: normal; }
+
+.api-bible-content .sc {
+  font-variant: small-caps; }
+
+.api-bible-content .qt {
+  font-style: italic; }
+
+.api-bible-content .sig {
+  font-weight: normal;
+  font-style: italic; }
+
+.api-bible-content table {
+  width: 100%;
+  display: table; }
+
+.api-bible-content .tr {
+  display: table-row; }
+
+.api-bible-content [class^="th"] {
+  font-style: italic;
+  display: table-cell; }
+
+.api-bible-content [class^="thr"] {
+  text-align: right;
+  padding-right: 1.5em; }
+
+.api-bible-content [class^="tc"] {
+  display: table-cell; }
+
+.api-bible-content [class^="tcr"] {
+  text-align: right;
+  padding-right: 1.5em; }
+
+.api-bible-content [class^="mt"] {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: normal; }
+
+.api-bible-content .mt, .api-bible-content .mt1 {
+  font-size: 2.8em; }
+
+.api-bible-content .mt2 {
+  font-size: 1.6em;
+  font-style: italic;
+  font-weight: normal; }
+
+.api-bible-content [class^="ms"] {
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: normal; }
+
+.api-bible-content .ms, .api-bible-content .ms1 {
+  font-size: 1.6em; }
+
+.api-bible-content .ms2 {
+  font-size: 1.5em; }
+
+.api-bible-content .ms3 {
+  font-size: 1.4em; }
+
+.api-bible-content .mr {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic; }
+
+.api-bible-content .s, .api-bible-content .s1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: normal; }
+
+.api-bible-content .s2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: inherit;
+  letter-spacing: normal; }
+
+.api-bible-content .s3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: inherit;
+  letter-spacing: normal; }
+
+.api-bible-content .s4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: inherit;
+  letter-spacing: normal; }
+
+.api-bible-content .sr {
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  font-size: inherit;
+  letter-spacing: normal; }
+
+.api-bible-content .r {
+  font-size: 0.9em;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: normal; }
+
+.api-bible-content .rq {
+  font-size: 0.85em;
+  line-height: 1.9;
+  font-style: italic;
+  text-align: right;
+  letter-spacing: normal; }
+
+.api-bible-content .d {
+  font-style: italic;
+  text-align: center;
+  font-size: inherit;
+  letter-spacing: normal; }
+
+.api-bible-content .sp {
+  text-align: left;
+  font-weight: normal;
+  font-style: italic;
+  font-size: inherit;
+  letter-spacing: normal; }
+
+.api-bible-content [class^="p"] + .s, .api-bible-content [class^="p"] + .s1, .api-bible-content [class^="q"] + .s, .api-bible-content [class^="q"] + .s1 {
+  margin-top: 1.5em; }
+
+/*# sourceMappingURL=api-bible-content-nested.css.map */

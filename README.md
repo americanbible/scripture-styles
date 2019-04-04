@@ -34,13 +34,7 @@ Or individually:
 
 ## Fonts
 
-We recommend using [CharisSIL](http://scripts.sil.org/cms/scripts/page.php?item_id=CharisSIL_download) because it has tremendous character support. Over 3600 glyphs are included. We have included “Charis” in our default font stack and we are leaving it up to developers to make that font available to their apps or sites.
-
-You are welcome to use the Sass files to change the default font stack and recompile the css, or you can simply override it with your own rules in a separate CSS file.
-
-Charis SIL is released under the SIL Open Font License (OFL), version 1.1. Copyright (c) 1997-2014, SIL International (http://scripts.sil.org/) with Reserved Font Names "Charis" and "SIL".
-
-http://scripts.sil.org/cms/scripts/page.php?item_id=OFL
+Documentation soon...
 
 # Preview Tool
 
