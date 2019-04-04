@@ -118,29 +118,16 @@
     content: ")" !important; }
 
 .api-bible-content .x {
-  font-size: 0.75em;
-  display: block;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  display: inline-block;
   position: relative;
-  padding: 1em;
+  padding: 0 0.4em;
+  margin: 0 0.1em;
   text-indent: 0;
-  margin: 0.25em 0.75em;
-  background-color: white;
-  float: left;
-  clear: left;
-  width: 8em;
-  margin-left: -10em;
   text-align: left;
-  border-left: solid 3px lightgrey; }
-  .api-bible-content .x:after {
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 4.5em;
-    height: 100%;
-    content: "";
-    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.15); }
+  border-radius: 4px;
+  border: 1px solid #dcdcdc; }
 
 .api-bible-content .xo {
   font-weight: bold; }
@@ -167,29 +154,15 @@
     content: "\a0"; }
 
 .api-bible-content .f {
-  font-size: 0.75em;
-  display: block;
-  position: relative;
-  padding: 1em;
+  font-size: 0.85rem;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 0.4em;
+  margin: 0 0.1em;
   text-indent: 0;
-  margin: 0.25em 0.75em;
-  background-color: white;
-  float: right;
-  clear: right;
-  width: 15em;
-  margin-right: -16em;
   text-align: left;
-  border-right: solid 3px lightgrey; }
-  .api-bible-content .f:after {
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    width: 10.5em;
-    height: 100%;
-    content: "";
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15); }
+  border-radius: 4px;
+  border: 1px solid #dcdcdc; }
 
 .api-bible-content .fr {
   font-weight: bold; }
@@ -246,8 +219,8 @@
   text-indent: 1em; }
 
 .api-bible-content .ipi {
-  padding-left: rhythm(1);
-  padding-right: rhythm(1); }
+  padding-left: 1em;
+  padding-right: 1em; }
 
 .api-bible-content .im {
   text-indent: 0; }
@@ -604,7 +577,7 @@
   font-size: 0.85em;
   line-height: 1.9;
   font-style: italic;
-  padding-left: rhythm(0.5);
+  text-align: right;
   letter-spacing: normal; }
 
 .api-bible-content .d {
