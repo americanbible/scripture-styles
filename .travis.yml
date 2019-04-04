@@ -10,8 +10,7 @@ before_deploy:
 deploy:
   provider: s3
   access_key_id: AKIAW3FERPLDL6MEIMPF
-  secret_access_key:
-    secure: qZWWUw40R7vT4fWpEONLPHCUkPaqn7+MXr7eDPO95n4ukaUOf9Sn5JqUw2cGF6x91bOiJdGMjo8xTexJKY+40gZPqTyoF5oFwy8a/PEVR7O0jJ+PBl6A2oDZC00sL5A8wFyWDMLLJ8zM2EZxkvkPA2eaRdqIs1Y8wI4pPzq+xWU=
+  secret_access_key: n7JEmK49pEVXvmWHHxsAYqjzQV2EqPxSYY0e/5XG
   bucket: assets.api.bible
   region: "us-east-1"
   local-dir: dist
