@@ -5,3 +5,15 @@ branches:
   only:
     - master
     - travis
+before_deploy:
+  - npm run build
+deploy:
+  provider: s3
+  access_key_id: AKIAW3FERPLDNAZNWM7C
+  secret_access_key:
+    secure: KhU7NpF04TZLzJhLZEnzZCy7wNWMa2dSMwea4k3tCbDN8Q/X7nVjH/FVJKeLFj4bioAIZUznE6kGfSTNcsVghTfZfqCZmdfptsJsPk+vdMZgoMDDx+woENJdFrwN3noxGJtPRqlwbw31/FqircOnnrftY7eR+wlujpzeeamTjfo=
+  bucket: assets.api.bible
+  upload-dir: dist
+  skip_cleanup: true
+  on:
+    branch: travis
