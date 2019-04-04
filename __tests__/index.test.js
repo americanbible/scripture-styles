@@ -7,7 +7,6 @@ it("can compile sass to css", done => {
       file: __dirname + "/../scss/api-bible-content.scss"
     },
     (err, result) => {
-      console.log(err);
       expect(err).toBeNull();
       expect(result).toBeInstanceOf(Object);
       expect(result.css).toBeInstanceOf(Buffer);
