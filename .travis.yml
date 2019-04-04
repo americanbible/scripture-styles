@@ -1,19 +1,18 @@
 language: node_js
 node_js:
-  - stable
+- stable
 branches:
   only:
-    - master
-    - travis
+  - master
+  - travis
 before_deploy:
-  - npm run build
+- npm run build
 deploy:
   provider: s3
   access_key_id: AKIAW3FERPLDNAZNWM7C
   secret_access_key:
-    secure: SUkxbLErYUa7xsJ3A5cgT/Y1YH99E6D44B3UUDScOQmVsGas5SjNZd87T58E69bSq9Mwq2NxbaQnlxphnRyYQViPK48iUQLge1eDtMlylkrP1kyHpgyy6VNTm4XPmImFoGoAcxzr2Vm8QdQMlBdL0cz1Q16IHa5eY7FfpQRkqEw=
-  bucket: "assets.api.bible"
+    secure: Lrdo8pvorslMSikBGvOlVzZZTtAb/Rrn/ljhyKJlw2OuezOOGrK3PmaZiWMbTBhKr0JMBloomb3frm7VeAGf+vvNpfpgGqi7Q09RkShUAPolgqekIkrnHSQ7HLb5CIi2rN+3RLRo9y2Nv+F4Amqe2x7eOQXof/TVDO0cdQE6orA=
+  bucket: assets.api.bible
   local-dir: dist
-  acl: public_read
   on:
     branch: travis
