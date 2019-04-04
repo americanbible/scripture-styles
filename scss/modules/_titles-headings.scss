@@ -98,12 +98,13 @@
 }
 
 // Inline quotation reference(s).
+//https://ubsicap.github.io/usfm/titles_headings/index.html#rq-rq
 // .rq = <p>
 .rq {
     font-size: 0.85em;
     line-height: 1.9;
     font-style: italic;
-    padding-left: rhythm(0.5);
+    text-align: right;
     letter-spacing: normal;
 }
 
