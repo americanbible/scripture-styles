@@ -9,10 +9,11 @@ before_deploy:
   - npm run build
 deploy:
   provider: s3
-  access_key_id: AKIAW3FERPLDL6MEIMPF
-  secret_access_key: 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
+  access_key_id: AKIAW3FERPLDPF55B36Z
+  secret_access_key:
+    secure: O9d7fSZX4sdk5PmcEfOnIdAjk5AGDklydOxX9Jkm6/YgfE8Fn7btHYnPORPqLsPofa5mmR8bBHKIpfozvfNJF2ObLiP3p2MQvN+HKPsVdtXNKGtyekAvDtIUxicn8sQQ5vW9KvMF8QVdYCZxXSEIsxRH3RmPwWWybHmyj6AkIVQ=
   bucket: assets.api.bible
-  region: "us-east-1"
   local-dir: dist
   on:
+    repo: americanbible/api-bible-assets
     branch: travis
