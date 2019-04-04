@@ -9,9 +9,9 @@ before_deploy:
   - npm run build
 deploy:
   provider: s3
-  access_key_id: AKIAW3FERPLDPF55B36Z
+  access_key_id: AKIAW3FERPLDGBJYGAJE
   secret_access_key:
-    secure: VA9xlKBg39se98B5eIpzZrNgDdguKTX+uoKrxa8r3oZfrcLgZqmocwTNEHRppA8B8P/h8JENDX2qyoDPpS5WedgU+fUilJfQctGSTG20+yv7cKqv+k9P8xUN/HnBaMHC++OPQnEPkou+PN0pCFrh75x29x2zyiofqQFkeEsPYyc=
+    secure: ELmpNQplp88y3HUkwbyjhz0VR02XkLRlHjGbW0/Vf4ipuEIsFgNK+jRayW18C9J/QhewG9BTyv+ZcgY2MAoxyc4Qd5dReaOvk6K2enacCZbx1ClSkyaTTmBox3u6cknFB/3nwOuyywW/+1yTXUX+6j1mMjABw6tFLgd8P1Cy3MM=
   bucket: assets.api.bible
   local-dir: dist
   on:
