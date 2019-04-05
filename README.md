@@ -36,6 +36,17 @@ Or individually:
 
 Documentation soon...
 
+## CDN
+
+To reference this directly from the CDN add the following to your page.
+
+```html
+<link
+  rel="stylesheet"
+  href="https://assets.api.bible/css/api-bible-content.css"
+/>
+```
+
 # Preview Tool
 
 First add your API.Bible key to `previewer/config.json`. See `config.json.sample` for format.
