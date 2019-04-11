@@ -1,37 +1,7 @@
-@font-face {
-  font-family: 'Noto Serif';
-  src: url("../fonts/NotoSerif-Regular.woff2") format("woff2"), url("../fonts/NotoSerif-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Noto Serif';
-  src: url("../fonts/NotoSerif-Light.woff2") format("woff2"), url("../fonts/NotoSerif-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Noto Serif';
-  src: url("../fonts/NotoSerif-Bold.woff2") format("woff2"), url("../fonts/NotoSerif-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Noto Serif';
-  src: url("../fonts/NotoSerif-BoldItalic.woff2") format("woff2"), url("../fonts/NotoSerif-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Noto Serif';
-  src: url("../fonts/NotoSerif-Italic.woff2") format("woff2"), url("../fonts/NotoSerif-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic; }
-
 .api-bible-content {
   /* HTML5 display-role reset for older browsers */
   font-size: 18px;
-  font-family: "Noto Serif", serif;
+  font-family: serif;
   line-height: 1.5;
   color: #444444; }
   .api-bible-content html, .api-bible-content body, .api-bible-content div, .api-bible-content span, .api-bible-content applet, .api-bible-content object, .api-bible-content iframe,
@@ -99,7 +69,7 @@
   letter-spacing: -0.03em;
   vertical-align: 0.25em;
   line-height: 0;
-  font-family: "Helvetica", sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   top: inherit; }
   .api-bible-content .v:after,
@@ -148,7 +118,7 @@
     letter-spacing: -.03em;
     vertical-align: 0.25em;
     line-height: 0;
-    font-family: "Helvetica", sans-serif;
+    font-family: sans-serif;
     font-weight: bold; }
   .api-bible-content .notelink + sup:before {
     content: "\a0"; }
@@ -184,7 +154,7 @@
   letter-spacing: -0.03em;
   vertical-align: 0.25em;
   line-height: 0;
-  font-family: "Helvetica", sans-serif;
+  font-family: sans-serif;
   font-weight: bold; }
   .api-bible-content .fv:after {
     content: "\a0"; }
