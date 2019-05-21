@@ -3,7 +3,7 @@
   font-size: 18px;
   font-family: serif;
   line-height: 1.5;
-  color: #444444; }
+  color: #111111; }
   .api-bible-content html, .api-bible-content body, .api-bible-content div, .api-bible-content span, .api-bible-content applet, .api-bible-content object, .api-bible-content iframe,
   .api-bible-content h1, .api-bible-content h2, .api-bible-content h3, .api-bible-content h4, .api-bible-content h5, .api-bible-content h6, .api-bible-content p, .api-bible-content blockquote, .api-bible-content pre,
   .api-bible-content a, .api-bible-content abbr, .api-bible-content acronym, .api-bible-content address, .api-bible-content big, .api-bible-content cite, .api-bible-content code,
@@ -46,7 +46,7 @@
 .api-bible-content .ca {
   font-style: italic;
   font-weight: normal;
-  color: #aaaaaa; }
+  color: #777777; }
   .api-bible-content .ca:before {
     content: "("; }
   .api-bible-content .ca:after {
@@ -112,7 +112,7 @@
   text-decoration: underline;
   padding: .1em; }
   .api-bible-content .notelink, .api-bible-content .notelink:hover, .api-bible-content .notelink:active, .api-bible-content .notelink:visited {
-    color: #9d9d9d; }
+    color: #6a6a6a; }
   .api-bible-content .notelink sup {
     font-size: .7em;
     letter-spacing: -.03em;
@@ -149,7 +149,7 @@
   font-weight: bold; }
 
 .api-bible-content .fv {
-  color: #848484;
+  color: #515151;
   font-size: 0.75em;
   letter-spacing: -0.03em;
   vertical-align: 0.25em;
