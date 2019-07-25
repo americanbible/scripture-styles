@@ -1,0 +1,19 @@
+.card {
+  font-family: sans-serif;
+  max-width: 40em;
+}
+
+.marker {
+  background-color: #41454e;
+  color: #74f1c6;
+  padding: 0.4em;
+  border-radius: 2px;
+  font-family: monospace;
+  font-weight: normal;
+}
+
+.passage {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.08);
+  padding: 2em;
+  margin-bottom: 3em;
+}

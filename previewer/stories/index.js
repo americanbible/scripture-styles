@@ -1,25 +1,26 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
-import { linkTo } from "@storybook/addon-links";
+// import { action } from "@storybook/addon-actions";
+// import { linkTo } from "@storybook/addon-links";
 
 import Passage from "../components/Passage";
+import StyleCard from "../components/StyleCard";
+
+import stories from "./stories";
 
 const gntId = "61fd76eafa1577c2-01";
 
-storiesOf("Passage", module).add("Genesis 1", () => (
-  <Passage bibleId={gntId} passageId="GEN.1" />
-));
-
-storiesOf("Passage", module).add("Genesis 1 with Footnotes", () => (
-  <Passage bibleId={gntId} passageId="GEN.1" footnotes={true} />
-));
-
-storiesOf("Passage", module).add("Psalms 23", () => (
-  <Passage bibleId={gntId} passageId="PSA.23" />
-));
-
-storiesOf("Passage", module).add("John 3:16-20", () => (
-  <Passage bibleId={gntId} passageId="JHN.3.16-JHN.3.20" />
-));
+stories.map(story =>
+  story.cards.map(card =>
+    storiesOf(story.title, module).add(card.title, () => (
+      <StyleCard
+        marker={card.marker}
+        title={card.title}
+        description={card.description}
+        bibleId={card.bibleId}
+        passageId={card.passageId}
+      />
+    ))
+  )
+);
