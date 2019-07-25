@@ -14,6 +14,7 @@ const PassageWrapper = styled.div`
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.08);
   padding: 2em;
   margin-bottom: 3em;
+  background-color: white;
 `;
 
 const Marker = styled.span`
