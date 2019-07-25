@@ -10,7 +10,8 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,6 +28,7 @@
     "@storybook/addon-links": "^5.1.9",
     "@storybook/addons": "^5.1.9",
     "@storybook/react": "^5.1.9",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.6"
   }
 }
