@@ -13,14 +13,17 @@ const gntId = "61fd76eafa1577c2-01";
 
 stories.map(story =>
   story.cards.map(card =>
-    storiesOf(story.title, module).add(card.title, () => (
-      <StyleCard
-        marker={card.marker}
-        title={card.title}
-        description={card.description}
-        bibleId={card.bibleId}
-        passageId={card.passageId}
-      />
-    ))
+    storiesOf(`Classes|${story.title}`, module).add(
+      `.${card.marker} - ${card.title}`,
+      () => (
+        <StyleCard
+          marker={card.marker}
+          title={card.title}
+          description={card.description}
+          bibleId={card.bibleId}
+          passageId={card.passageId}
+        />
+      )
+    )
   )
 );
