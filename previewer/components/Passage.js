@@ -7,6 +7,9 @@ const Passage = ({
   passageId,
   footnotes = false
 }) => {
+  if (!passageId) {
+    return null;
+  }
   const [data, setData] = useState({});
   const baseUrl = "https://api.scripture.api.bible/v1";
   const endpoint = isIntro(passageId)

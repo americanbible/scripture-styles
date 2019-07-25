@@ -100,7 +100,7 @@ export default [
         marker: "s",
         title: "Section heading",
         description: "The typical (common) section division heading.",
-        passageId: "GEN.intro-GEN.1.8"
+        passageId: "GEN.1.1-GEN.1.8"
       },
       {
         marker: "sr",
@@ -153,35 +153,35 @@ export default [
         marker: "ca",
         description:
           "Used for marking the chapter number used in an alternate versification scheme. Required when different versification traditions need to be supported in the same translation text. The content within the marker pair should only contain the alternate chapter number, and not include any formatting/presentation characters (e.g. brackets or parentheses).",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Chapter Description",
         marker: "cd",
         description:
           "A brief description of chapter content (similar to .d - descriptive heading, or .iex - ).",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Verse Number",
         marker: "v",
         description:
           "Marker is followed by the verse number #, and the text of the verse.",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
-        title: "va",
+        title: "Alternate Versification Number",
         description:
           "Used for marking verse numbers used in an alternate versification scheme. Required when different versification traditions need to be supported in the same translation text.",
         marker: "va",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
-        title: "Published verse character.",
+        title: "Published Verse Character",
         marker: "vp",
         description:
           "This is the verse character (number, letter) which should be displayed in the published text (where the published character(s) are different than the .v # digit used within the translation editing environment).",
-        passageId: "GEN.1.1"
+        passageId: null
       }
     ]
   },
@@ -191,41 +191,41 @@ export default [
       {
         title: "Normal paragraph",
         marker: "p",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Flush left paragraph",
         marker: "m",
         description:
           "No first line indent. Usually used to resume prose at the margin (without indent) after poetry or OT quotation (i.e. continuation of the previous paragraph).",
-        passageId: "GEN.1.1"
+        passageId: "LUK.20.16-LUK.20.25"
       },
       {
         title: "Embeded text opening",
         marker: "pmo",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Embeded text paragraph",
         marker: "pm",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Embedded text refrain",
         marker: "pmr",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Indented paragraph",
-        marker: "pi#",
+        marker: "pi",
         description:
           "Used in some texts for discourse sections. The variable # represents the level of indent.",
-        passageId: "GEN.1.1"
+        passageId: "ACT.15.22-ACT.15.35"
       },
       {
         title: "Indented flush left",
         marker: "mi",
-        passageId: "GEN.1.1"
+        passageId: "NEH.6.1-NEH.6.11"
       },
       {
         title: "Closure of an epistle/letter",
@@ -235,14 +235,14 @@ export default [
       {
         title: "Centered paragraph",
         marker: "pc",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "List item",
-        marker: "li",
+        marker: "li1",
         description:
           "An out-dented paragraph meant to highlight the items of a list. Lists may be used to markup the elements of a recurrent structure, such as the days within the creation account, or the Decalogue (10 commandments).",
-        passageId: "GEN.1.1"
+        passageId: "GEN.36.31-GEN.36.43"
       }
     ]
   },
@@ -250,19 +250,25 @@ export default [
     title: "Poetry",
     cards: [
       {
-        title: "Poetic line",
-        marker: "q#"
+        title: "Poetic line - level 1",
+        marker: "q1",
+        passageId: "PSA.23"
+      },
+      {
+        title: "Poetic line - level 2",
+        marker: "q2",
+        passageId: "PSA.23"
       },
       {
         title: "Right aligned poetic line",
         marker: "qr",
         description: "Commonly used as poetic refrain",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Centered poetic line",
         marker: "qc",
-        passageId: "GEN.1.1"
+        passageId: "PSA.41.11-PSA.41.13"
       },
       {
         title: "Selah",
@@ -273,14 +279,14 @@ export default [
       {
         title: "Acrostic heading",
         marker: "qa",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Acrostic Marker character",
         marker: "qac",
         description:
           "Marker to indicate the acrostic letter within a poetic line.",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Embeded text poetic line",
@@ -292,14 +298,16 @@ export default [
     title: "Tables",
     cards: [
       {
-        title: "Table row start.",
+        title: "Table row start",
         marker: "tr",
         description:
-          'The first <span class="code">.tr</span> initiates a new table. Rows contain column headings or cells.'
+          "The first .tr initiates a new table. Rows contain column headings or cells.",
+        passageId: "EZR.1.7-EZR.1.11"
       },
       {
         title: "Table column heading",
-        marker: "th#"
+        marker: "th#",
+        passageId: "1CH.27.16-1CH.27.23"
       },
       {
         title: "Right aligned table column heading",
@@ -307,11 +315,13 @@ export default [
       },
       {
         title: "Table cell",
-        marker: "tc#"
+        marker: "tc#",
+        passageId: "1CH.27.16-1CH.27.23"
       },
       {
         title: "Right aligned table cell",
-        marker: "tcr#"
+        marker: "tcr#",
+        passageId: "EZR.1.7-EZR.1.11"
       }
     ]
   },
@@ -321,34 +331,34 @@ export default [
       {
         title: "The footnote element",
         marker: "f",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: 'Footnote "origin"reference',
         marker: "fr",
         description: "This is the chapter and verse(s) that note refers to.",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Footnote Keyword",
         marker: "fk",
         description:
           "The specific keyword/term from the text for which the footnote is being provided.",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Footnote translation quotation",
         marker: "fq",
         description:
           "A quotation from the current scripture text translation for which the note is being provided.",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Footnote alternate translation quotation",
         marker: "fqa",
         description:
           "A quotation from the current scripture text translation for which the note is being provided.",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: 'Footnote "label"text.',
@@ -361,27 +371,27 @@ export default [
         marker: "fv#",
         description:
           "To mark a verse number in the the text quotation or alternative translation.",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Footnote text",
         marker: "ft",
         description: "The essential (explanatory) text of the footnote.",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Deuterocanonical content",
         marker: "fdc",
         description:
           "Text between these markers is material to be included only in published editions that contain the Deuterocanonical books.",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Footnote reference mark",
         marker: "fm",
         description:
           "Used where two or more locations in the scripture text should ideally refer the reader to the same footnote text (as seen in identical footnote text which is referred to at Gen 2.9 and Gen 2.17 in some English translations).",
-        passageId: "GEN.1.1"
+        passageId: null
       }
     ]
   },
@@ -393,12 +403,12 @@ export default [
         marker: "xo",
         description:
           "This is the chapter and verse(s) that target reference(s) are being provided for",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Target reference(s)",
         marker: "xt",
-        passageId: "GEN.1.1"
+        passageId: null
       }
     ]
   },
@@ -408,49 +418,49 @@ export default [
       {
         title: "Translator's addition",
         marker: "add",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Quoted book title",
         marker: "bk",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Litergical note/comment",
         marker: "lit",
         description:
           "Liturgical note/comment. (e.g. a guide which tells the reader/worshipper that he should recite a prayer or recitation etc.)",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Name of God",
         marker: "nd",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Quoted text",
         marker: "qt",
         description:
           "Old Testament quotations in the New Testament, or other quotations.",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Signature",
         marker: "sig",
         description: "Signature of the author of an epistle",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Secondary language",
         marker: "sls",
         description:
           "Passage of text based on a secondary language or alternate text source.",
-        passageId: "GEN.1.1"
+        passageId: null
       },
       {
         title: "Transliterated (or foreign) word(s)",
         marker: "tl",
-        passageId: "GEN.1.1"
+        passageId: null
       }
     ]
   }
