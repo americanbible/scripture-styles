@@ -3,24 +3,28 @@ import Passage from "./Passage";
 import styled from "styled-components";
 
 const Card = styled.section`
-  font-family: sans-serif;
+  font-family: "Noto Sans", sans-serif;
   max-width: 40em;
+  padding: 24px;
 `;
 
 const PassageWrapper = styled.div`
   .${props => props.marker} {
-    box-shadow: 0 0 0 3px rgba(116, 241, 198, 0.5);
+    box-shadow: 0 0 0 4px rgba(12, 104, 241, 0.3);
   }
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.08);
-  padding: 2em;
-  margin-bottom: 3em;
-  background-color: white;
+  /* white */
+  background: #ffffff;
+  /* Gray-300 */
+  border: 1px solid #e0e0e0;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 24px;
 `;
 
 const Marker = styled.span`
-  background-color: #41454e;
-  color: #74f1c6;
-  padding: 0.4em;
+  background-color: #0c68f1;
+  color: #ffffff;
+  padding: 8px;
   border-radius: 2px;
   font-family: monospace;
   font-weight: normal;
