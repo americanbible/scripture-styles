@@ -56,7 +56,7 @@ Then, to run the preview tool
 ```
 cd previewer
 npm install
-npm run storybook
+npm start
 ```
 
-New stories can be added to `stores/index.js`.
+New stories can be added to `stories/stories.js`.
