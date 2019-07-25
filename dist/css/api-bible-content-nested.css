@@ -1,7 +1,7 @@
 .api-bible-content {
   /* HTML5 display-role reset for older browsers */
   font-size: 18px;
-  font-family: serif;
+  font-family: "Noto Serif", serif;
   line-height: 1.5;
   color: #111111; }
   .api-bible-content html, .api-bible-content body, .api-bible-content div, .api-bible-content span, .api-bible-content applet, .api-bible-content object, .api-bible-content iframe,
