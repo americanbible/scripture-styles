@@ -1,5 +1,5 @@
 {
-  "name": "api-bible-assets",
+  "name": "scripture-styles",
   "version": "0.1.0",
   "description": "SASS and CSS styles for API.Bible Scripture Output",
   "main": "index.js",
@@ -10,7 +10,8 @@
     "build": "npm run build-nested && npm run build-compressed && npm run gzip",
     "build-nested": "node-sass scss/api-bible-content.scss dist/css/api-bible-content-nested.css --source-map true --output-style nested",
     "build-compressed": "node-sass scss/api-bible-content.scss dist/css/api-bible-content.css --source-map true --output-style compressed",
-    "gzip": "gzip < dist/css/api-bible-content.css > dist/css/api-bible-content.css.gz"
+    "gzip": "gzip < dist/css/api-bible-content.css > dist/css/api-bible-content.css.gz",
+    "docs": "cd previewer && npm start"
   },
   "repository": {
     "type": "git",
