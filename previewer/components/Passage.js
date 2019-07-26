@@ -8,7 +8,7 @@ const Passage = ({
   footnotes = false
 }) => {
   if (!passageId) {
-    return null;
+    return <div>Example Passage Coming Soon...</div>;
   }
   const [data, setData] = useState({});
   const baseUrl = "https://api.scripture.api.bible/v1";
