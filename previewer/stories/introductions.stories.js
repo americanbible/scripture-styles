@@ -4,7 +4,7 @@ export default {
     {
       title: "Introduction major title.",
       marker: "imt",
-      bibleID: "555fef9a6cb31151-01",
+      bibleId: "555fef9a6cb31151-01",
       passageId: "GEN.intro"
     },
     {
