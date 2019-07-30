@@ -1,2 +1,4 @@
 __tests__
 previewer
+.travis.yml
+**/config.js
