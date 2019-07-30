@@ -9,9 +9,12 @@ const Card = styled.section`
 `;
 
 const PassageWrapper = styled.div`
-  .${props => props.marker} {
+  ${props =>
+    props.markers.map(
+      marker => `.${marker} {
     box-shadow: 0 0 0 4px rgba(12, 104, 241, 0.3);
-  }
+  }`
+    )}
   /* white */
   background: #ffffff;
   /* Gray-300 */
@@ -31,13 +34,16 @@ const Marker = styled.span`
 `;
 
 const StyleCard = ({ marker, title, description, bibleId, passageId }) => {
+  const markers = marker.match("#")
+    ? [1, 2, 3].map(i => marker.replace("#", i))
+    : [marker];
   return (
     <Card>
       <h2>
         <Marker>{`.${marker}`}</Marker> {title}
       </h2>
       <p>{description}</p>
-      <PassageWrapper marker={marker}>
+      <PassageWrapper markers={markers}>
         <Passage bibleId={bibleId} passageId={passageId} />
       </PassageWrapper>
     </Card>
