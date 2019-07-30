@@ -1,15 +1,31 @@
 import React from "react";
-
 import { storiesOf } from "@storybook/react";
-// import { action } from "@storybook/addon-actions";
-// import { linkTo } from "@storybook/addon-links";
 
-import Passage from "../components/Passage";
 import StyleCard from "../components/StyleCard";
 
-import stories from "./stories";
+import introductions from "./introductions.stories";
+import chaptersverses from "./chaptersverses.stories";
+import crossreferences from "./crossreferences.stories";
+import footnotes from "./footnotes.stories";
+import paragraphs from "./paragraphs.stories";
+import poetry from "./poetry.stories";
+import titlesheadingslabels from "./titlesheadingslabels.stories";
+import tables from "./tables.stories";
+import specialtext from "./specialtext.stories";
 
 const gntId = "61fd76eafa1577c2-01";
+
+const stories = [
+  introductions,
+  chaptersverses,
+  crossreferences,
+  footnotes,
+  titlesheadingslabels,
+  paragraphs,
+  poetry,
+  tables,
+  specialtext
+];
 
 stories.map(story =>
   story.cards.map(card =>
@@ -20,7 +36,7 @@ stories.map(story =>
           marker={card.marker}
           title={card.title}
           description={card.description}
-          bibleId={card.bibleId}
+          bibleId={card.bibleId | gntId}
           passageId={card.passageId}
         />
       )
