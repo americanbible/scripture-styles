@@ -7,17 +7,18 @@ export default [
       {
         title: "Introduction major title.",
         marker: "imt",
+        bibleID: "555fef9a6cb31151-01",
         passageId: "GEN.intro"
       },
       {
         title: "Introduction section heading.",
         marker: "is",
-        passageId: "GEN.intro"
+        passageId: "ACT.intro"
       },
       {
         title: "Introduction Paragraph",
         marker: "ip",
-        passageId: "GEN.intro"
+        passageId: "PSA.intro"
       },
       {
         title: "Introduction Paragraph Indented",
@@ -27,45 +28,46 @@ export default [
       {
         title: "Introduction flush left (margin) paragraph",
         marker: "im",
-        passageId: "GEN.intro"
+        passageId: null
       },
       {
         title: "Introduction flush left (margin) paragraph indented",
         marker: "imi",
-        passageId: "GEN.intro"
+        passageId: null
       },
       {
         title: "Introduction quote from text paragraph.",
         marker: "ipq",
-        passageId: "GEN.intro"
+        passageId: null
       },
       {
         title: "Introduction quote from text paragraph (no margin).",
         marker: "imq",
-        passageId: "GEN.intro"
+        passageId: null
       },
       {
         title: "Introduction right-aligned paragraph.",
         marker: "ipr",
         description: "Typically used for a quote from text reference.",
-        passageId: "GEN.intro"
+        passageId: null
       },
       {
         title: "Introduction poetic line.",
         marker: "iq#",
-        passageId: "GEN.intro"
+        passageId: null
       },
       {
         title: "Introduction blank line.",
         marker: "ib",
         description:
           "May be used to explicitly indicate additional white space between paragraphs.",
-        passageId: "GEN.intro"
+        passageId: null
       },
       {
         title: "Introduction List Item",
         marker: "ib",
-        passageId: "GEN.intro"
+        bibleId: "555fef9a6cb31151-01",
+        passageId: null
       },
       {
         title: "Introduction outline title.",
@@ -82,7 +84,7 @@ export default [
         marker: "ior",
         description:
           "An outline entry typically ends with a range of references in parentheses. This is an optional character style for marking (and potentially formatting) these references separately.",
-        passageId: "GEN.intro"
+        passageId: null
       }
     ]
   },
@@ -146,7 +148,7 @@ export default [
         marker: "c",
         description:
           "The marker is followed by the chapter number. No text should follow this marker.",
-        passageId: "GEN.intro"
+        passageId: null
       },
       {
         title: "Alternate second chapter number",
@@ -167,7 +169,7 @@ export default [
         marker: "v",
         description:
           "Marker is followed by the verse number #, and the text of the verse.",
-        passageId: null
+        passageId: "PSA.1"
       },
       {
         title: "Alternate Versification Number",
@@ -191,7 +193,7 @@ export default [
       {
         title: "Normal paragraph",
         marker: "p",
-        passageId: "MAT.1.1-MAT.1.11"
+        passageId: "MAT.1.1-MAT.1.3"
       },
       {
         title: "Flush left paragraph",
@@ -230,12 +232,14 @@ export default [
       {
         title: "Closure of an epistle/letter",
         marker: "cls",
-        description: 'Similar to "With love,"or "Sincerely yours,".'
+        description: 'Similar to "With love,"or "Sincerely yours,".',
+        passageId: null
       },
       {
         title: "Centered paragraph",
         marker: "pc",
-        passageId: null
+        // bibleId: "555fef9a6cb31151-01",
+        passageId: "REV.13.1"
       },
       {
         title: "List item",
