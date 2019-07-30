@@ -11,6 +11,7 @@ export default {
     {
       title: "Target reference(s)",
       marker: "xt",
+      bibleId: "555fef9a6cb31151-01",
       passageId: null
     }
   ]

@@ -49,8 +49,8 @@ export default {
     {
       title: "Centered paragraph",
       marker: "pc",
-      // bibleId: "555fef9a6cb31151-01",
-      passageId: "REV.13.1"
+      bibleId: "555fef9a6cb31151-01",
+      passageId: "REV.17.4-REV.17.7"
     },
     {
       title: "List item",

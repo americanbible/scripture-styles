@@ -9,7 +9,8 @@ export default {
     {
       title: "Quoted book title",
       marker: "bk",
-      passageId: null
+      bibleId: "555fef9a6cb31151-01",
+      passageId: "1KI.14.19"
     },
     {
       title: "Litergical note/comment",
@@ -21,7 +22,8 @@ export default {
     {
       title: "Name of God",
       marker: "nd",
-      passageId: null
+      bibleId: "555fef9a6cb31151-01",
+      passageId: "1CH.2.3"
     },
     {
       title: "Quoted text",
@@ -34,7 +36,7 @@ export default {
       title: "Signature",
       marker: "sig",
       description: "Signature of the author of an epistle",
-      passageId: null
+      passageId: "1CO.16.19-1CO.16.22"
     },
     {
       title: "Secondary language",
@@ -45,6 +47,7 @@ export default {
     },
     {
       title: "Transliterated (or foreign) word(s)",
+      bibleId: "555fef9a6cb31151-01",
       marker: "tl",
       passageId: null
     }

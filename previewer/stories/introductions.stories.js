@@ -4,7 +4,6 @@ export default {
     {
       title: "Introduction major title.",
       marker: "imt",
-      bibleId: "555fef9a6cb31151-01",
       passageId: "GEN.intro"
     },
     {
@@ -25,7 +24,8 @@ export default {
     {
       title: "Introduction flush left (margin) paragraph",
       marker: "im",
-      passageId: null
+      bibleId: "555fef9a6cb31151-01",
+      passageId: "1CH.intro"
     },
     {
       title: "Introduction flush left (margin) paragraph indented",
@@ -63,7 +63,6 @@ export default {
     {
       title: "Introduction List Item",
       marker: "ib",
-      bibleId: "555fef9a6cb31151-01",
       passageId: null
     },
     {
