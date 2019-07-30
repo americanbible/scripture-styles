@@ -15,13 +15,13 @@ npm install --save scripture-styles
 Then import into your index file.
 
 ```
-import "scripture-styles/dist/css/api-bible-content.css";
+import "scripture-styles/dist/css/scripture-styles.css";
 ```
 
-Wherever you display scripture content from API.Bible on your site, just make sure it's wrapped in a `div` with `class="api-bible-content"`.
+Wherever you display scripture content from API.Bible on your site, just make sure it's wrapped in a `div` with `class="scripture-styles"`.
 
 ````
-<div class="api-bible-content">
+<div class="scripture-styles">
   {apiBibleResponse.data.content}
 </div>
 
@@ -33,7 +33,7 @@ If you prefer to reference this directly from the CDN add the following to your 
 ```html
 <link
   rel="stylesheet"
-  href="https://assets.api.bible/css/api-bible-content.css"
+  href="https://assets.api.bible/css/scripture-styles.css"
 />
 ````
 
