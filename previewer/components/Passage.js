@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../scss/api-bible-content.scss";
+import "../../scss/scripture-styles.scss";
 import { apikey } from "../config.json";
 
 const Passage = ({
@@ -34,7 +34,7 @@ const Passage = ({
 
   return (
     <div
-      className="api-bible-content"
+      className="scripture-styles"
       dangerouslySetInnerHTML={{ __html: data.content }}
     />
   );

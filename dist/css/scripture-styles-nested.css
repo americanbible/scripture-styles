@@ -1,69 +1,69 @@
-.api-bible-content {
+.scripture-styles {
   /* HTML5 display-role reset for older browsers */
   font-size: 18px;
   font-family: "Noto Serif", serif;
   line-height: 1.5;
   color: #111111; }
-  .api-bible-content html, .api-bible-content body, .api-bible-content div, .api-bible-content span, .api-bible-content applet, .api-bible-content object, .api-bible-content iframe,
-  .api-bible-content h1, .api-bible-content h2, .api-bible-content h3, .api-bible-content h4, .api-bible-content h5, .api-bible-content h6, .api-bible-content p, .api-bible-content blockquote, .api-bible-content pre,
-  .api-bible-content a, .api-bible-content abbr, .api-bible-content acronym, .api-bible-content address, .api-bible-content big, .api-bible-content cite, .api-bible-content code,
-  .api-bible-content del, .api-bible-content dfn, .api-bible-content em, .api-bible-content img, .api-bible-content ins, .api-bible-content kbd, .api-bible-content q, .api-bible-content s, .api-bible-content samp,
-  .api-bible-content small, .api-bible-content strike, .api-bible-content strong, .api-bible-content sub, .api-bible-content sup, .api-bible-content tt, .api-bible-content var,
-  .api-bible-content b, .api-bible-content u, .api-bible-content i, .api-bible-content center,
-  .api-bible-content dl, .api-bible-content dt, .api-bible-content dd, .api-bible-content ol, .api-bible-content ul, .api-bible-content li,
-  .api-bible-content fieldset, .api-bible-content form, .api-bible-content label, .api-bible-content legend,
-  .api-bible-content table, .api-bible-content caption, .api-bible-content tbody, .api-bible-content tfoot, .api-bible-content thead, .api-bible-content tr, .api-bible-content th, .api-bible-content td,
-  .api-bible-content article, .api-bible-content aside, .api-bible-content canvas, .api-bible-content details, .api-bible-content embed,
-  .api-bible-content figure, .api-bible-content figcaption, .api-bible-content footer, .api-bible-content header, .api-bible-content hgroup,
-  .api-bible-content menu, .api-bible-content nav, .api-bible-content output, .api-bible-content ruby, .api-bible-content section, .api-bible-content summary,
-  .api-bible-content time, .api-bible-content mark, .api-bible-content audio, .api-bible-content video {
+  .scripture-styles html, .scripture-styles body, .scripture-styles div, .scripture-styles span, .scripture-styles applet, .scripture-styles object, .scripture-styles iframe,
+  .scripture-styles h1, .scripture-styles h2, .scripture-styles h3, .scripture-styles h4, .scripture-styles h5, .scripture-styles h6, .scripture-styles p, .scripture-styles blockquote, .scripture-styles pre,
+  .scripture-styles a, .scripture-styles abbr, .scripture-styles acronym, .scripture-styles address, .scripture-styles big, .scripture-styles cite, .scripture-styles code,
+  .scripture-styles del, .scripture-styles dfn, .scripture-styles em, .scripture-styles img, .scripture-styles ins, .scripture-styles kbd, .scripture-styles q, .scripture-styles s, .scripture-styles samp,
+  .scripture-styles small, .scripture-styles strike, .scripture-styles strong, .scripture-styles sub, .scripture-styles sup, .scripture-styles tt, .scripture-styles var,
+  .scripture-styles b, .scripture-styles u, .scripture-styles i, .scripture-styles center,
+  .scripture-styles dl, .scripture-styles dt, .scripture-styles dd, .scripture-styles ol, .scripture-styles ul, .scripture-styles li,
+  .scripture-styles fieldset, .scripture-styles form, .scripture-styles label, .scripture-styles legend,
+  .scripture-styles table, .scripture-styles caption, .scripture-styles tbody, .scripture-styles tfoot, .scripture-styles thead, .scripture-styles tr, .scripture-styles th, .scripture-styles td,
+  .scripture-styles article, .scripture-styles aside, .scripture-styles canvas, .scripture-styles details, .scripture-styles embed,
+  .scripture-styles figure, .scripture-styles figcaption, .scripture-styles footer, .scripture-styles header, .scripture-styles hgroup,
+  .scripture-styles menu, .scripture-styles nav, .scripture-styles output, .scripture-styles ruby, .scripture-styles section, .scripture-styles summary,
+  .scripture-styles time, .scripture-styles mark, .scripture-styles audio, .scripture-styles video {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font-family: inherit;
     vertical-align: baseline; }
-  .api-bible-content article, .api-bible-content aside, .api-bible-content details, .api-bible-content figcaption, .api-bible-content figure,
-  .api-bible-content footer, .api-bible-content header, .api-bible-content hgroup, .api-bible-content menu, .api-bible-content nav, .api-bible-content section {
+  .scripture-styles article, .scripture-styles aside, .scripture-styles details, .scripture-styles figcaption, .scripture-styles figure,
+  .scripture-styles footer, .scripture-styles header, .scripture-styles hgroup, .scripture-styles menu, .scripture-styles nav, .scripture-styles section {
     display: block; }
-  .api-bible-content ol, .api-bible-content ul {
+  .scripture-styles ol, .scripture-styles ul {
     list-style: none; }
-  .api-bible-content blockquote, .api-bible-content q {
+  .scripture-styles blockquote, .scripture-styles q {
     quotes: none; }
-  .api-bible-content blockquote:before, .api-bible-content blockquote:after,
-  .api-bible-content q:before, .api-bible-content q:after {
+  .scripture-styles blockquote:before, .scripture-styles blockquote:after,
+  .scripture-styles q:before, .scripture-styles q:after {
     content: "";
     content: none; }
-  .api-bible-content table {
+  .scripture-styles table {
     border-collapse: collapse;
     border-spacing: 0; }
 
-.api-bible-content .c {
+.scripture-styles .c {
   text-align: center;
   font-weight: bold;
   font-size: 1.3em; }
 
-.api-bible-content .ca {
+.scripture-styles .ca {
   font-style: italic;
   font-weight: normal;
   color: #777777; }
-  .api-bible-content .ca:before {
+  .scripture-styles .ca:before {
     content: "("; }
-  .api-bible-content .ca:after {
+  .scripture-styles .ca:after {
     content: ")" !important; }
 
-.api-bible-content .cl {
+.scripture-styles .cl {
   text-align: center;
   font-weight: bold; }
 
-.api-bible-content .cd {
+.scripture-styles .cd {
   margin-left: 1em;
   margin-right: 1em;
   font-style: italic; }
 
-.api-bible-content .v,
-.api-bible-content .vp,
-.api-bible-content sup[class^="v"] {
+.scripture-styles .v,
+.scripture-styles .vp,
+.scripture-styles sup[class^="v"] {
   color: black;
   font-size: 0.7em;
   letter-spacing: -0.03em;
@@ -72,22 +72,22 @@
   font-family: sans-serif;
   font-weight: bold;
   top: inherit; }
-  .api-bible-content .v:after,
-  .api-bible-content .vp:after,
-  .api-bible-content sup[class^="v"]:after {
+  .scripture-styles .v:after,
+  .scripture-styles .vp:after,
+  .scripture-styles sup[class^="v"]:after {
     content: "\a0"; }
 
-.api-bible-content sup + sup:before {
+.scripture-styles sup + sup:before {
   content: "\a0"; }
 
-.api-bible-content .va {
+.scripture-styles .va {
   font-style: italic; }
-  .api-bible-content .va:before {
+  .scripture-styles .va:before {
     content: "("; }
-  .api-bible-content .va:after {
+  .scripture-styles .va:after {
     content: ")" !important; }
 
-.api-bible-content .x {
+.scripture-styles .x {
   font-size: 0.85rem;
   box-sizing: border-box;
   display: inline-block;
@@ -99,31 +99,31 @@
   border-radius: 4px;
   border: 1px solid #dcdcdc; }
 
-.api-bible-content .xo {
+.scripture-styles .xo {
   font-weight: bold; }
 
-.api-bible-content .xk {
+.scripture-styles .xk {
   font-style: italic; }
 
-.api-bible-content .xq {
+.scripture-styles .xq {
   font-style: italic; }
 
-.api-bible-content .notelink {
+.scripture-styles .notelink {
   text-decoration: underline;
   padding: .1em; }
-  .api-bible-content .notelink, .api-bible-content .notelink:hover, .api-bible-content .notelink:active, .api-bible-content .notelink:visited {
+  .scripture-styles .notelink, .scripture-styles .notelink:hover, .scripture-styles .notelink:active, .scripture-styles .notelink:visited {
     color: #6a6a6a; }
-  .api-bible-content .notelink sup {
+  .scripture-styles .notelink sup {
     font-size: .7em;
     letter-spacing: -.03em;
     vertical-align: 0.25em;
     line-height: 0;
     font-family: sans-serif;
     font-weight: bold; }
-  .api-bible-content .notelink + sup:before {
+  .scripture-styles .notelink + sup:before {
     content: "\a0"; }
 
-.api-bible-content .f {
+.scripture-styles .f {
   font-size: 0.85rem;
   display: inline-block;
   box-sizing: border-box;
@@ -134,21 +134,21 @@
   border-radius: 4px;
   border: 1px solid #dcdcdc; }
 
-.api-bible-content .fr {
+.scripture-styles .fr {
   font-weight: bold; }
 
-.api-bible-content .fk {
+.scripture-styles .fk {
   font-style: italic;
   font-variant: small-caps; }
 
-.api-bible-content [class^="fq"] {
+.scripture-styles [class^="fq"] {
   font-style: italic; }
 
-.api-bible-content .fl {
+.scripture-styles .fl {
   font-style: italic;
   font-weight: bold; }
 
-.api-bible-content .fv {
+.scripture-styles .fv {
   color: #515151;
   font-size: 0.75em;
   letter-spacing: -0.03em;
@@ -156,414 +156,414 @@
   line-height: 0;
   font-family: sans-serif;
   font-weight: bold; }
-  .api-bible-content .fv:after {
+  .scripture-styles .fv:after {
     content: "\a0"; }
 
-.api-bible-content .h {
+.scripture-styles .h {
   text-align: center;
   font-style: italic; }
 
-.api-bible-content [class^="imt"] {
+.scripture-styles [class^="imt"] {
   text-align: center;
   font-weight: bold; }
 
-.api-bible-content .imt, .api-bible-content .imt1,
-.api-bible-content .imte, .api-bible-content .imte1 {
+.scripture-styles .imt, .scripture-styles .imt1,
+.scripture-styles .imte, .scripture-styles .imte1 {
   font-size: 1.4em; }
 
-.api-bible-content .imt2, .api-bible-content .imte2 {
+.scripture-styles .imt2, .scripture-styles .imte2 {
   font-size: 1.3em; }
 
-.api-bible-content .imt3, .api-bible-content .imte3 {
+.scripture-styles .imt3, .scripture-styles .imte3 {
   font-size: 1.2em; }
 
-.api-bible-content .imt4, .api-bible-content .imte4 {
+.scripture-styles .imt4, .scripture-styles .imte4 {
   font-size: 1.1em; }
 
-.api-bible-content [class^="is"] {
+.scripture-styles [class^="is"] {
   font-size: 1.1em;
   text-align: center;
   font-weight: bold; }
 
-.api-bible-content [class^="ip"] {
+.scripture-styles [class^="ip"] {
   text-indent: 1em; }
 
-.api-bible-content .ipi {
+.scripture-styles .ipi {
   padding-left: 1em;
   padding-right: 1em; }
 
-.api-bible-content .im {
+.scripture-styles .im {
   text-indent: 0; }
 
-.api-bible-content .imi {
+.scripture-styles .imi {
   text-indent: 0;
   margin-left: 1em;
   margin-right: 1em; }
 
-.api-bible-content .ipq {
+.scripture-styles .ipq {
   font-style: italic;
   margin-left: 1em;
   margin-right: 1em; }
 
-.api-bible-content .imq {
+.scripture-styles .imq {
   margin-left: 1em;
   margin-right: 1em; }
 
-.api-bible-content .ipr {
+.scripture-styles .ipr {
   text-align: right;
   text-indent: 0; }
 
-.api-bible-content [class^="iq"] {
+.scripture-styles [class^="iq"] {
   margin-left: 1em;
   margin-right: 1em; }
 
-.api-bible-content .iq2 {
+.scripture-styles .iq2 {
   text-indent: 1em; }
 
-.api-bible-content [class^="ili"] {
+.scripture-styles [class^="ili"] {
   padding-left: 1em;
   text-indent: -1em; }
 
-.api-bible-content .ili1 {
+.scripture-styles .ili1 {
   margin-left: 1em;
   margin-right: 1em; }
 
-.api-bible-content .ili2 {
+.scripture-styles .ili2 {
   margin-left: 2em;
   margin-right: 1em; }
 
-.api-bible-content .iot {
+.scripture-styles .iot {
   font-weight: bold;
   font-size: 1.1em;
   margin-top: 1.5em; }
 
-.api-bible-content .io, .api-bible-content .io1 {
+.scripture-styles .io, .scripture-styles .io1 {
   margin-left: 1em;
   margin-right: 0em; }
 
-.api-bible-content .io2 {
+.scripture-styles .io2 {
   margin-left: 2em;
   margin-right: 0em; }
 
-.api-bible-content .io3 {
+.scripture-styles .io3 {
   margin-left: 3em;
   margin-right: 0em; }
 
-.api-bible-content .io4 {
+.scripture-styles .io4 {
   margin-left: 4em;
   margin-right: 0em; }
 
-.api-bible-content .ior {
+.scripture-styles .ior {
   font-style: italic; }
 
-.api-bible-content .iex {
+.scripture-styles .iex {
   text-indent: 1em; }
 
-.api-bible-content .iqt {
+.scripture-styles .iqt {
   text-indent: 1em;
   font-style: italic; }
 
-.api-bible-content [class^="p"] {
+.scripture-styles [class^="p"] {
   text-indent: 1em; }
 
-.api-bible-content .m {
+.scripture-styles .m {
   text-indent: 0 !important; }
 
-.api-bible-content .pmo {
+.scripture-styles .pmo {
   text-indent: 0;
   margin-left: 1em;
   margin-right: 0em; }
 
-.api-bible-content .pm {
+.scripture-styles .pm {
   margin-left: 1em;
   margin-right: 0em; }
 
-.api-bible-content .pmr {
+.scripture-styles .pmr {
   text-align: right; }
 
-.api-bible-content .pmc {
+.scripture-styles .pmc {
   margin-left: 1em;
   margin-right: 0em; }
 
-.api-bible-content .pi {
+.scripture-styles .pi {
   margin-left: 1em;
   margin-right: 0em; }
 
-.api-bible-content .pi1 {
+.scripture-styles .pi1 {
   margin-left: 2em;
   margin-right: 0em; }
 
-.api-bible-content .pi2 {
+.scripture-styles .pi2 {
   margin-left: 3em;
   margin-right: 0em; }
 
-.api-bible-content .pi3 {
+.scripture-styles .pi3 {
   margin-left: 4em;
   margin-right: 0em; }
 
-.api-bible-content .mi {
+.scripture-styles .mi {
   margin-left: 1em;
   margin-right: 0em;
   text-indent: 0; }
 
-.api-bible-content .pc {
+.scripture-styles .pc {
   text-align: center;
   text-indent: 0; }
 
-.api-bible-content .cls {
+.scripture-styles .cls {
   text-align: right; }
 
-.api-bible-content [class^="li"] {
+.scripture-styles [class^="li"] {
   padding-left: 1em;
   text-indent: -1em;
   margin-left: 1em;
   margin-right: 0em; }
 
-.api-bible-content .li2 {
+.scripture-styles .li2 {
   margin-left: 2em;
   margin-right: 0em; }
 
-.api-bible-content .li3 {
+.scripture-styles .li3 {
   margin-left: 3em;
   margin-right: 0em; }
 
-.api-bible-content .li4 {
+.scripture-styles .li4 {
   margin-left: 4em;
   margin-right: 0em; }
 
-.api-bible-content [class^="q"] {
+.scripture-styles [class^="q"] {
   padding-left: 1em;
   text-indent: -1em;
   margin-left: 1em;
   margin-right: 0em; }
 
-.api-bible-content .q2 {
+.scripture-styles .q2 {
   margin-left: 1.5em;
   margin-right: 0em; }
 
-.api-bible-content .q3 {
+.scripture-styles .q3 {
   margin-left: 2em;
   margin-right: 0em; }
 
-.api-bible-content .q4 {
+.scripture-styles .q4 {
   margin-left: 2.5em;
   margin-right: 0em; }
 
-.api-bible-content .qr {
+.scripture-styles .qr {
   text-align: right;
   font-style: italic; }
 
-.api-bible-content .qc {
+.scripture-styles .qc {
   text-align: center; }
 
-.api-bible-content .qs {
+.scripture-styles .qs {
   font-style: italic;
   text-align: right; }
 
-.api-bible-content .qa {
+.scripture-styles .qa {
   text-align: center;
   font-style: italic;
   font-size: 1.1em;
   margin-left: 0em;
   margin-right: 0em; }
 
-.api-bible-content .qac {
+.scripture-styles .qac {
   margin-left: 0em;
   margin-right: 0em;
   padding: 0;
   text-indent: 0;
   font-style: italic; }
 
-.api-bible-content .qm2 {
+.scripture-styles .qm2 {
   margin-left: 1.5em;
   margin-right: 0em; }
 
-.api-bible-content .qm3 {
+.scripture-styles .qm3 {
   margin-left: 2em;
   margin-right: 0em; }
 
-.api-bible-content .qt {
+.scripture-styles .qt {
   font-style: italic;
   text-indent: 0;
   padding: 0;
   margin: 0; }
 
-.api-bible-content .bk {
+.scripture-styles .bk {
   font-style: italic; }
 
-.api-bible-content .nd {
+.scripture-styles .nd {
   font-variant: small-caps; }
 
-.api-bible-content .add {
+.scripture-styles .add {
   font-style: italic; }
 
-.api-bible-content .dc {
+.scripture-styles .dc {
   font-style: italic; }
 
-.api-bible-content .k {
+.scripture-styles .k {
   font-weight: bold;
   font-style: italic; }
 
-.api-bible-content .lit {
+.scripture-styles .lit {
   text-align: right;
   font-weight: bold; }
 
-.api-bible-content .pn {
+.scripture-styles .pn {
   font-weight: bold;
   text-decoration: underline; }
 
-.api-bible-content .sls {
+.scripture-styles .sls {
   font-style: italic; }
 
-.api-bible-content .tl {
+.scripture-styles .tl {
   font-style: italic; }
 
-.api-bible-content .wj {
+.scripture-styles .wj {
   color: #CC0000; }
 
-.api-bible-content .em {
+.scripture-styles .em {
   font-style: italic; }
 
-.api-bible-content .bd {
+.scripture-styles .bd {
   font-weight: bold; }
 
-.api-bible-content .it {
+.scripture-styles .it {
   font-style: italic; }
 
-.api-bible-content .bdit {
+.scripture-styles .bdit {
   font-weight: bold;
   font-style: italic; }
 
-.api-bible-content .no {
+.scripture-styles .no {
   font-weight: normal;
   font-style: normal; }
 
-.api-bible-content .sc {
+.scripture-styles .sc {
   font-variant: small-caps; }
 
-.api-bible-content .qt {
+.scripture-styles .qt {
   font-style: italic; }
 
-.api-bible-content .sig {
+.scripture-styles .sig {
   font-weight: normal;
   font-style: italic; }
 
-.api-bible-content table {
+.scripture-styles table {
   width: 100%;
   display: table; }
 
-.api-bible-content .tr {
+.scripture-styles .tr {
   display: table-row; }
 
-.api-bible-content [class^="th"] {
+.scripture-styles [class^="th"] {
   font-style: italic;
   display: table-cell; }
 
-.api-bible-content [class^="thr"] {
+.scripture-styles [class^="thr"] {
   text-align: right;
   padding-right: 1.5em; }
 
-.api-bible-content [class^="tc"] {
+.scripture-styles [class^="tc"] {
   display: table-cell; }
 
-.api-bible-content [class^="tcr"] {
+.scripture-styles [class^="tcr"] {
   text-align: right;
   padding-right: 1.5em; }
 
-.api-bible-content [class^="mt"] {
+.scripture-styles [class^="mt"] {
   text-align: center;
   font-weight: bold;
   letter-spacing: normal; }
 
-.api-bible-content .mt, .api-bible-content .mt1 {
+.scripture-styles .mt, .scripture-styles .mt1 {
   font-size: 2.8em; }
 
-.api-bible-content .mt2 {
+.scripture-styles .mt2 {
   font-size: 1.6em;
   font-style: italic;
   font-weight: normal; }
 
-.api-bible-content [class^="ms"] {
+.scripture-styles [class^="ms"] {
   text-align: center;
   font-weight: bold;
   line-height: 1.2;
   letter-spacing: normal; }
 
-.api-bible-content .ms, .api-bible-content .ms1 {
+.scripture-styles .ms, .scripture-styles .ms1 {
   font-size: 1.6em; }
 
-.api-bible-content .ms2 {
+.scripture-styles .ms2 {
   font-size: 1.5em; }
 
-.api-bible-content .ms3 {
+.scripture-styles .ms3 {
   font-size: 1.4em; }
 
-.api-bible-content .mr {
+.scripture-styles .mr {
   font-size: 0.9em;
   margin-bottom: 1em;
   text-align: center;
   font-weight: normal;
   font-style: italic; }
 
-.api-bible-content .s, .api-bible-content .s1 {
+.scripture-styles .s, .scripture-styles .s1 {
   text-align: center;
   font-weight: bold;
   font-size: 1.1em;
   letter-spacing: normal; }
 
-.api-bible-content .s2 {
+.scripture-styles .s2 {
   text-align: center;
   font-weight: bold;
   font-size: inherit;
   letter-spacing: normal; }
 
-.api-bible-content .s3 {
+.scripture-styles .s3 {
   text-align: center;
   font-weight: bold;
   font-size: inherit;
   letter-spacing: normal; }
 
-.api-bible-content .s4 {
+.scripture-styles .s4 {
   text-align: center;
   font-weight: bold;
   font-size: inherit;
   letter-spacing: normal; }
 
-.api-bible-content .sr {
+.scripture-styles .sr {
   font-weight: normal;
   font-style: italic;
   text-align: center;
   font-size: inherit;
   letter-spacing: normal; }
 
-.api-bible-content .r {
+.scripture-styles .r {
   font-size: 0.9em;
   font-weight: normal;
   font-style: italic;
   text-align: center;
   letter-spacing: normal; }
 
-.api-bible-content .rq {
+.scripture-styles .rq {
   font-size: 0.85em;
   line-height: 1.9;
   font-style: italic;
   text-align: right;
   letter-spacing: normal; }
 
-.api-bible-content .d {
+.scripture-styles .d {
   font-style: italic;
   text-align: center;
   font-size: inherit;
   letter-spacing: normal; }
 
-.api-bible-content .sp {
+.scripture-styles .sp {
   text-align: left;
   font-weight: normal;
   font-style: italic;
   font-size: inherit;
   letter-spacing: normal; }
 
-.api-bible-content [class^="p"] + .s, .api-bible-content [class^="p"] + .s1, .api-bible-content [class^="q"] + .s, .api-bible-content [class^="q"] + .s1 {
+.scripture-styles [class^="p"] + .s, .scripture-styles [class^="p"] + .s1, .scripture-styles [class^="q"] + .s, .scripture-styles [class^="q"] + .s1 {
   margin-top: 1.5em; }
 
-/*# sourceMappingURL=api-bible-content-nested.css.map */
+/*# sourceMappingURL=scripture-styles-nested.css.map */

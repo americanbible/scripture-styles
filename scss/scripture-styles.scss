@@ -8,7 +8,7 @@
 @import "base";
 
 // Let's namespace all the modules
-.api-bible-content {
+.scripture-styles {
     @import "modules/chapters-verses";
     @import "modules/cross-references";
     @import "modules/footnotes";

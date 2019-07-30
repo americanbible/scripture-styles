@@ -4,7 +4,7 @@ const sass = require("node-sass");
 it("can compile sass to css", done => {
   sass.render(
     {
-      file: __dirname + "/../scss/api-bible-content.scss"
+      file: __dirname + "/../scss/scripture-styles.scss"
     },
     (err, result) => {
       expect(err).toBeNull();
