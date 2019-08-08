@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../../scss/scripture-styles.scss";
-import { apikey } from "../config.json";
+// import { apikey } from "../config.json";
+
+const API_BIBLE_KEY = process.env.STORYBOOK_API_BIBLE_KEY;
+console.log("APIKEY", API_BIBLE_KEY);
 
 const Passage = ({
   bibleId = "61fd76eafa1577c2-01",
@@ -21,7 +24,7 @@ const Passage = ({
       {
         method: "GET",
         headers: {
-          "api-key": apikey
+          "api-key": API_BIBLE_KEY
         }
       }
     ).then(response => response.json());
