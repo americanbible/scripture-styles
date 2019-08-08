@@ -36,7 +36,7 @@ stories.map(story =>
           marker={card.marker}
           title={card.title}
           description={card.description}
-          bibleId={card.bibleId | gntId}
+          bibleId={card.bibleId || gntId}
           passageId={card.passageId}
         />
       )

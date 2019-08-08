@@ -4,6 +4,7 @@ export default {
     {
       title: "The footnote element",
       marker: "f",
+      bibleId: "555fef9a6cb31151-01",
       passageId: null
     },
     {
@@ -37,7 +38,8 @@ export default {
       title: 'Footnote "label"text.',
       marker: "fl",
       description:
-        'Can be used for marking or "labeling"a word or words which are used consistently across certain types of translation notes (such as the words "Or"in an alternative translation note, "Others", "Heb.", "LXX"etc.).'
+        'Can be used for marking or "labeling"a word or words which are used consistently across certain types of translation notes (such as the words "Or"in an alternative translation note, "Others", "Heb.", "LXX"etc.).',
+      passageId: null
     },
     {
       title: "Footnote verse number.",
