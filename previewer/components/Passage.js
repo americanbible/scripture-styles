@@ -3,7 +3,6 @@ import "../../scss/scripture-styles.scss";
 // import { apikey } from "../config.json";
 
 const API_BIBLE_KEY = process.env.STORYBOOK_API_BIBLE_KEY;
-console.log("APIKEY", API_BIBLE_KEY);
 
 const Passage = ({
   bibleId = "61fd76eafa1577c2-01",
