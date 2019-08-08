@@ -7,7 +7,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "^3.0.1",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "universal-dotenv": "^3.0.1"
   },
   "scripts": {
     "start": "npm run storybook",
@@ -31,6 +32,7 @@
     "@storybook/addons": "^5.1.9",
     "@storybook/react": "^5.1.9",
     "@storybook/storybook-deployer": "^2.8.1",
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "semantic-release": "^15.13.18"
   }
 }
