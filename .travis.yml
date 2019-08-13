@@ -23,10 +23,10 @@ deploy:
 #   acl: public_read
 #   on:
 #     repo: americanbible/scripture-styles
-# - provider: script
-#   skip_cleanup: true
-#   script: cd previewer && npm run deploy-storybook -- --ci
-#   on:
-#     repo: americanbible/scripture-styles
-#     branch: master
+- provider: script
+  skip_cleanup: true
+  script: cd previewer && npm run deploy-storybook -- --ci
+  on:
+    repo: americanbible/scripture-styles
+    branch: master
 
