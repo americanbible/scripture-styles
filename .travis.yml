@@ -19,9 +19,8 @@ deploy:
   access_key_id: AKIAW3FERPLDNJJQOFU7
   secret_access_key:
     secure: aU9oddW2jCxVGkoRNdSaD7KD1fQjUUsL6Xz18VJosfFzs7mUJy/GiPT03bvw6jD4lnYbexA9bZGYMaPlxUpIW4i6FQFusckQSRvBt520nhI7LW343GyfZ6E/eBy7vI5jvrqkyj3/S8FYBZJMk8L1vQOCaOLZm1neRDiXKn+GMTI=
-  bucket: assets.api.bible
+  bucket: 'assets.api.bible'
   local-dir: dist
-  acl: public_read
   on:
     repo: americanbible/scripture-styles
     branch: master
