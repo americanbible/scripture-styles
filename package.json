@@ -23,7 +23,6 @@
     "url": "https://github.com/americanbible/api-bible-assets/issues"
   },
   "homepage": "https://github.com/americanbible/api-bible-assets#readme",
-  "dependencies": {},
   "devDependencies": {
     "node-sass": "^4.12.0",
     "jest": "^24.8.0"
