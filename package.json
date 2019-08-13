@@ -1,6 +1,6 @@
 {
   "name": "scripture-styles",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "SASS and CSS styles for API.Bible Scripture Output",
   "main": "index.js",
   "style": "dist/css/scripture-styles.css",
