@@ -1,14 +1,16 @@
 // Running header text.
 // The variable # represents distinct components or levels of text required for the running header presentation (e.g. inside, outside, sub-division/section etc.).
 .h {
-    text-align: center;
-    font-style: italic;
-    // @include adjust-font-size-to(20px);
+  text-align: center;
+  font-style: italic;
 }
 
 // These are not used.
-.toc1 {}
+.toc1 {
+}
 
-.toc2 {}
+.toc2 {
+}
 
-.toc3 {}
+.toc3 {
+}

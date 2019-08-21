@@ -24,22 +24,18 @@
 .imt1,
 .imte,
 .imte1 {
-  //   font-size: 1.4em;
 }
 
 .imt2,
 .imte2 {
-  //   font-size: 1.3em;
 }
 
 .imt3,
 .imte3 {
-  //   font-size: 1.2em;
 }
 
 .imt4,
 .imte4 {
-  //   font-size: 1.1em;
 }
 
 // Introduction Paragraphs
@@ -64,14 +60,12 @@
 
 .imi {
   text-indent: 0;
-
   @include indented(1, 1);
 }
 
 // Intro Quote
 .ipq {
   font-style: italic;
-
   @include indented(1, 1);
 }
 

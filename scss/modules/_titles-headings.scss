@@ -86,7 +86,7 @@
 //https://ubsicap.github.io/usfm/titles_headings/index.html#rq-rq
 // .rq = <p>
 .rq {
-  font-size: 16px;
+  font-size: inherit;
   line-height: $base-line-height;
   font-style: italic;
   text-align: right;

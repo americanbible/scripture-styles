@@ -1,68 +1,69 @@
 // Chapter number
 .c {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.3em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
 // Alternate (second) chapter number.
 .ca {
-    font-style: italic;
-    font-weight: normal;
-    color: lighten($base-font-color, 40%);
+  font-style: italic;
+  font-weight: normal;
+  color: lighten($base-font-color, 40%);
 
-    @include parenthesis-wrap;
+  @include parenthesis-wrap;
 }
 
 // Published chapter character.
 // cp = h3
-.cp {}
+.cp {
+}
 
 // cl = h3 (should this be an inline element?)
 .cl {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 // Chapter Description
 .cd {
-    @include indented(1, 1);
+  @include indented(1, 1);
 
-    font-style: italic;
+  font-style: italic;
 }
 
 // Verse Numbers
 .v,
 .vp,
 sup[class^="v"] {
-    color: darken($base-font-color, 80%);
-    font-size: 0.7em;
-    letter-spacing: -0.03em;
-    vertical-align: 0.25em;
-    line-height: 0;
-    font-family: sans-serif;
-    font-weight: bold;
-    top: inherit;
+  color: darken($base-font-color, 80%);
+  font-size: 0.7em;
+  letter-spacing: -0.03em;
+  vertical-align: 0.25em;
+  line-height: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  top: inherit;
 
-    &:after {
-        content: "\a0";
-    }
+  &:after {
+    content: "\a0";
+  }
 }
 
 sup + sup {
-    &:before {
-        content: "\a0";
-    }
+  &:before {
+    content: "\a0";
+  }
 }
 
 // Verse Alternate
 .va {
-    @include parenthesis-wrap;
+  @include parenthesis-wrap;
 
-    font-style: italic;
+  font-style: italic;
 }
 
 // Published verse character
 .vp {
-    // no extra styles yet
+  // no extra styles yet
 }
