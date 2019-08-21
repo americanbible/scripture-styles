@@ -116,6 +116,6 @@
 [class^="q"] {
   & + .s,
   & + .s1 {
-    margin-top: $modular-scale-ratio + em;
+    margin-top: $base-margin-height;
   }
 }
