@@ -21,7 +21,10 @@ const PassageWrapper = styled.div`
   border: 1px solid #e0e0e0;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  padding: 24px;
+  padding: 0 24px;
+  /* setup some grid lines for previwer */
+  background: linear-gradient(rgba(0, 119, 179, 0.2) 1px, transparent 0px) left
+    top / 25px 25px;
 `;
 
 const Marker = styled.span`
