@@ -8,155 +8,168 @@
 // is1 = h3
 // is2  = h
 
-[class^="imt"] {
-    text-align: center;
-    font-weight: bold;
+[class^="imt"],
+// Introduction section heading.
+[class^="is"] {
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: $base-line-height * 2;
+  margin-top: $base-margin-height;
+  margin-bottom: $base-margin-height;
 }
 
 //  Introduction major title.
-.imt, .imt1,
-.imte, .imte1 {
-    font-size: 1.4em;
+.imt,
+.imt1,
+.imte,
+.imte1 {
+  //   font-size: 1.4em;
 }
 
-.imt2, .imte2 {
-    font-size: 1.3em;
+.imt2,
+.imte2 {
+  //   font-size: 1.3em;
 }
 
-.imt3, .imte3 {
-    font-size: 1.2em;
+.imt3,
+.imte3 {
+  //   font-size: 1.2em;
 }
 
-.imt4, .imte4 {
-    font-size: 1.1em;
-}
-
-// Introduction section heading.
-[class^="is"] {
-    font-size: 1.1em;
-    text-align: center;
-    font-weight: bold;
+.imt4,
+.imte4 {
+  //   font-size: 1.1em;
 }
 
 // Introduction Paragraphs
 [class^="ip"] {
-    @include text-indent;
+  @include text-indent;
 }
 
-.ip {}
+.ip {
+}
 
 // Indented Introduction Paragraph
 // https://ubsicap.github.io/usfm/introductions/index.html#ipi
 .ipi {
-    padding-left: 1em;
-    padding-right: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 // Introduction flush left (margin) paragraph.
 .im {
-    text-indent: 0;
+  text-indent: 0;
 }
 
 .imi {
-    text-indent: 0;
+  text-indent: 0;
 
-    @include indented(1, 1);
+  @include indented(1, 1);
 }
 
 // Intro Quote
 .ipq {
-    font-style: italic;
+  font-style: italic;
 
-    @include indented(1, 1);
+  @include indented(1, 1);
 }
 
 // Intro Quote flush left
 .imq {
-    @include indented(1, 1);
+  @include indented(1, 1);
 }
 
 // Introduction right aligned paragraph
 .ipr {
-    text-align: right;
-    text-indent: 0;
+  text-align: right;
+  text-indent: 0;
 }
 
 // Introduction Poetic Line
 [class^="iq"] {
-    @include indented(1, 1);
+  @include indented(1, 1);
 }
 
-.iq, .iq1 {}
+.iq,
+.iq1 {
+}
 
 .iq2 {
-    @include text-indent;
+  @include text-indent;
 }
 
 .iq3 {
-    //should this further indent?
+  //should this further indent?
 }
 
 // Introduction Blank Line
 .ib {
-    // @include trailer(1, $base-font-size, margin);
+  // @include trailer(1, $base-font-size, margin);
 }
 
-.ior {}
+.ior {
+}
 
 // Introduction list item.
 [class^="ili"] {
-    @include hanging-indent;
+  @include hanging-indent;
 }
 
-.ili {}
+.ili {
+}
 
 .ili1 {
-    @include indented(1, 1);
+  @include indented(1, 1);
 }
 
 .ili2 {
-    @include indented(2, 1);
+  @include indented(2, 1);
 }
 
 // Introduction outline title
 .iot {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: $modular-scale-ratio + em;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: $base-line-height;
+  margin-top: $base-margin-height;
+  margin-bottom: 0px;
 }
 
 // Introduction outline entry
-.io, .io1 {
-    @include indented(1, 0);
+.io,
+.io1 {
+  @include indented(1, 0);
 }
 
 .io2 {
-    @include indented(2, 0);
+  @include indented(2, 0);
 }
 
 .io3 {
-    @include indented(3, 0);
+  @include indented(3, 0);
 }
 
 .io4 {
-    @include indented(4, 0);
+  @include indented(4, 0);
 }
 
 .ior {
-    font-style: italic;
+  font-style: italic;
 }
 
 //  Introduction explanatory or bridge text
 .iex {
-    @include text-indent;
+  @include text-indent;
 }
 
 //  Introduction quoted text.
 .iqt {
-    @include text-indent;
+  @include text-indent;
 
-    font-style: italic;
+  font-style: italic;
 }
 
 //  Introduction end.
-.ie {}
+.ie {
+}
