@@ -58,8 +58,8 @@
   font-weight: bold;
   font-size: 27px;
   line-height: $base-line-height * 2;
-  margin-top: $base-margin-height;
-  margin-bottom: 0px;
+  margin-bottom: $base-margin-height;
+  margin-top: 0px;
 }
 
 // Section reference range
@@ -110,12 +110,4 @@
   font-style: italic;
   font-size: inherit;
   letter-spacing: normal;
-}
-
-[class^="p"],
-[class^="q"] {
-  & + .s,
-  & + .s1 {
-    margin-top: $base-margin-height;
-  }
 }

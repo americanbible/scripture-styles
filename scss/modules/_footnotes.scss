@@ -28,7 +28,7 @@
 }
 
 .f {
-  font-size: 0.85em;
+  font-size: $base-font-size - 2;
   display: inline-block;
   box-sizing: border-box;
   padding: 0 0.4em;

@@ -89,7 +89,6 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 18px;
     font-family: inherit;
     vertical-align: baseline; }
   .scripture-styles article,
@@ -170,7 +169,7 @@
     content: ")" !important; }
 
 .scripture-styles .x {
-  font-size: 0.85rem;
+  font-size: 16px;
   box-sizing: border-box;
   display: inline-block;
   position: relative;
@@ -192,12 +191,12 @@
 
 .scripture-styles .notelink {
   text-decoration: underline;
-  padding: .1em; }
+  padding: 0.1em; }
   .scripture-styles .notelink, .scripture-styles .notelink:hover, .scripture-styles .notelink:active, .scripture-styles .notelink:visited {
     color: #6a6a6a; }
   .scripture-styles .notelink sup {
-    font-size: .7em;
-    letter-spacing: -.03em;
+    font-size: 0.7em;
+    letter-spacing: -0.03em;
     vertical-align: 0.25em;
     line-height: 0;
     font-family: sans-serif;
@@ -206,7 +205,7 @@
     content: "\a0"; }
 
 .scripture-styles .f {
-  font-size: 0.85rem;
+  font-size: 16px;
   display: inline-block;
   box-sizing: border-box;
   padding: 0 0.4em;
@@ -491,7 +490,7 @@
   font-style: italic; }
 
 .scripture-styles .wj {
-  color: #CC0000; }
+  color: #cc0000; }
 
 .scripture-styles .em {
   font-style: italic; }
@@ -533,14 +532,14 @@
 
 .scripture-styles [class^="thr"] {
   text-align: right;
-  padding-right: 1.5em; }
+  padding: 0 25px; }
 
 .scripture-styles [class^="tc"] {
   display: table-cell; }
 
 .scripture-styles [class^="tcr"] {
   text-align: right;
-  padding-right: 1.5em; }
+  padding: 0 25px; }
 
 .scripture-styles [class^="mt"] {
   text-align: center;
@@ -589,8 +588,8 @@
   font-weight: bold;
   font-size: 27px;
   line-height: 50px;
-  margin-top: 25px;
-  margin-bottom: 0px; }
+  margin-bottom: 25px;
+  margin-top: 0px; }
 
 .scripture-styles .sr {
   font-weight: normal;
@@ -607,7 +606,7 @@
   letter-spacing: normal; }
 
 .scripture-styles .rq {
-  font-size: 16px;
+  font-size: inherit;
   line-height: 25px;
   font-style: italic;
   text-align: right;
@@ -625,11 +624,5 @@
   font-style: italic;
   font-size: inherit;
   letter-spacing: normal; }
-
-.scripture-styles [class^="p"] + .s,
-.scripture-styles [class^="p"] + .s1,
-.scripture-styles [class^="q"] + .s,
-.scripture-styles [class^="q"] + .s1 {
-  margin-top: 1.5em; }
 
 /*# sourceMappingURL=scripture-styles-nested.css.map */
