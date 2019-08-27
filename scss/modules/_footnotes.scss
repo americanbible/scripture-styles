@@ -1,92 +1,100 @@
 .notelink {
-    text-decoration: underline;
-    padding: .1em;
+  text-decoration: underline;
+  padding: 0.1em;
 
-    &, &:hover, &:active, &:visited {
-        color: lighten($base-font-color, 35%);
-    }
+  &,
+  &:hover,
+  &:active,
+  &:visited {
+    color: lighten($base-font-color, 35%);
+  }
 
-    sup {
-        font-size: .7em;
-        letter-spacing: -.03em;
-        vertical-align: 0.25em;
-        line-height: 0;
-        font-family: sans-serif;
-        font-weight: bold;
-    }
-
-    & + sup:before {
-        content: "\a0";
-    }
-}
-
-// .note is a wrapper class for both cross refs and footnotes
-.note {
-    // @include adjust-font-size-to(16px);
-}
-
-.f {
-    font-size: 0.85rem;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 0 0.4em;
-    margin: 0 0.1em;
-    text-indent: 0;
-    text-align: left;
-    border-radius: 4px;
-    border: 1px solid #dcdcdc;
-}
-
-// Origin reference
-.fr {
-    font-weight: bold;
-}
-
-// Footnote keyword
-.fk {
-    font-style: italic;
-    font-variant: small-caps;
-}
-
-// Footnote translation quotation.
-// .fq {} & .fqa {}
-[class^="fq"] {
-    font-style: italic;
-}
-
-// Footnote label
-.fl {
-    font-style: italic;
-    font-weight: bold;
-}
-
-// Footnote additional paragraph.
-.fp {}
-
-// Footnote verse number.
-.fv {
-    color: lighten($base-font-color, 25%);
-    font-size: 0.75em;
+  sup {
+    font-size: 0.7em;
     letter-spacing: -0.03em;
     vertical-align: 0.25em;
     line-height: 0;
     font-family: sans-serif;
     font-weight: bold;
+  }
 
-    &:after {
-        content: "\a0";
-    }
+  & + sup:before {
+    content: "\a0";
+  }
+}
+
+// .note is a wrapper class for both cross refs and footnotes
+.note {
+}
+
+.f {
+  font-size: $base-font-size - 2;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 0.4em;
+  margin: 0 0.1em;
+  text-indent: 0;
+  text-align: left;
+  border-radius: 4px;
+  border: 1px solid #dcdcdc;
+}
+
+// Origin reference
+.fr {
+  font-weight: bold;
+}
+
+// Footnote keyword
+.fk {
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+// Footnote translation quotation.
+// .fq {} & .fqa {}
+[class^="fq"] {
+  font-style: italic;
+}
+
+// Footnote label
+.fl {
+  font-style: italic;
+  font-weight: bold;
+}
+
+// Footnote additional paragraph.
+.fp {
+}
+
+// Footnote verse number.
+.fv {
+  color: lighten($base-font-color, 25%);
+  font-size: 0.75em;
+  letter-spacing: -0.03em;
+  vertical-align: 0.25em;
+  line-height: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+
+  &:after {
+    content: "\a0";
+  }
 }
 
 // Footnote text
-.ft {}
+.ft {
+}
 
-.fe {}
+.fe {
+}
 
 // Deuterocanonical content
-.fdc {}
+.fdc {
+}
 
-.fs {}
+.fs {
+}
 
 // Footnote reference mark
-.fm {}
+.fm {
+}

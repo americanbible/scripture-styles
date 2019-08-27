@@ -2,36 +2,117 @@
   /* HTML5 display-role reset for older browsers */
   font-size: 18px;
   font-family: "Noto Serif", serif;
-  line-height: 1.5;
-  color: #111111; }
-  .scripture-styles html, .scripture-styles body, .scripture-styles div, .scripture-styles span, .scripture-styles applet, .scripture-styles object, .scripture-styles iframe,
-  .scripture-styles h1, .scripture-styles h2, .scripture-styles h3, .scripture-styles h4, .scripture-styles h5, .scripture-styles h6, .scripture-styles p, .scripture-styles blockquote, .scripture-styles pre,
-  .scripture-styles a, .scripture-styles abbr, .scripture-styles acronym, .scripture-styles address, .scripture-styles big, .scripture-styles cite, .scripture-styles code,
-  .scripture-styles del, .scripture-styles dfn, .scripture-styles em, .scripture-styles img, .scripture-styles ins, .scripture-styles kbd, .scripture-styles q, .scripture-styles s, .scripture-styles samp,
-  .scripture-styles small, .scripture-styles strike, .scripture-styles strong, .scripture-styles sub, .scripture-styles sup, .scripture-styles tt, .scripture-styles var,
-  .scripture-styles b, .scripture-styles u, .scripture-styles i, .scripture-styles center,
-  .scripture-styles dl, .scripture-styles dt, .scripture-styles dd, .scripture-styles ol, .scripture-styles ul, .scripture-styles li,
-  .scripture-styles fieldset, .scripture-styles form, .scripture-styles label, .scripture-styles legend,
-  .scripture-styles table, .scripture-styles caption, .scripture-styles tbody, .scripture-styles tfoot, .scripture-styles thead, .scripture-styles tr, .scripture-styles th, .scripture-styles td,
-  .scripture-styles article, .scripture-styles aside, .scripture-styles canvas, .scripture-styles details, .scripture-styles embed,
-  .scripture-styles figure, .scripture-styles figcaption, .scripture-styles footer, .scripture-styles header, .scripture-styles hgroup,
-  .scripture-styles menu, .scripture-styles nav, .scripture-styles output, .scripture-styles ruby, .scripture-styles section, .scripture-styles summary,
-  .scripture-styles time, .scripture-styles mark, .scripture-styles audio, .scripture-styles video {
+  line-height: 25px;
+  color: #111111;
+  -webkit-font-smoothing: antialiased; }
+  .scripture-styles html,
+  .scripture-styles body,
+  .scripture-styles div,
+  .scripture-styles span,
+  .scripture-styles applet,
+  .scripture-styles object,
+  .scripture-styles iframe,
+  .scripture-styles h1,
+  .scripture-styles h2,
+  .scripture-styles h3,
+  .scripture-styles h4,
+  .scripture-styles h5,
+  .scripture-styles h6,
+  .scripture-styles p,
+  .scripture-styles blockquote,
+  .scripture-styles pre,
+  .scripture-styles a,
+  .scripture-styles abbr,
+  .scripture-styles acronym,
+  .scripture-styles address,
+  .scripture-styles big,
+  .scripture-styles cite,
+  .scripture-styles code,
+  .scripture-styles del,
+  .scripture-styles dfn,
+  .scripture-styles em,
+  .scripture-styles img,
+  .scripture-styles ins,
+  .scripture-styles kbd,
+  .scripture-styles q,
+  .scripture-styles s,
+  .scripture-styles samp,
+  .scripture-styles small,
+  .scripture-styles strike,
+  .scripture-styles strong,
+  .scripture-styles sub,
+  .scripture-styles sup,
+  .scripture-styles tt,
+  .scripture-styles var,
+  .scripture-styles b,
+  .scripture-styles u,
+  .scripture-styles i,
+  .scripture-styles center,
+  .scripture-styles dl,
+  .scripture-styles dt,
+  .scripture-styles dd,
+  .scripture-styles ol,
+  .scripture-styles ul,
+  .scripture-styles li,
+  .scripture-styles fieldset,
+  .scripture-styles form,
+  .scripture-styles label,
+  .scripture-styles legend,
+  .scripture-styles table,
+  .scripture-styles caption,
+  .scripture-styles tbody,
+  .scripture-styles tfoot,
+  .scripture-styles thead,
+  .scripture-styles tr,
+  .scripture-styles th,
+  .scripture-styles td,
+  .scripture-styles article,
+  .scripture-styles aside,
+  .scripture-styles canvas,
+  .scripture-styles details,
+  .scripture-styles embed,
+  .scripture-styles figure,
+  .scripture-styles figcaption,
+  .scripture-styles footer,
+  .scripture-styles header,
+  .scripture-styles hgroup,
+  .scripture-styles menu,
+  .scripture-styles nav,
+  .scripture-styles output,
+  .scripture-styles ruby,
+  .scripture-styles section,
+  .scripture-styles summary,
+  .scripture-styles time,
+  .scripture-styles mark,
+  .scripture-styles audio,
+  .scripture-styles video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font-family: inherit;
     vertical-align: baseline; }
-  .scripture-styles article, .scripture-styles aside, .scripture-styles details, .scripture-styles figcaption, .scripture-styles figure,
-  .scripture-styles footer, .scripture-styles header, .scripture-styles hgroup, .scripture-styles menu, .scripture-styles nav, .scripture-styles section {
+  .scripture-styles article,
+  .scripture-styles aside,
+  .scripture-styles details,
+  .scripture-styles figcaption,
+  .scripture-styles figure,
+  .scripture-styles footer,
+  .scripture-styles header,
+  .scripture-styles hgroup,
+  .scripture-styles menu,
+  .scripture-styles nav,
+  .scripture-styles section {
     display: block; }
-  .scripture-styles ol, .scripture-styles ul {
+  .scripture-styles ol,
+  .scripture-styles ul {
     list-style: none; }
-  .scripture-styles blockquote, .scripture-styles q {
+  .scripture-styles blockquote,
+  .scripture-styles q {
     quotes: none; }
-  .scripture-styles blockquote:before, .scripture-styles blockquote:after,
-  .scripture-styles q:before, .scripture-styles q:after {
+  .scripture-styles blockquote:before,
+  .scripture-styles blockquote:after,
+  .scripture-styles q:before,
+  .scripture-styles q:after {
     content: "";
     content: none; }
   .scripture-styles table {
@@ -88,7 +169,7 @@
     content: ")" !important; }
 
 .scripture-styles .x {
-  font-size: 0.85rem;
+  font-size: 16px;
   box-sizing: border-box;
   display: inline-block;
   position: relative;
@@ -110,12 +191,12 @@
 
 .scripture-styles .notelink {
   text-decoration: underline;
-  padding: .1em; }
+  padding: 0.1em; }
   .scripture-styles .notelink, .scripture-styles .notelink:hover, .scripture-styles .notelink:active, .scripture-styles .notelink:visited {
     color: #6a6a6a; }
   .scripture-styles .notelink sup {
-    font-size: .7em;
-    letter-spacing: -.03em;
+    font-size: 0.7em;
+    letter-spacing: -0.03em;
     vertical-align: 0.25em;
     line-height: 0;
     font-family: sans-serif;
@@ -124,7 +205,7 @@
     content: "\a0"; }
 
 .scripture-styles .f {
-  font-size: 0.85rem;
+  font-size: 16px;
   display: inline-block;
   box-sizing: border-box;
   padding: 0 0.4em;
@@ -163,27 +244,14 @@
   text-align: center;
   font-style: italic; }
 
-.scripture-styles [class^="imt"] {
-  text-align: center;
-  font-weight: bold; }
-
-.scripture-styles .imt, .scripture-styles .imt1,
-.scripture-styles .imte, .scripture-styles .imte1 {
-  font-size: 1.4em; }
-
-.scripture-styles .imt2, .scripture-styles .imte2 {
-  font-size: 1.3em; }
-
-.scripture-styles .imt3, .scripture-styles .imte3 {
-  font-size: 1.2em; }
-
-.scripture-styles .imt4, .scripture-styles .imte4 {
-  font-size: 1.1em; }
-
+.scripture-styles [class^="imt"],
 .scripture-styles [class^="is"] {
-  font-size: 1.1em;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 .scripture-styles [class^="ip"] {
   text-indent: 1em; }
@@ -234,10 +302,13 @@
 
 .scripture-styles .iot {
   font-weight: bold;
-  font-size: 1.1em;
-  margin-top: 1.5em; }
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 25px;
+  margin-bottom: 0px; }
 
-.scripture-styles .io, .scripture-styles .io1 {
+.scripture-styles .io,
+.scripture-styles .io1 {
   margin-left: 1em;
   margin-right: 0em; }
 
@@ -419,7 +490,7 @@
   font-style: italic; }
 
 .scripture-styles .wj {
-  color: #CC0000; }
+  color: #cc0000; }
 
 .scripture-styles .em {
   font-style: italic; }
@@ -461,73 +532,64 @@
 
 .scripture-styles [class^="thr"] {
   text-align: right;
-  padding-right: 1.5em; }
+  padding: 0 25px; }
 
 .scripture-styles [class^="tc"] {
   display: table-cell; }
 
 .scripture-styles [class^="tcr"] {
   text-align: right;
-  padding-right: 1.5em; }
+  padding: 0 25px; }
 
 .scripture-styles [class^="mt"] {
   text-align: center;
   font-weight: bold;
   letter-spacing: normal; }
 
-.scripture-styles .mt, .scripture-styles .mt1 {
-  font-size: 2.8em; }
+.scripture-styles .mt,
+.scripture-styles .mt1,
+.scripture-styles .mt2 {
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 .scripture-styles .mt2 {
-  font-size: 1.6em;
+  font-size: 34px;
+  margin-top: -25px;
   font-style: italic;
   font-weight: normal; }
 
-.scripture-styles [class^="ms"] {
+.scripture-styles [class^="ms"],
+.scripture-styles .ms,
+.scripture-styles .ms1,
+.scripture-styles .ms2,
+.scripture-styles .ms3 {
   text-align: center;
   font-weight: bold;
-  line-height: 1.2;
-  letter-spacing: normal; }
-
-.scripture-styles .ms, .scripture-styles .ms1 {
-  font-size: 1.6em; }
-
-.scripture-styles .ms2 {
-  font-size: 1.5em; }
-
-.scripture-styles .ms3 {
-  font-size: 1.4em; }
+  font-size: 27px;
+  line-height: 50px;
+  margin-top: 25px;
+  margin-bottom: 0px; }
 
 .scripture-styles .mr {
   font-size: 0.9em;
-  margin-bottom: 1em;
+  margin-bottom: 25px;
   text-align: center;
   font-weight: normal;
   font-style: italic; }
 
-.scripture-styles .s, .scripture-styles .s1 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.1em;
-  letter-spacing: normal; }
-
-.scripture-styles .s2 {
-  text-align: center;
-  font-weight: bold;
-  font-size: inherit;
-  letter-spacing: normal; }
-
-.scripture-styles .s3 {
-  text-align: center;
-  font-weight: bold;
-  font-size: inherit;
-  letter-spacing: normal; }
-
+.scripture-styles .s,
+.scripture-styles .s1,
+.scripture-styles .s2,
+.scripture-styles .s3,
 .scripture-styles .s4 {
   text-align: center;
   font-weight: bold;
-  font-size: inherit;
-  letter-spacing: normal; }
+  font-size: 27px;
+  line-height: 50px;
+  margin-bottom: 25px;
+  margin-top: 0px; }
 
 .scripture-styles .sr {
   font-weight: normal;
@@ -537,15 +599,15 @@
   letter-spacing: normal; }
 
 .scripture-styles .r {
-  font-size: 0.9em;
+  font-size: 18px;
   font-weight: normal;
   font-style: italic;
   text-align: center;
   letter-spacing: normal; }
 
 .scripture-styles .rq {
-  font-size: 0.85em;
-  line-height: 1.9;
+  font-size: inherit;
+  line-height: 25px;
   font-style: italic;
   text-align: right;
   letter-spacing: normal; }
@@ -562,8 +624,5 @@
   font-style: italic;
   font-size: inherit;
   letter-spacing: normal; }
-
-.scripture-styles [class^="p"] + .s, .scripture-styles [class^="p"] + .s1, .scripture-styles [class^="q"] + .s, .scripture-styles [class^="q"] + .s1 {
-  margin-top: 1.5em; }
 
 /*# sourceMappingURL=scripture-styles-nested.css.map */
