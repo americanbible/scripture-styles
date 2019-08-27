@@ -11,7 +11,8 @@
     "build-nested": "node-sass scss/scripture-styles.scss dist/css/scripture-styles-nested.css --source-map true --output-style nested",
     "build-compressed": "node-sass scss/scripture-styles.scss dist/css/scripture-styles.css --source-map true --output-style compressed",
     "gzip": "gzip < dist/css/scripture-styles.css > dist/css/scripture-styles.css.gz",
-    "docs": "cd previewer && npm start"
+    "docs": "cd previewer && npm start",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,22 @@
   },
   "homepage": "https://github.com/americanbible/api-bible-assets#readme",
   "devDependencies": {
-    "node-sass": "^4.12.0",
-    "jest": "^24.8.0"
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "husky": "^3.0.4",
+    "jest": "^24.8.0",
+    "node-sass": "^4.12.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
