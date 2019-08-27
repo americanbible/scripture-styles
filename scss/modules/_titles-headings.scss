@@ -1,134 +1,113 @@
 // Major title.
 [class^="mt"] {
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: normal;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: normal;
 }
 
-.mt, .mt1 {
-    font-size: 2.8em;
+.mt,
+.mt1,
+.mt2 {
+  font-size: 40px;
+  line-height: $base-line-height * 2;
+  margin-top: $base-margin-height;
+  margin-bottom: $base-margin-height;
 }
 
 .mt2 {
-    font-size: 1.6em;
-    font-style: italic;
-    font-weight: normal;
+  font-size: 34px;
+  margin-top: -$base-line-height;
+  font-style: italic;
+  font-weight: normal;
 }
 
 // Major Section Heading - Headings before larger text divisions than what is typically considered a "section" division (see \s#).
-// ms = h2, ms1 = h2, ms2 = h3
-[class^="ms"] {
-    text-align: center;
-    font-weight: bold;
-    line-height: 1.2;
-    letter-spacing: normal;
-}
-
-.ms, .ms1 {
-    font-size: 1.6em;
-}
-
-.ms2 {
-    font-size: 1.5em;
-}
-
+// ms = h2, ms1 = h2, ms2 = h2 ms3 = h2
+[class^="ms"],
+.ms,
+.ms1,
+.ms2,
 .ms3 {
-    font-size: 1.4em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: $base-line-height * 2;
+  margin-top: $base-margin-height;
+  margin-bottom: 0px;
 }
 
 // Major section reference range.
 // The text reference range listed under a major section heading.
 // mr = h3
 .mr {
-    font-size: 0.9em;
-    margin-bottom: 1em;
-    text-align: center;
-    font-weight: normal;
-    font-style: italic;
+  font-size: 0.9em;
+  margin-bottom: $base-margin-height;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
 }
 
 // Section Heading
 // s = h3, s1 = h3, s2 = h4
-.s, .s1 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.1em;
-    letter-spacing: normal;
-}
-
-.s2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: inherit;
-    letter-spacing: normal;
-}
-
-.s3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: inherit;
-    letter-spacing: normal;
-}
-
+.s,
+.s1,
+.s2,
+.s3,
 .s4 {
-    text-align: center;
-    font-weight: bold;
-    font-size: inherit;
-    letter-spacing: normal;
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: $base-line-height * 2;
+  margin-bottom: $base-margin-height;
+  margin-top: 0px;
 }
 
 // Section reference range
 // sr = h4
 .sr {
-    font-weight: normal;
-    font-style: italic;
-    text-align: center;
-    font-size: inherit;
-    letter-spacing: normal;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  font-size: inherit;
+  letter-spacing: normal;
 }
 
 // Parallel passage reference(s).
 // r = h5
 .r {
-    font-size: 0.9em;
-    font-weight: normal;
-    font-style: italic;
-    text-align: center;
-    letter-spacing: normal;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: normal;
 }
 
 // Inline quotation reference(s).
 //https://ubsicap.github.io/usfm/titles_headings/index.html#rq-rq
 // .rq = <p>
 .rq {
-    font-size: 0.85em;
-    line-height: 1.9;
-    font-style: italic;
-    text-align: right;
-    letter-spacing: normal;
+  font-size: inherit;
+  line-height: $base-line-height;
+  font-style: italic;
+  text-align: right;
+  letter-spacing: normal;
 }
 
 // Descriptive title (or "Hebrew subtitle")
 // d = h3
 .d {
-    font-style: italic;
-    text-align: center;
-    font-size: inherit;
-    letter-spacing: normal;
+  font-style: italic;
+  text-align: center;
+  font-size: inherit;
+  letter-spacing: normal;
 }
 
 // Speaker Identification
 // sp = h5
 .sp {
-    text-align: left;
-    font-weight: normal;
-    font-style: italic;
-    font-size: inherit;
-    letter-spacing: normal;
-}
-
-[class^="p"], [class^="q"] {
-    & + .s, & + .s1 {
-        margin-top: $modular-scale-ratio + em;
-    }
+  text-align: left;
+  font-weight: normal;
+  font-style: italic;
+  font-size: inherit;
+  letter-spacing: normal;
 }

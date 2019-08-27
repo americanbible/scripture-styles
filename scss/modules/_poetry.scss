@@ -1,69 +1,71 @@
 // Poetic line.
 [class^="q"] {
-    @include hanging-indent;
-    @include indented(1, 0);
+  @include hanging-indent;
+  @include indented(1, 0);
 }
 
 .q2 {
-    @include indented(1.5, 0);
+  @include indented(1.5, 0);
 }
 
 .q3 {
-    @include indented(2, 0);
+  @include indented(2, 0);
 }
 
 .q4 {
-    @include indented(2.5, 0);
+  @include indented(2.5, 0);
 }
 
 // Right-aligned poetic line.
 .qr {
-    text-align: right;
-    font-style: italic;
+  text-align: right;
+  font-style: italic;
 }
 
 // Centered poetic line
 .qc {
-    text-align: center;
+  text-align: center;
 }
 
 // Selah
 .qs {
-    font-style: italic;
-    text-align: right;
+  font-style: italic;
+  text-align: right;
 }
 
 // Acrostic heading
 .qa {
-    text-align: center;
-    font-style: italic;
-    font-size: 1.1em;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1em;
 
-    @include indented(0, 0);
+  @include indented(0, 0);
 }
 
 .qac {
-    @include indented(0, 0);
+  @include indented(0, 0);
 
-    padding: 0;
-    text-indent: 0;
-    font-style: italic;
+  padding: 0;
+  text-indent: 0;
+  font-style: italic;
 }
 
 // Embeded poetic line
-.qm, .qm1 {}
+.qm,
+.qm1 {
+}
 
 .qm2 {
-    @include indented(1.5, 0);
+  @include indented(1.5, 0);
 }
 
 .qm3 {
-    @include indented(2, 0);
+  @include indented(2, 0);
 }
 
 .qt {
-    font-style: italic;
-    text-indent: 0;
-    padding: 0;
-    margin: 0;
+  font-style: italic;
+  text-indent: 0;
+  padding: 0;
+  margin: 0;
 }

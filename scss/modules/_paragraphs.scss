@@ -1,93 +1,94 @@
+// Indent all paragraphs
 [class^="p"] {
-    @include text-indent; // Indent all paragraphs
+  @include text-indent;
 }
 
 // Normal paragraph
-.p {}
+.p {
+}
 
 // Flush left paragraph
 .m {
-    text-indent: 0 !important;
+  text-indent: 0 !important;
 }
 
 // Embeded text opening
 .pmo {
-    text-indent: 0;
+  text-indent: 0;
 
-    @include indented(1, 0);
+  @include indented(1, 0);
 }
 
 // Embedded text paragraph
 .pm {
-    @include indented(1, 0);
+  @include indented(1, 0);
 }
 
 // Embedded Text Refrain
 .pmr {
-    text-align: right;
+  text-align: right;
 }
 
 // Embedded text closing
 .pmc {
-    @include indented(1, 0);
+  @include indented(1, 0);
 }
 
 // Indented paragraph.
 .pi {
-    @include indented(1, 0);
+  @include indented(1, 0);
 }
 
 .pi1 {
-    @include indented(2, 0);
+  @include indented(2, 0);
 }
 
 .pi2 {
-    @include indented(3, 0);
+  @include indented(3, 0);
 }
 
 .pi3 {
-    @include indented(4, 0);
+  @include indented(4, 0);
 }
 
 // Indented flush left (no margin)
 .mi {
-    @include indented(1, 0);
-
-    text-indent: 0;
+  @include indented(1, 0);
+  text-indent: 0;
 }
 
 // No break, (currently we strip these out of the html)
-.nb {}
+.nb {
+}
 
 // Centered paragraph
 .pc {
-    text-align: center;
-    text-indent: 0;
+  text-align: center;
+  text-indent: 0;
 }
 
 // Closure of an epistle/letter
 .cls {
-    text-align: right;
+  text-align: right;
 }
 
 [class^="li"] {
-    @include hanging-indent;
-    @include indented(1, 0);
+  @include hanging-indent;
+  @include indented(1, 0);
 }
 
 .li2 {
-    @include indented(2, 0);
+  @include indented(2, 0);
 }
 
 .li3 {
-    @include indented(3, 0);
+  @include indented(3, 0);
 }
 
 .li4 {
-    @include indented(4, 0);
+  @include indented(4, 0);
 }
 
 // Blank line
 .b {
-    // @include trailer(1,$base-font-size,margin);
 }
