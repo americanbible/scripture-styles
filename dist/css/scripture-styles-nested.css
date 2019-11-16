@@ -402,6 +402,9 @@
   margin-left: 4em;
   margin-right: 0em; }
 
+.scripture-styles .b {
+  height: 25px; }
+
 .scripture-styles [class^="q"] {
   padding-left: 1em;
   text-indent: -1em;
