@@ -589,7 +589,8 @@
 .scripture-styles .s4 {
   text-align: center;
   font-weight: bold;
-  font-size: 27px;
+  font-style: italic;
+  font-size: inherit;
   line-height: 50px;
   margin-bottom: 25px;
   margin-top: 0px; }
