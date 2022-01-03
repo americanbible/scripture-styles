@@ -69,7 +69,7 @@ Or individually:
 
 # Preview Tool
 
-First add your API.Bible key to `previewer/config.json`. See `config.json.sample` for format. If you need a key, you can [Sign Up Here](https://scripture.api.bible).
+First add your API.Bible key to `previewer/.env`. See `.env.sample` for format. If you need a key, you can [Sign Up Here](https://scripture.api.bible).
 
 Then, to run the preview tool
 

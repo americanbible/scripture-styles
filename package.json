@@ -25,13 +25,13 @@
   },
   "homepage": "https://github.com/americanbible/api-bible-assets#readme",
   "devDependencies": {
-    "@commitlint/cli": "^8.1.0",
-    "@commitlint/config-conventional": "^8.1.0",
-    "commitizen": "^4.0.3",
-    "cz-conventional-changelog": "^3.0.2",
-    "husky": "^3.0.4",
+    "@commitlint/cli": "^8.3.6",
+    "@commitlint/config-conventional": "^8.3.6",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^3.1.0",
     "jest": "^24.8.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.14.1"
   },
   "config": {
     "commitizen": {
