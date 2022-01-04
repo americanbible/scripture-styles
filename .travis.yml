@@ -16,9 +16,9 @@ deploy:
     branch: master
 - provider: s3
   skip_cleanup: true
-  access_key_id: AKIAW3FERPLDNJJQOFU7
+  access_key_id: AKIAW3FERPLDOJJBHNUU
   secret_access_key:
-    secure: aU9oddW2jCxVGkoRNdSaD7KD1fQjUUsL6Xz18VJosfFzs7mUJy/GiPT03bvw6jD4lnYbexA9bZGYMaPlxUpIW4i6FQFusckQSRvBt520nhI7LW343GyfZ6E/eBy7vI5jvrqkyj3/S8FYBZJMk8L1vQOCaOLZm1neRDiXKn+GMTI=
+    secure: cboyxA6i659/qN/xqSEdBWtWwD/0mM0blhMpyR7V5G1BMzWOPDv+mA7JM+mUoi/HnWn57d3ghFOZgndsRjvLBc0LJS+NoYwTyjnNEWmkAcvBIsPp7kW1p9BQeqSQ1riLHDFpXboWKbEEuSzEhSN8mniEd1QR/9dhnttzAEhpInQ=
   bucket: 'assets.api.bible'
   local-dir: dist
   on:

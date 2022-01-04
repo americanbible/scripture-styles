@@ -58,9 +58,8 @@
   font-weight: bold;
   font-style: italic;
   font-size: inherit;
-  line-height: $base-line-height * 2;
-  margin-bottom: $base-margin-height;
-  margin-top: 0px;
+  margin-bottom: $base-margin-height * .6;
+  margin-top: $base-margin-height;
 }
 
 // Section reference range
