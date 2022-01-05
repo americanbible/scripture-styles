@@ -16,9 +16,8 @@ deploy:
     branch: master
 - provider: s3
   skip_cleanup: true
-  access_key_id: AKIAW3FERPLDOJJBHNUU
-  secret_access_key:
-    secure: Vhe+8kzM97gVgq/wjMEv1G5oLcl3SMUY03VYWg+Gbn5TULNSOFmWVskEx+HEIamPXTO6D2RpgUFxouDsWqjskBGbLD1lwyE2C6+q4qDIEP0tqxR+W2rr78KIvTgwTWida1Kyg6BQhLOD7LaMB4YqvvBBJLiE0l1bjYCI9a8FHio=
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: assets.api.bible
   local-dir: dist
   on:
