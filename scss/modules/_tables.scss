@@ -1,32 +1,32 @@
 table {
-  width: 100%;
-  display: table;
+	width: 100%;
+	display: table;
 }
 
 // Table row <tr> markup
 .tr {
-  display: table-row;
+	display: table-row;
 }
 
 // Table heading <td> markup
-[class^="th"] {
-  font-style: italic;
-  display: table-cell;
+[class^='th'] {
+	font-style: italic;
+	display: table-cell;
 }
 
 // Table heading right
-[class^="thr"] {
-  text-align: right;
-  padding: 0 $base-margin-height;
+[class^='thr'] {
+	text-align: right;
+	padding: 0 var(--ss-base-line-height);
 }
 
 // Table cell
-[class^="tc"] {
-  display: table-cell;
+[class^='tc'] {
+	display: table-cell;
 }
 
 // Table cell right aligned
-[class^="tcr"] {
-  text-align: right;
-  padding: 0 $base-margin-height;
+[class^='tcr'] {
+	text-align: right;
+	padding: 0 var(--ss-base-line-height);
 }
