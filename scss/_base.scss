@@ -33,22 +33,22 @@
 	// replaces: $base-line-height and $base-margin-height
 	--ss-base-line-height: calc(1.5 * var(--ss-rem));
 }
-@media (prefers-color-scheme: dark) {
-	.scripture-styles:not([data-color-mode='light']) {
-		--ss-color-text-intense: #ffffff;
 
-		// replaces: $base-font-color
-		--ss-color-text: #d7d7d8;
-		--ss-color-text-muted: #a4a3a3;
-		--ss-color-text-very-muted: #878787;
-		--ss-color-ui: #323233;
-		--ss-color-ui-muted: #575758;
-		--ss-color-background: #212122;
-		--ss-color-background-card: #282829;
-		--ss-color-redlettter: #e57373;
-		--ss-color-link: #6296cb;
-		--ss-color-link-active: #87baed;
-	}
+.scripture-styles[data-color-mode='dark'],
+[data-color-mode='dark'] .scripture-styles:not([data-color-mode='light']) {
+	--ss-color-text-intense: #ffffff;
+
+	// replaces: $base-font-color
+	--ss-color-text: #d7d7d8;
+	--ss-color-text-muted: #a4a3a3;
+	--ss-color-text-very-muted: #878787;
+	--ss-color-ui: #323233;
+	--ss-color-ui-muted: #575758;
+	--ss-color-background: #212122;
+	--ss-color-background-card: #282829;
+	--ss-color-redlettter: #e57373;
+	--ss-color-link: #6296cb;
+	--ss-color-link-active: #87baed;
 }
 
 .scripture-styles {
