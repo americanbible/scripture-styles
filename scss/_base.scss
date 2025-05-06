@@ -1,8 +1,70 @@
 .scripture-styles {
-  @include style-reset; // Clear out all the inherited styles and get back to a clean slate
-  font-size: $base-font-size;
-  font-family: $scripture-font;
-  line-height: $base-line-height;
-  color: $base-font-color;
-  -webkit-font-smoothing: antialiased;
+	// replaces: darken($base-font-color, 80%);
+	--ss-color-text-intense: #000000;
+
+	// replaces: $base-font-color
+	--ss-color-text: #2a2a2a;
+
+	// replaces lighten($base-font-color, 25%);
+	--ss-color-text-muted: #494949;
+
+	// replaces:
+	// - lighten($base-font-color, 40%);
+	// - lighten($base-font-color, 35%);
+
+	--ss-color-text-very-muted: #757575;
+
+	// replace: hardcoded values: #dcdcdc, #cc0000;
+	--ss-color-ui: #dedede;
+	--ss-color-background: #fafafa;
+	--ss-color-background-card: #ffffff;
+	--ss-color-redlettter: #d32f2f;
+	--ss-color-link: #2562a0;
+	--ss-color-link-active: #184b7d;
+	--ss-font-serif: 'Noto Serif', serif;
+	--ss-font-sans: 'Noto Sans', sans-serif;
+
+	// replaces: $scripture-font
+	--ss-font: var(--ss-font-serif);
+
+	// replaces: $base-font-size and $em-base
+	--ss-rem: 1.125rem;
+
+	// replaces: $base-line-height and $base-margin-height
+	--ss-base-line-height: calc(1.5 * var(--ss-rem));
 }
+@media (prefers-color-scheme: dark) {
+	.scripture-styles:not([data-color-mode='light']) {
+		--ss-color-text-intense: #ffffff;
+
+		// replaces: $base-font-color
+		--ss-color-text: #d7d7d8;
+		--ss-color-text-muted: #a4a3a3;
+		--ss-color-ui: #323233;
+		--ss-color-ui-muted: #575758;
+		--ss-color-background: #212122;
+		--ss-color-background-card: #282829;
+		--ss-color-redlettter: #e57373;
+		--ss-color-link: #6296cb;
+		--ss-color-link-active: #87baed;
+	}
+}
+
+.scripture-styles {
+	font-size: var(--ss-rem);
+	font-family: var(--ss-font-serif);
+	line-height: 1.5;
+	background: var(--ss-color-background);
+	color: var(--ss-color-text);
+	-webkit-font-smoothing: antialiased;
+}
+/*
+.scripture-styles {
+	@include style-reset; // Clear out all the inherited styles and get back to a clean slate
+	font-size: $base-font-size;
+	font-family: $scripture-font;
+	line-height: $base-line-height;
+	color: $base-font-color;
+	-webkit-font-smoothing: antialiased;
+}
+*/
