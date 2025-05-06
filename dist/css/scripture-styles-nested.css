@@ -1,132 +1,56 @@
 @charset "UTF-8";
 .scripture-styles {
-  /* HTML5 display-role reset for older browsers */
-  font-size: 18px;
-  font-family: "Noto Serif", serif;
-  line-height: 25px;
-  color: #111111;
-  -webkit-font-smoothing: antialiased;
-}
-.scripture-styles html,
-.scripture-styles body,
-.scripture-styles div,
-.scripture-styles span,
-.scripture-styles applet,
-.scripture-styles object,
-.scripture-styles iframe,
-.scripture-styles h1,
-.scripture-styles h2,
-.scripture-styles h3,
-.scripture-styles h4,
-.scripture-styles h5,
-.scripture-styles h6,
-.scripture-styles p,
-.scripture-styles blockquote,
-.scripture-styles pre,
-.scripture-styles a,
-.scripture-styles abbr,
-.scripture-styles acronym,
-.scripture-styles address,
-.scripture-styles big,
-.scripture-styles cite,
-.scripture-styles code,
-.scripture-styles del,
-.scripture-styles dfn,
-.scripture-styles em,
-.scripture-styles img,
-.scripture-styles ins,
-.scripture-styles kbd,
-.scripture-styles q,
-.scripture-styles s,
-.scripture-styles samp,
-.scripture-styles small,
-.scripture-styles strike,
-.scripture-styles strong,
-.scripture-styles sub,
-.scripture-styles sup,
-.scripture-styles tt,
-.scripture-styles var,
-.scripture-styles b,
-.scripture-styles u,
-.scripture-styles i,
-.scripture-styles center,
-.scripture-styles dl,
-.scripture-styles dt,
-.scripture-styles dd,
-.scripture-styles ol,
-.scripture-styles ul,
-.scripture-styles li,
-.scripture-styles fieldset,
-.scripture-styles form,
-.scripture-styles label,
-.scripture-styles legend,
-.scripture-styles table,
-.scripture-styles caption,
-.scripture-styles tbody,
-.scripture-styles tfoot,
-.scripture-styles thead,
-.scripture-styles tr,
-.scripture-styles th,
-.scripture-styles td,
-.scripture-styles article,
-.scripture-styles aside,
-.scripture-styles canvas,
-.scripture-styles details,
-.scripture-styles embed,
-.scripture-styles figure,
-.scripture-styles figcaption,
-.scripture-styles footer,
-.scripture-styles header,
-.scripture-styles hgroup,
-.scripture-styles menu,
-.scripture-styles nav,
-.scripture-styles output,
-.scripture-styles ruby,
-.scripture-styles section,
-.scripture-styles summary,
-.scripture-styles time,
-.scripture-styles mark,
-.scripture-styles audio,
-.scripture-styles video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: inherit;
-  vertical-align: baseline;
-}
-.scripture-styles article,
-.scripture-styles aside,
-.scripture-styles details,
-.scripture-styles figcaption,
-.scripture-styles figure,
-.scripture-styles footer,
-.scripture-styles header,
-.scripture-styles hgroup,
-.scripture-styles menu,
-.scripture-styles nav,
-.scripture-styles section {
-  display: block;
-}
-.scripture-styles ol,
-.scripture-styles ul {
-  list-style: none;
-}
-.scripture-styles blockquote,
-.scripture-styles q {
-  quotes: none;
-}
-.scripture-styles blockquote:before,
-.scripture-styles blockquote:after,
-.scripture-styles q:before,
-.scripture-styles q:after {
-  content: "";
-  content: none;
-}
-.scripture-styles table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  --ss-color-text-intense: #000000;
+  --ss-color-text: #2a2a2a;
+  --ss-color-text-muted: #494949;
+  --ss-color-text-very-muted: #757575;
+  --ss-color-ui: #dedede;
+  --ss-color-background: #fafafa;
+  --ss-color-background-card: #ffffff;
+  --ss-color-redlettter: #d32f2f;
+  --ss-color-link: #2562a0;
+  --ss-color-link-active: #184b7d;
+  --ss-font-serif: "Noto Serif", serif;
+  --ss-font-sans: "Noto Sans", sans-serif;
+  --ss-font: var(--ss-font-serif);
+  --ss-rem: 1.125rem;
+  --ss-base-line-height: calc(1.5 * var(--ss-rem));
 }
 
+@media (prefers-color-scheme: dark) {
+  .scripture-styles:not([data-color-mode=light]) {
+    --ss-color-text-intense: #ffffff;
+    --ss-color-text: #d7d7d8;
+    --ss-color-text-muted: #a4a3a3;
+    --ss-color-text-very-muted: #878787;
+    --ss-color-ui: #323233;
+    --ss-color-ui-muted: #575758;
+    --ss-color-background: #212122;
+    --ss-color-background-card: #282829;
+    --ss-color-redlettter: #e57373;
+    --ss-color-link: #6296cb;
+    --ss-color-link-active: #87baed;
+  }
+}
+.scripture-styles {
+  font-size: var(--ss-rem);
+  font-family: var(--ss-font-serif);
+  line-height: 1.5;
+  background: var(--ss-color-background);
+  color: var(--ss-color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+.scripture-styles {
+	@include style-reset; // Clear out all the inherited styles and get back to a clean slate
+	font-size: $base-font-size;
+	font-family: $scripture-font;
+	line-height: $base-line-height;
+	color: $base-font-color;
+	-webkit-font-smoothing: antialiased;
+}
+*/
 .scripture-styles .c {
   text-align: center;
   font-weight: bold;
@@ -135,7 +59,7 @@
 .scripture-styles .ca {
   font-style: italic;
   font-weight: normal;
-  color: #777777;
+  color: var(--ss-color-text-very-muted);
 }
 .scripture-styles .ca:before {
   content: "(";
@@ -155,7 +79,7 @@
 .scripture-styles .v,
 .scripture-styles .vp,
 .scripture-styles sup[class^=v] {
-  color: black;
+  color: var(--ss-color-text-intense);
   font-size: 0.7em;
   letter-spacing: -0.03em;
   vertical-align: 0.25em;
@@ -207,7 +131,7 @@
   padding: 0.1em;
 }
 .scripture-styles .notelink, .scripture-styles .notelink:hover, .scripture-styles .notelink:active, .scripture-styles .notelink:visited {
-  color: rgb(106.25, 106.25, 106.25);
+  color: var(--ss-color-text-very-muted);
 }
 .scripture-styles .notelink sup {
   font-size: 0.7em;
@@ -246,7 +170,7 @@
   font-weight: bold;
 }
 .scripture-styles .fv {
-  color: rgb(80.75, 80.75, 80.75);
+  color: var(--ss-color-text-muted);
   font-size: 0.75em;
   letter-spacing: -0.03em;
   vertical-align: 0.25em;
