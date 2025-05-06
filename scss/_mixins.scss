@@ -3,12 +3,12 @@
 }
 
 @mixin indented($left, $right) {
-	margin-left: $left + em;
-	margin-right: $right + em;
+	margin-inline-start: $left + em;
+	margin-inline-end: $right + em;
 }
 
 @mixin hanging-indent {
-	padding-left: 1em;
+	padding-inline-start: 1em;
 	text-indent: -1em;
 }
 

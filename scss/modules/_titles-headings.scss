@@ -11,13 +11,13 @@
 	.mt2 {
 		font-size: 40px;
 		line-height: calc(2 * var(--ss-base-line-height));
-		margin-top: var(--ss-base-line-height);
-		margin-bottom: var(--ss-base-line-height);
+		margin-block-start: var(--ss-base-line-height);
+		margin-block-end: var(--ss-base-line-height);
 	}
 
 	.mt2 {
 		font-size: 34px;
-		margin-top: calc(-1 * var(--ss-base-line-height));
+		margin-block-start: calc(-1 * var(--ss-base-line-height));
 		font-style: italic;
 		font-weight: normal;
 	}
@@ -33,8 +33,8 @@
 		font-weight: bold;
 		font-size: 27px;
 		line-height: calc(2 * var(--ss-base-line-height));
-		margin-top: var(--ss-base-line-height);
-		margin-bottom: 0px;
+		margin-block-start: var(--ss-base-line-height);
+		margin-block-end: 0px;
 	}
 
 	// Major section reference range.
@@ -42,7 +42,7 @@
 	// mr = h3
 	.mr {
 		font-size: 0.9em;
-		margin-bottom: var(--ss-base-line-height);
+		margin-block-end: var(--ss-base-line-height);
 		text-align: center;
 		font-weight: normal;
 		font-style: italic;
@@ -59,8 +59,8 @@
 		font-weight: bold;
 		font-style: italic;
 		font-size: inherit;
-		margin-bottom: calc(0.6 * var(--ss-base-line-height));
-		margin-top: var(--ss-base-line-height);
+		margin-block-end: calc(0.6 * var(--ss-base-line-height));
+		margin-block-start: var(--ss-base-line-height);
 	}
 
 	// Section reference range
