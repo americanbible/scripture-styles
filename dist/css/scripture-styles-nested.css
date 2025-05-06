@@ -41,16 +41,48 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/*
 .scripture-styles {
-	@include style-reset; // Clear out all the inherited styles and get back to a clean slate
-	font-size: $base-font-size;
-	font-family: $scripture-font;
-	line-height: $base-line-height;
-	color: $base-font-color;
-	-webkit-font-smoothing: antialiased;
+  /* 1. Use a more-intuitive box-sizing model */
+  /* 2. Improve media defaults */
+  /* 3. Avoid text overflows */
+  /* 4. Improve line wrapping */
 }
-*/
+.scripture-styles *,
+.scripture-styles *::before,
+.scripture-styles *::after {
+  box-sizing: border-box;
+}
+.scripture-styles * {
+  margin: 0;
+}
+.scripture-styles img,
+.scripture-styles picture,
+.scripture-styles video,
+.scripture-styles canvas,
+.scripture-styles svg {
+  display: block;
+  max-width: 100%;
+}
+.scripture-styles p,
+.scripture-styles h1,
+.scripture-styles h2,
+.scripture-styles h3,
+.scripture-styles h4,
+.scripture-styles h5,
+.scripture-styles h6 {
+  overflow-wrap: break-word;
+}
+.scripture-styles p {
+  text-wrap: pretty;
+}
+.scripture-styles h1,
+.scripture-styles h2,
+.scripture-styles h3,
+.scripture-styles h4,
+.scripture-styles h5,
+.scripture-styles h6 {
+  text-wrap: balance;
+}
 .scripture-styles .c {
   text-align: center;
   font-weight: bold;

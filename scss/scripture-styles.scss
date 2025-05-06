@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @use 'base' as *;
+@use 'reset' as *;
 @use 'modules/chapters-verses' as *;
 @use 'modules/cross-references' as *;
 @use 'modules/footnotes' as *;
@@ -15,6 +16,7 @@
 
 // Let's namespace all the modules
 .scripture-styles {
+	@include reset;
 	@include chapters-verses;
 	@include cross-references;
 	@include footnotes;
