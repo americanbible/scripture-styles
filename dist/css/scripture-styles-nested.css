@@ -17,21 +17,21 @@
   --ss-base-line-height: calc(1.5 * var(--ss-rem));
 }
 
-@media (prefers-color-scheme: dark) {
-  .scripture-styles:not([data-color-mode=light]) {
-    --ss-color-text-intense: #ffffff;
-    --ss-color-text: #d7d7d8;
-    --ss-color-text-muted: #a4a3a3;
-    --ss-color-text-very-muted: #878787;
-    --ss-color-ui: #323233;
-    --ss-color-ui-muted: #575758;
-    --ss-color-background: #212122;
-    --ss-color-background-card: #282829;
-    --ss-color-redlettter: #e57373;
-    --ss-color-link: #6296cb;
-    --ss-color-link-active: #87baed;
-  }
+.scripture-styles[data-color-mode=dark],
+[data-color-mode=dark] .scripture-styles:not([data-color-mode=light]) {
+  --ss-color-text-intense: #ffffff;
+  --ss-color-text: #d7d7d8;
+  --ss-color-text-muted: #a4a3a3;
+  --ss-color-text-very-muted: #878787;
+  --ss-color-ui: #323233;
+  --ss-color-ui-muted: #575758;
+  --ss-color-background: #212122;
+  --ss-color-background-card: #282829;
+  --ss-color-redlettter: #e57373;
+  --ss-color-link: #6296cb;
+  --ss-color-link-active: #87baed;
 }
+
 .scripture-styles {
   font-size: var(--ss-rem);
   font-family: var(--ss-font-serif);
@@ -106,7 +106,7 @@
   content: ")" !important;
 }
 .scripture-styles .x {
-  font-size: 16px;
+  font-size: calc(0.8 * var(--ss-rem));
   box-sizing: border-box;
   display: inline-block;
   position: relative;
@@ -115,7 +115,7 @@
   text-indent: 0;
   text-align: left;
   border-radius: 4px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid var(--ss-color-text-very-muted);
 }
 .scripture-styles .xo {
   font-weight: bold;
@@ -145,7 +145,7 @@
   content: " ";
 }
 .scripture-styles .f {
-  font-size: 16px;
+  font-size: calc(0.8 * var(--ss-rem));
   display: inline-block;
   box-sizing: border-box;
   padding: 0 0.4em;
@@ -153,7 +153,7 @@
   text-indent: 0;
   text-align: left;
   border-radius: 4px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid var(--ss-color-text-very-muted);
 }
 .scripture-styles .fr {
   font-weight: bold;
@@ -190,9 +190,9 @@
   text-align: center;
   font-weight: bold;
   font-size: 27px;
-  line-height: 50px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  line-height: calc(2 * var(--ss-base-line-height));
+  margin-top: var(--ss-base-line-height);
+  margin-bottom: var(--ss-base-line-height);
 }
 .scripture-styles [class^=ip] {
   text-indent: 1em;
@@ -244,8 +244,8 @@
 .scripture-styles .iot {
   font-weight: bold;
   font-size: 18px;
-  line-height: 25px;
-  margin-top: 25px;
+  line-height: var(--ss-base-line-height);
+  margin-top: var(--ss-base-line-height);
   margin-bottom: 0px;
 }
 .scripture-styles .io,
@@ -344,7 +344,7 @@
   margin-right: 0em;
 }
 .scripture-styles .b {
-  height: 25px;
+  height: var(--ss-base-line-height);
 }
 .scripture-styles [class^=q] {
   padding-left: 1em;
@@ -434,7 +434,7 @@
   font-style: italic;
 }
 .scripture-styles .wj {
-  color: #cc0000;
+  color: var(--ss-color-text-very-muted);
 }
 .scripture-styles .em {
   font-style: italic;
@@ -476,14 +476,14 @@
 }
 .scripture-styles [class^=thr] {
   text-align: right;
-  padding: 0 25px;
+  padding: 0 var(--ss-base-line-height);
 }
 .scripture-styles [class^=tc] {
   display: table-cell;
 }
 .scripture-styles [class^=tcr] {
   text-align: right;
-  padding: 0 25px;
+  padding: 0 var(--ss-base-line-height);
 }
 .scripture-styles [class^=mt] {
   text-align: center;
@@ -494,13 +494,13 @@
 .scripture-styles .mt1,
 .scripture-styles .mt2 {
   font-size: 40px;
-  line-height: 50px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  line-height: calc(2 * var(--ss-base-line-height));
+  margin-top: var(--ss-base-line-height);
+  margin-bottom: var(--ss-base-line-height);
 }
 .scripture-styles .mt2 {
   font-size: 34px;
-  margin-top: -25px;
+  margin-top: calc(-1 * var(--ss-base-line-height));
   font-style: italic;
   font-weight: normal;
 }
@@ -512,13 +512,13 @@
   text-align: center;
   font-weight: bold;
   font-size: 27px;
-  line-height: 50px;
-  margin-top: 25px;
+  line-height: calc(2 * var(--ss-base-line-height));
+  margin-top: var(--ss-base-line-height);
   margin-bottom: 0px;
 }
 .scripture-styles .mr {
   font-size: 0.9em;
-  margin-bottom: 25px;
+  margin-bottom: var(--ss-base-line-height);
   text-align: center;
   font-weight: normal;
   font-style: italic;
@@ -532,8 +532,8 @@
   font-weight: bold;
   font-style: italic;
   font-size: inherit;
-  margin-bottom: 15px;
-  margin-top: 25px;
+  margin-bottom: calc(0.6 * var(--ss-base-line-height));
+  margin-top: var(--ss-base-line-height);
 }
 .scripture-styles .sr {
   font-weight: normal;
@@ -551,7 +551,7 @@
 }
 .scripture-styles .rq {
   font-size: inherit;
-  line-height: 25px;
+  line-height: var(--ss-base-line-height);
   font-style: italic;
   text-align: right;
   letter-spacing: normal;

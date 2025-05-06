@@ -1,69 +1,72 @@
-// Chapter number
-.c {
-	text-align: center;
-	font-weight: bold;
-	font-size: 1.3em;
-}
-
-// Alternate (second) chapter number.
-.ca {
-	font-style: italic;
-	font-weight: normal;
-	color: var(--ss-color-text-very-muted);
-
-	@include parenthesis-wrap;
-}
-
-// Published chapter character.
-// cp = h3
-.cp {
-}
-
-// cl = h3 (should this be an inline element?)
-.cl {
-	text-align: center;
-	font-weight: bold;
-}
-
-// Chapter Description
-.cd {
-	@include indented(1, 1);
-
-	font-style: italic;
-}
-
-// Verse Numbers
-.v,
-.vp,
-sup[class^='v'] {
-	color: var(--ss-color-text-intense);
-	font-size: 0.7em;
-	letter-spacing: -0.03em;
-	vertical-align: 0.25em;
-	line-height: 0;
-	font-family: sans-serif;
-	font-weight: bold;
-	top: inherit;
-
-	&:after {
-		content: '\a0';
+@use '../mixins' as *;
+@mixin chapters-verses {
+	// Chapter number
+	.c {
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.3em;
 	}
-}
 
-sup + sup {
-	&:before {
-		content: '\a0';
+	// Alternate (second) chapter number.
+	.ca {
+		font-style: italic;
+		font-weight: normal;
+		color: var(--ss-color-text-very-muted);
+
+		@include parenthesis-wrap;
 	}
-}
 
-// Verse Alternate
-.va {
-	@include parenthesis-wrap;
+	// Published chapter character.
+	// cp = h3
+	.cp {
+	}
 
-	font-style: italic;
-}
+	// cl = h3 (should this be an inline element?)
+	.cl {
+		text-align: center;
+		font-weight: bold;
+	}
 
-// Published verse character
-.vp {
-	// no extra styles yet
+	// Chapter Description
+	.cd {
+		@include indented(1, 1);
+
+		font-style: italic;
+	}
+
+	// Verse Numbers
+	.v,
+	.vp,
+	sup[class^='v'] {
+		color: var(--ss-color-text-intense);
+		font-size: 0.7em;
+		letter-spacing: -0.03em;
+		vertical-align: 0.25em;
+		line-height: 0;
+		font-family: sans-serif;
+		font-weight: bold;
+		top: inherit;
+
+		&:after {
+			content: '\a0';
+		}
+	}
+
+	sup + sup {
+		&:before {
+			content: '\a0';
+		}
+	}
+
+	// Verse Alternate
+	.va {
+		@include parenthesis-wrap;
+
+		font-style: italic;
+	}
+
+	// Published verse character
+	.vp {
+		// no extra styles yet
+	}
 }

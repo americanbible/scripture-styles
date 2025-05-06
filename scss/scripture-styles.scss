@@ -1,22 +1,29 @@
 @charset "UTF-8";
 
-@import "settings";
-@import "style-reset";
-@import "mixins";
-@import "functions";
-@import "base";
+@use 'base' as *;
+@use 'modules/chapters-verses' as *;
+@use 'modules/cross-references' as *;
+@use 'modules/footnotes' as *;
+@use 'modules/identification' as *;
+@use 'modules/introductions' as *;
+@use 'modules/other' as *;
+@use 'modules/paragraphs' as *;
+@use 'modules/poetry' as *;
+@use 'modules/special-text' as *;
+@use 'modules/tables' as *;
+@use 'modules/titles-headings' as *;
 
 // Let's namespace all the modules
 .scripture-styles {
-  @import "modules/chapters-verses";
-  @import "modules/cross-references";
-  @import "modules/footnotes";
-  @import "modules/identification";
-  @import "modules/introductions";
-  @import "modules/other";
-  @import "modules/paragraphs";
-  @import "modules/poetry";
-  @import "modules/special-text";
-  @import "modules/tables";
-  @import "modules/titles-headings";
+	@include chapters-verses;
+	@include cross-references;
+	@include footnotes;
+	@include identification;
+	@include introductions;
+	@include other;
+	@include paragraphs;
+	@include poetry;
+	@include special-text;
+	@include tables;
+	@include titles-headings;
 }

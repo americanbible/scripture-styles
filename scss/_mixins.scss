@@ -1,22 +1,22 @@
 @mixin text-indent {
-  text-indent: 1em;
+	text-indent: 1em;
 }
 
 @mixin indented($left, $right) {
-  margin-left: $left + em;
-  margin-right: $right + em;
+	margin-left: $left + em;
+	margin-right: $right + em;
 }
 
 @mixin hanging-indent {
-  padding-left: 1em;
-  text-indent: -1em;
+	padding-left: 1em;
+	text-indent: -1em;
 }
 
 @mixin parenthesis-wrap {
-  &:before {
-    content: "(";
-  }
-  &:after {
-    content: ")" !important;
-  }
+	&:before {
+		content: '(';
+	}
+	&:after {
+		content: ')' !important;
+	}
 }
