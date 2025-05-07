@@ -90,7 +90,7 @@
 		font-size: inherit;
 		line-height: var(--ss-base-line-height);
 		font-style: italic;
-		text-align: right;
+		text-align: end;
 		letter-spacing: normal;
 	}
 
@@ -106,7 +106,7 @@
 	// Speaker Identification
 	// sp = h5
 	.sp {
-		text-align: left;
+		text-align: start;
 		font-weight: normal;
 		font-style: italic;
 		font-size: inherit;

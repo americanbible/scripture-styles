@@ -11,7 +11,7 @@
 	.ca {
 		font-style: italic;
 		font-weight: normal;
-		color: var(--ss-color-text-very-muted);
+		color: var(--ss-color-text-muted);
 
 		@include parenthesis-wrap;
 	}
@@ -45,7 +45,6 @@
 		line-height: 0;
 		font-family: sans-serif;
 		font-weight: bold;
-		top: inherit;
 
 		&:after {
 			content: '\a0';

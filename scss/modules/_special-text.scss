@@ -27,7 +27,7 @@
 
 	// Liturgical note/comment
 	.lit {
-		text-align: right;
+		text-align: end;
 		font-weight: bold;
 	}
 
@@ -53,7 +53,7 @@
 
 	//Words of Jesus
 	.wj {
-		color: var(--ss-color-text-very-muted);
+		color: var(--ss-color-text-muted);
 	}
 
 	// Emphasis text

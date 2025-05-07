@@ -1,15 +1,15 @@
 @mixin cross-references {
 	.x {
-		font-size: calc(0.8 * var(--ss-rem));
+		font-size: calc(0.875 * var(--ss-rem));
 		box-sizing: border-box;
 		display: inline-block;
 		position: relative;
 		padding: 0 0.4em;
 		margin: 0 0.1em;
 		text-indent: 0;
-		text-align: left;
+		text-align: start;
 		border-radius: 0.25rem;
-		border: 1px solid var(--ss-color-text-very-muted);
+		border: 1px solid var(--ss-color-ui);
 	}
 
 	// Origin reference

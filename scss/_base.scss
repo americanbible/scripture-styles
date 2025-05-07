@@ -6,21 +6,14 @@
 	--ss-color-text: #2a2a2a;
 
 	// replaces lighten($base-font-color, 25%);
-	--ss-color-text-muted: #494949;
-
-	// replaces:
 	// - lighten($base-font-color, 40%);
 	// - lighten($base-font-color, 35%);
-
-	--ss-color-text-very-muted: #757575;
+	--ss-color-text-muted: #757575;
 
 	// replace: hardcoded values: #dcdcdc, #cc0000;
 	--ss-color-ui: #dedede;
 	--ss-color-background: #fafafa;
-	--ss-color-background-card: #ffffff;
 	--ss-color-redlettter: #d32f2f;
-	--ss-color-link: #2562a0;
-	--ss-color-link-active: #184b7d;
 	--ss-font-serif: 'Noto Serif', serif;
 	--ss-font-sans: 'Noto Sans', sans-serif;
 
@@ -37,18 +30,11 @@
 .scripture-styles[data-color-mode='dark'],
 [data-color-mode='dark'] .scripture-styles:not([data-color-mode='light']) {
 	--ss-color-text-intense: #ffffff;
-
-	// replaces: $base-font-color
 	--ss-color-text: #d7d7d8;
-	--ss-color-text-muted: #a4a3a3;
-	--ss-color-text-very-muted: #878787;
-	--ss-color-ui: #323233;
-	--ss-color-ui-muted: #575758;
+	--ss-color-text-muted: #878787;
+	--ss-color-ui: #434344;
 	--ss-color-background: #212122;
-	--ss-color-background-card: #282829;
 	--ss-color-redlettter: #e57373;
-	--ss-color-link: #6296cb;
-	--ss-color-link-active: #87baed;
 }
 
 .scripture-styles {
