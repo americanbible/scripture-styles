@@ -1,95 +1,99 @@
-// Indent all paragraphs
-[class^="p"] {
-  @include text-indent;
-}
+@use '../mixins' as *;
 
-// Normal paragraph
-.p {
-}
+@mixin paragraphs {
+	// Indent all paragraphs
+	[class^='p'] {
+		@include text-indent;
+	}
 
-// Flush left paragraph
-.m {
-  text-indent: 0 !important;
-}
+	// Normal paragraph
+	.p {
+	}
 
-// Embeded text opening
-.pmo {
-  text-indent: 0;
+	// Flush left paragraph
+	.m {
+		text-indent: 0 !important;
+	}
 
-  @include indented(1, 0);
-}
+	// Embeded text opening
+	.pmo {
+		text-indent: 0;
 
-// Embedded text paragraph
-.pm {
-  @include indented(1, 0);
-}
+		@include indented(1, 0);
+	}
 
-// Embedded Text Refrain
-.pmr {
-  text-align: right;
-}
+	// Embedded text paragraph
+	.pm {
+		@include indented(1, 0);
+	}
 
-// Embedded text closing
-.pmc {
-  @include indented(1, 0);
-}
+	// Embedded Text Refrain
+	.pmr {
+		text-align: end;
+	}
 
-// Indented paragraph.
-.pi {
-  @include indented(1, 0);
-}
+	// Embedded text closing
+	.pmc {
+		@include indented(1, 0);
+	}
 
-.pi1 {
-  @include indented(2, 0);
-}
+	// Indented paragraph.
+	.pi {
+		@include indented(1, 0);
+	}
 
-.pi2 {
-  @include indented(3, 0);
-}
+	.pi1 {
+		@include indented(2, 0);
+	}
 
-.pi3 {
-  @include indented(4, 0);
-}
+	.pi2 {
+		@include indented(3, 0);
+	}
 
-// Indented flush left (no margin)
-.mi {
-  @include indented(1, 0);
-  text-indent: 0;
-}
+	.pi3 {
+		@include indented(4, 0);
+	}
 
-// No break, (currently we strip these out of the html)
-.nb {
-}
+	// Indented flush left (no margin)
+	.mi {
+		@include indented(1, 0);
+		text-indent: 0;
+	}
 
-// Centered paragraph
-.pc {
-  text-align: center;
-  text-indent: 0;
-}
+	// No break, (currently we strip these out of the html)
+	.nb {
+	}
 
-// Closure of an epistle/letter
-.cls {
-  text-align: right;
-}
+	// Centered paragraph
+	.pc {
+		text-align: center;
+		text-indent: 0;
+	}
 
-[class^="li"] {
-  @include hanging-indent;
-  @include indented(1, 0);
-}
+	// Closure of an epistle/letter
+	.cls {
+		text-align: end;
+	}
 
-.li2 {
-  @include indented(2, 0);
-}
+	[class^='li'] {
+		@include hanging-indent;
+		@include indented(1, 0);
+	}
 
-.li3 {
-  @include indented(3, 0);
-}
+	.li2 {
+		@include indented(2, 0);
+	}
 
-.li4 {
-  @include indented(4, 0);
-}
+	.li3 {
+		@include indented(3, 0);
+	}
 
-// Blank line
-.b {
-  height: $base-line-height;
+	.li4 {
+		@include indented(4, 0);
+	}
+
+	// Blank line
+	.b {
+		height: var(--ss-base-line-height);
+	}
 }

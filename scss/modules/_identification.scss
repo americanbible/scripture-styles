@@ -1,16 +1,19 @@
-// Running header text.
-// The variable # represents distinct components or levels of text required for the running header presentation (e.g. inside, outside, sub-division/section etc.).
-.h {
-  text-align: center;
-  font-style: italic;
-}
+@mixin identification {
+	// Running header text.
+	// The variable # represents distinct components or levels of text required for the running header presentation (e.g. inside, outside, sub-division/section etc.).
 
-// These are not used.
-.toc1 {
-}
+	.h {
+		text-align: center;
+		font-style: italic;
+	}
 
-.toc2 {
-}
+	// These are not used.
+	.toc1 {
+	}
 
-.toc3 {
+	.toc2 {
+	}
+
+	.toc3 {
+	}
 }

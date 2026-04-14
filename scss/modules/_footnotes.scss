@@ -1,100 +1,102 @@
-.notelink {
-  text-decoration: underline;
-  padding: 0.1em;
+@mixin footnotes {
+	.notelink {
+		text-decoration: underline;
+		padding: 0.1em;
 
-  &,
-  &:hover,
-  &:active,
-  &:visited {
-    color: lighten($base-font-color, 35%);
-  }
+		&,
+		&:hover,
+		&:active,
+		&:visited {
+			color: var(--ss-color-text-muted);
+		}
 
-  sup {
-    font-size: 0.7em;
-    letter-spacing: -0.03em;
-    vertical-align: 0.25em;
-    line-height: 0;
-    font-family: sans-serif;
-    font-weight: bold;
-  }
+		sup {
+			font-size: 0.7em;
+			letter-spacing: -0.03em;
+			vertical-align: 0.25em;
+			line-height: 0;
+			font-family: sans-serif;
+			font-weight: bold;
+		}
 
-  & + sup:before {
-    content: "\a0";
-  }
-}
+		& + sup:before {
+			content: '\a0';
+		}
+	}
 
-// .note is a wrapper class for both cross refs and footnotes
-.note {
-}
+	// .note is a wrapper class for both cross refs and footnotes
+	.note {
+	}
 
-.f {
-  font-size: $base-font-size - 2;
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 0 0.4em;
-  margin: 0 0.1em;
-  text-indent: 0;
-  text-align: left;
-  border-radius: 4px;
-  border: 1px solid #dcdcdc;
-}
+	.f {
+		font-size: calc(0.875 * var(--ss-rem));
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 0 0.4em;
+		margin: 0 0.1em;
+		text-indent: 0;
+		text-align: start;
+		border-radius: 0.25rem;
+		border: 1px solid var(--ss-color-ui);
+	}
 
-// Origin reference
-.fr {
-  font-weight: bold;
-}
+	// Origin reference
+	.fr {
+		font-weight: bold;
+	}
 
-// Footnote keyword
-.fk {
-  font-style: italic;
-  font-variant: small-caps;
-}
+	// Footnote keyword
+	.fk {
+		font-style: italic;
+		font-variant: small-caps;
+	}
 
-// Footnote translation quotation.
-// .fq {} & .fqa {}
-[class^="fq"] {
-  font-style: italic;
-}
+	// Footnote translation quotation.
+	// .fq {} & .fqa {}
+	[class^='fq'] {
+		font-style: italic;
+	}
 
-// Footnote label
-.fl {
-  font-style: italic;
-  font-weight: bold;
-}
+	// Footnote label
+	.fl {
+		font-style: italic;
+		font-weight: bold;
+	}
 
-// Footnote additional paragraph.
-.fp {
-}
+	// Footnote additional paragraph.
+	.fp {
+	}
 
-// Footnote verse number.
-.fv {
-  color: lighten($base-font-color, 25%);
-  font-size: 0.75em;
-  letter-spacing: -0.03em;
-  vertical-align: 0.25em;
-  line-height: 0;
-  font-family: sans-serif;
-  font-weight: bold;
+	// Footnote verse number.
+	.fv {
+		color: var(--ss-color-text-muted);
+		font-size: 0.75em;
+		letter-spacing: -0.03em;
+		vertical-align: 0.25em;
+		line-height: 0;
+		font-family: sans-serif;
+		font-weight: bold;
 
-  &:after {
-    content: "\a0";
-  }
-}
+		&:after {
+			content: '\a0';
+		}
+	}
 
-// Footnote text
-.ft {
-}
+	// Footnote text
+	.ft {
+	}
 
-.fe {
-}
+	.fe {
+	}
 
-// Deuterocanonical content
-.fdc {
-}
+	// Deuterocanonical content
+	.fdc {
+	}
 
-.fs {
-}
+	.fs {
+	}
 
-// Footnote reference mark
-.fm {
+	// Footnote reference mark
+	.fm {
+	}
 }

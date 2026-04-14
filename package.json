@@ -1,46 +1,46 @@
 {
-  "name": "scripture-styles",
-  "version": "1.0.0",
-  "description": "SASS and CSS styles for API.Bible Scripture Output",
-  "main": "index.js",
-  "style": "dist/css/scripture-styles.css",
-  "sass": "scss/scripture-styles.scss",
-  "scripts": {
-    "test": "jest",
-    "build": "npm run build-nested && npm run build-compressed && npm run gzip",
-    "build-nested": "node-sass scss/scripture-styles.scss dist/css/scripture-styles-nested.css --source-map true --output-style nested",
-    "build-compressed": "node-sass scss/scripture-styles.scss dist/css/scripture-styles.css --source-map true --output-style compressed",
-    "gzip": "gzip < dist/css/scripture-styles.css > dist/css/scripture-styles.css.gz",
-    "docs": "cd previewer && npm start",
-    "commit": "git-cz"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/americanbible/api-bible-assets.git"
-  },
-  "author": "American Bible Society",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/americanbible/api-bible-assets/issues"
-  },
-  "homepage": "https://github.com/americanbible/api-bible-assets#readme",
-  "devDependencies": {
-    "@commitlint/cli": "^8.3.6",
-    "@commitlint/config-conventional": "^8.3.6",
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0",
-    "husky": "^3.1.0",
-    "jest": "^24.8.0",
-    "node-sass": "^4.14.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  }
+	"name": "scripture-styles",
+	"version": "1.0.0",
+	"description": "SASS and CSS styles for API.Bible Scripture Output",
+	"main": "index.js",
+	"style": "dist/css/scripture-styles.css",
+	"sass": "scss/scripture-styles.scss",
+	"scripts": {
+		"test": "jest",
+		"build": "npm run build-nested && npm run build-compressed && npm run gzip",
+		"build-nested": "sass scss/scripture-styles.scss:dist/css/scripture-styles-nested.css --style expanded",
+		"build-compressed": "sass scss/scripture-styles.scss:dist/css/scripture-styles.css --style compressed",
+		"gzip": "gzip < dist/css/scripture-styles.css > dist/css/scripture-styles.css.gz",
+		"docs": "cd previewer && npm start",
+		"commit": "git-cz"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/americanbible/api-bible-assets.git"
+	},
+	"author": "American Bible Society",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/americanbible/api-bible-assets/issues"
+	},
+	"homepage": "https://github.com/americanbible/api-bible-assets#readme",
+	"devDependencies": {
+		"@commitlint/cli": "^19.8.0",
+		"@commitlint/config-conventional": "^19.8.0",
+		"commitizen": "^4.3.1",
+		"cz-conventional-changelog": "^3.3.0",
+		"husky": "^9.1.7",
+		"jest": "^29.7.0",
+		"sass": "1.87.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	}
 }
