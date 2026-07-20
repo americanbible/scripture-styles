@@ -23,9 +23,3 @@ deploy:
   on:
     repo: americanbible/scripture-styles
     branch: master
-- provider: script
-  skip_cleanup: true
-  script: cd previewer && npm install && npm run deploy-storybook -- --ci
-  on:
-    repo: americanbible/scripture-styles
-    branch: master

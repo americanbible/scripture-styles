@@ -1,6 +1,6 @@
 # Overview
 
-This repo contains base style sheets intented to be used on scripture content return from API.Bible. For examples of all the styles and formatting used, see [examples](http://americanbible.github.io/scripture-styles).
+This repo contains base style sheets intented to be used on scripture content return from API.Bible. For documentation on scripture styling, see [examples](https://docs.api.bible/resources/scripture-styling/).
 
 All the HTML content returned from API.Bible uses classnames that follow [USX](https://ubsicap.github.io/usx/) styles.
 
@@ -66,17 +66,3 @@ Or individually:
 **gzip**
 
 `npm run gzip`
-
-# Preview Tool
-
-First add your API.Bible key to `previewer/.env`. See `.env.sample` for format. If you need a key, you can [Sign Up Here](https://scripture.api.bible).
-
-Then, to run the preview tool
-
-```
-cd previewer
-npm install
-npm start
-```
-
-New stories can be added to `stories/stories.js`.
